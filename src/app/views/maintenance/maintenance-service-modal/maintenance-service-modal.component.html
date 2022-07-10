@@ -1,0 +1,102 @@
+<aside id="info-block">
+    <section class="file-marker">
+        <div>
+            <div class="box-title">
+                &nbsp;&nbsp;<a style="font-size:14px">เพิ่มอาการเสีย</a>&nbsp;&nbsp;
+            </div>
+            <div class="box-contents" style="text-align: left;padding: 10px;">
+                <form autocomplete="off">
+                    <div class="row mb-2">
+                        <div class="col-lg-2 text-right">
+                            <div class="form-group">
+                                Defect Code :&nbsp;     
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="input-group-append ">
+                                <input type="text" name="SKU" class="form-control" style="width: 30%;" >&nbsp;
+                                <input type="text" name="txtName" class="form-control" style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-lg-2 text-right">
+                            <div class="form-group">
+                                Defect Part :&nbsp; 
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="input-group-append ">
+                                <select name="part" id="part" class="form-control">
+                                    <option value="">SRV NO PART : part</option>
+                                    <option value="1">V002 : part 2</option>
+                                    <option value="2">V003 : part 3</option>
+                                    <option value="3">V004 : part 4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-lg-2 text-right">
+                            <div class="form-group">
+                                Serial Old :&nbsp; 
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="input-group-append ">
+                                <input type="text" name="txtName" class="form-control" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-lg-2 text-right">
+                            <div class="form-group">
+                                Serial New :&nbsp; 
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="input-group-append ">
+                                <input type="text" name="txtName" class="form-control" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-lg-2 text-right">
+                            <div class="form-group">
+                                Qty :&nbsp; 
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="input-group-append ">
+                                <input type="text" name="txtName" class="form-control" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-lg text-right">
+                            <div class="form-group">
+                                Price :&nbsp; 
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="input-group-append ">
+                                <input type="text" name="txtName" class="form-control" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-lg text-right">
+                            <div class="form-group">
+                                Charge :&nbsp; 
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="input-group-append text-bold" [ngStyle]="{'color':_Charge === 'ใช่' ? 'green' : 'red' }">
+                               {{_Charge}}
+                            </div>
+                        </div>
+                    </div>  
+                </form>
+            </div>    
+        </div>
+    </section>
+</aside>
+
+
+

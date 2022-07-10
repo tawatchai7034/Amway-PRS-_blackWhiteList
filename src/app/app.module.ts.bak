@@ -1,0 +1,171 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { LayoutComponent } from './views/shared/layout/layout.component';
+import { LoginComponent } from './views/login/login.component';
+import { HomeComponent } from './views/home/home.component';
+import { CounterComponent } from './views/counter/counter.component';
+import { DataTablesModule} from 'angular-datatables';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDatepickerModule} from '@angular/material/datepicker';
+import { MatInputModule} from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+import { ReceiveComponent } from './views/receive/receive.component';
+import { ReceiveDetailComponent } from './views/receive/receive-detail/receive-detail.component'
+import { MatStepperModule } from '@angular/material/stepper';
+import {MatTreeModule} from '@angular/material/tree';
+import {MatIconModule} from '@angular/material/icon';
+import { PartIndexComponent } from './views/master/part/index/part-index.component';
+import { PartNewComponent } from './views/master/part/new/part-new.component';
+import { MomentDateModule } from '@angular/material-moment-adapter';
+import { PartEditComponent } from './views/master/part/edit/part-edit.component';
+import { PartViewComponent } from './views/master/part/view/part-view.component';
+import {MatDividerModule} from '@angular/material/divider';
+import { NavbarComponent } from './views/shared/navbar/navbar.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { PieComponent } from './chart/pie/pie.component';
+import { LineComponent } from './chart/line/line.component';
+import * as CanvasJSAngularChart from '../assets/canvasjs-3.6.4/canvasjs.angular.component';
+import { BarComponent } from './chart/bar/bar.component';
+import { DonutComponent } from './chart/donut/donut.component';
+var CanvasJSChart = CanvasJSAngularChart.CanvasJSChart;
+import { NgChartsModule } from 'ng2-charts';
+import { MultiComponent } from './chart/multi/multi.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { FaultIndexComponent } from './views/master/fault/index/fault-index.component';
+import { FaultNewComponent } from './views/master/fault/new/fault-new.component';
+import { ToastrModule } from 'ngx-toastr';
+import { NotifierModule } from 'angular-notifier';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatDialogModule} from '@angular/material/dialog';
+import { NewModalComponent } from './views/master/fault/new_modal/new-modal.component';
+import { NgxSpinnerModule } from "ngx-spinner";
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import {MatTableModule} from '@angular/material/table';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FaultEditComponent } from './views/master/fault/edit/fault-edit.component';
+import { FaultViewComponent } from './views/master/fault/view/fault-view.component';
+import { BranchEditComponent } from './views/master/branch/edit/branch-edit.component';
+import { BranchViewComponent } from './views/master/branch/view/branch-view.component';
+import { BranchIndexComponent } from './views/master/branch/index/branch-index.component';
+import { WarrantyIndexComponent } from './views/master/warranty/index/warranty-index.component';
+import { WarrantyNewComponent } from './views/master/warranty/new/warranty-new.component';
+import { WarrantyEditComponent } from './views/master/warranty/edit/warranty-edit.component';
+import { WarrantyViewComponent } from './views/master/warranty/view/warranty-view.component';
+import { EmployeeNewComponent } from './views/master/employee/new/employee-new.component';
+import { EmployeeIndexComponent } from './views/master/employee/index/employee-index.component';
+import { EmployeeEditComponent } from './views/master/employee/edit/employee-edit.component';
+import { EmployeeViewComponent } from './views/master/employee/view/employee-view.component';
+import { PermissionIndexComponent } from './views/master/permission/index/permission-index.component';
+import { PermissionNewComponent } from './views/master/permission/new/permission-new.component';
+import { PermissionEditComponent } from './views/master/permission/edit/permission-edit.component';
+import { PermissionViewComponent } from './views/master/permission/view/permission-view.component';
+import { BorrowIndexComponent } from './views/master/borrow/index/borrow-index.component';
+import { BorrowNewComponent } from './views/master/borrow/new/borrow-new.component';
+import { BorrowViewComponent } from './views/master/borrow/view/borrow-view.component';
+import { BorrowEditComponent } from './views/master/borrow/edit/borrow-edit.component';
+import { FormsModule } from '@angular/forms';
+import { BomIndexComponent } from './views/master/bom/index/bom-index.component';
+import { BomNewComponent } from './views/master/bom/new/bom-new.component';
+import { BomEditComponent } from './views/master/bom/edit/bom-edit.component';
+import { BomViewComponent } from './views/master/bom/view/bom-view.component';
+import { ReceiveShopperComponent } from './views/receive/receive-shopper/receive-shopper.component';
+import { ReceiveShopperDetailComponent } from './views/receive/receive-shopper-detail/receive-shopper-detail.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    LayoutComponent,
+    LoginComponent,
+    HomeComponent,
+    CounterComponent,
+    ReceiveComponent,
+    ReceiveDetailComponent,
+    PartIndexComponent,
+    PartNewComponent,
+    PartEditComponent,
+    PartViewComponent,
+    NavbarComponent,
+    DashboardComponent,
+    PieComponent,
+    LineComponent,
+    CanvasJSChart,
+    BarComponent,
+    DonutComponent,
+    MultiComponent,
+    FaultIndexComponent,
+    FaultNewComponent,
+    NewModalComponent,
+    FaultEditComponent,
+    FaultViewComponent,
+    BranchEditComponent,
+    BranchViewComponent,
+    BranchIndexComponent,
+    WarrantyIndexComponent,
+    WarrantyNewComponent,
+    WarrantyEditComponent,
+    WarrantyViewComponent,
+    EmployeeNewComponent,
+    EmployeeIndexComponent,
+    EmployeeEditComponent,
+    EmployeeViewComponent,
+    PermissionIndexComponent,
+    PermissionNewComponent,
+    PermissionEditComponent,
+    PermissionViewComponent,
+    BorrowIndexComponent,
+    BorrowNewComponent,
+    BorrowViewComponent,
+    BorrowEditComponent,
+    BomIndexComponent,
+    BomNewComponent,
+    BomEditComponent,
+    BomViewComponent,
+    ReceiveShopperComponent,
+    ReceiveShopperDetailComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DataTablesModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatStepperModule,
+    MatTreeModule,
+    MatIconModule,
+    MomentDateModule,
+    MatDividerModule,
+    NgChartsModule,
+    NgxChartsModule,
+    ToastrModule.forRoot({
+      resetTimeoutOnDuplicate:true,
+      timeOut: 4000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: false,
+      countDuplicates:true,
+      autoDismiss: false,
+       maxOpened: 0,    
+      newestOnTop: true,
+      closeButton: true,
+   
+    }),
+    MatRadioModule,
+    NotifierModule.withConfig({
+      // Custom options in here
+    }),
+    MatDialogModule,
+    NgxSpinnerModule,
+    BsDatepickerModule.forRoot(),
+    MatTableModule,
+    FormsModule,
+    MatCheckboxModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

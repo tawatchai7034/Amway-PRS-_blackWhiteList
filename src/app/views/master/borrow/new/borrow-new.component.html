@@ -1,0 +1,190 @@
+<div class="content" style="padding: 5px;padding-top: 25px;">
+    <form autocomplete="off">
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">Borrow Data <label class="lblNew">New</label></div>
+                    <div class="col text-right"><i class="vp-clipboard-list-solid txtHead" style="font-size: 25px;"></i></div>
+                </div>
+            </div>
+            <div class="card-body">
+                <aside id="info-block">
+                    <section class="file-marker">
+                        <div>
+                            <div class="box-title">
+                                &nbsp;&nbsp;<a style="font-size:14px">Borrow</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                               
+                                <div class="card-body">
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            
+                                            <div class="form-group">
+                                                <a>
+                                                    Branch :
+                                                </a>
+                                                <a style="margin-left:41%">
+                                                    SKU :
+                                                </a>
+                                                <div class="input-group-append ">
+                                                    <select name="branch" id="branch" class="form-control" style="width: 50%;">
+                                                        <option value="">สำนักงานใหญ่</option>
+                                                        <option value="1">Branch 1</option>
+                                                        <option value="2">Branch 2</option>
+                                                    </select>
+                                                    &nbsp;
+                                                    <select name="SKU" id="SKU" class="form-control" style="width: 50%;">
+                                                        <option value="">SKU 1</option>
+                                                        <option value="1">SKU 2</option>
+                                                        <option value="2">SKU 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                Description :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <textarea id="Description" name="Description" rows="3" cols="50" class="form-control"
+                                                        placeholder="Please enter Description" style="width: 100%;resize:none;"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            
+                                           
+                                        </div>
+                                       
+                                        <div class="col-6" style="padding-left: 0px;">
+                                            
+                                            <div class="form-group">
+                                                Serial No.:&nbsp;
+                                                <div class="input-group-append ">
+                                                    <input type="text" name="serialNo" class="form-control"  placeholder="Please enter Serial No." style="width: 100%;">
+                                                </div>
+                                            </div>
+
+                                            <br>
+                                            <aside id="info-block">
+                                                <section class="file-marker">
+                                                    <div>
+                                                        <div class="box-title">
+                                                            &nbsp;&nbsp;<a style="font-size:14px">Choose</a>&nbsp;&nbsp;
+                                                        </div>
+                                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                            <table>
+                                                                
+                                                                <tr>
+                                                                    <td class="text-right">
+                                                                        Availability :&nbsp;
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="radio" name="rdoCounter">&nbsp;Yes
+                                                                        &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCounter"
+                                                                            checked>&nbsp;No
+                                                                    </td>
+                
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-right">
+                                                                        Active :&nbsp;
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="radio" name="rdoRepair">&nbsp;Yes
+                                                                &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoRepair" checked>&nbsp;No
+                                                                    </td>
+                                            
+                                                                </tr>
+                                                                
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                
+                                            </aside>
+                                        
+                                        </div>
+                                    </div>
+                            </div>    
+                        </div>
+                        </div>
+                    </section>
+                </aside>
+                &nbsp;
+                <aside id="info-block">
+                    <section class="file-marker">
+                        <div>
+                            <div class="box-title">
+                                &nbsp;&nbsp;<a style="font-size:14px">Borrow Detail</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="box-contents" style="text-align: left;padding: 10px;height: 550px;">
+                                <div class="card" style="padding: 5px;">
+                                    <div class="row" style="padding: 10px;">
+                                        <button type="button" class="btn btn-outline-success btn-xs" title="เพิ่ม" data-toggle="modal" data-target="#exampleModalLong"><i class="vp-plus-solid"></i>New Borrow Detail
+                                        </button>
+                                    </div>
+                                    <table datatable
+                                    [dtOptions]="dtOptions" class="row-border hover table-bordered table-striped display nowrap compact" style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-warning btn-xs" title="แก้ไข" (click)="onEdit()"><i class="vp-edit-solid"></i>
+                                                </button>
+                                                &nbsp;
+                                                <button type="button" class="btn btn-outline-danger btn-xs" title="ลบ" (click)="onDelete()"><i class="vp-trash-alt"></i>
+                                                </button>
+                                            </td>
+                                            <td>032950065BBB1</td>
+                                            <td>WTI0344</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>No</td>
+                                            <td>No</td>
+                                          
+                                        </tr>
+                                      </tbody>
+                                    </table> 
+                                </div>
+                                
+                            </div>    
+                        </div>
+                    </section>
+                </aside>
+                <hr>
+                <div class="row mb-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnSave" class="btn btn-amway btn-xs" (click)="onSave()"><i
+                                class="vp-save-solid"></i>&nbsp;&nbsp; Save&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                            (click)="onCancel()"><i class="vp-times-solid"></i> Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            Borrow Detail
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">   
+        <app-borrow-new-modal></app-borrow-new-modal>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-amway btn-xs"><i
+            class="vp-check-solid"></i>&nbsp;&nbsp; OK&nbsp;</button>&nbsp;
+          <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+          data-dismiss="modal"><i class="vp-times-solid"></i> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<ngx-spinner bdColor = "rgba(255,255,255,0.16)" size = "large" color = "#000000" type="ball-scale-multiple"><p style="color: rgb(0, 0, 0)" > Loading... </p></ngx-spinner>
+  

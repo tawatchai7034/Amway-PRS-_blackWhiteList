@@ -1,0 +1,257 @@
+<div class="content" style="padding: 5px;padding-top: 10px;">
+    <form autocomplete="off">
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">In-Home Service Data <label class="lblNew">New</label></div>
+                    <div class="col text-right"><i class="vp-clipboard-list-solid txtHead" style="font-size: 25px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col">
+
+                                    <div class="row mb-3">
+
+                                        <div class="col-12" style="text-align: center;">
+                                            <div class="form-group">
+                                                <label>วันที่ : &nbsp;</label>
+                                                    <label style="color: #0000a4" > 23-06-2022 14:43 </label>
+                                                <label style="margin-left: 30%;">พนักงานเปิดเอกสาร : &nbsp;</label>
+                                                    <label style="color: #0000a4" > วันชัย สอนเขียว </label>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        
+                                        <div class="col-6" >
+                                            <div class="form-group">
+                                                รหัสสมาชิก(ติดต่อ) :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <input type="text" name="txtName" class="form-control"
+                                                        placeholder="กรุณากรอกรหัสสมาชิก(ติดต่อ)">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a>
+                                                    <a style="color: red;">*</a> ชื่อ-นามสกุล(ติดต่อ) : 
+                                                </a>
+                                                <a style="margin-left:28%">
+                                                    <a style="color: red;">*</a> เบอร์โทร :
+                                                </a>
+                                                <div class="input-group-append ">
+                                                    <div class="input-group-append " style="width: 50%;" >
+                                                        <input type="text" name="nameContact" [(ngModel)]="this.formText.nameContact" class="form-control"
+                                                            placeholder="กรุณากรอกชื่อ-นามสกุล(ติดต่อ)">
+                                                            
+                                                    </div>
+                                                    &nbsp;&nbsp;
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <input type="text" name="contactNo" [(ngModel)]="this.formText.contactNo" class="form-control"
+                                                            placeholder="กรุณากรอกเบอร์โทร">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                SKU :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <select name="proVince" id="proVince" class="form-control"
+                                                        style="width: 100%;">
+                                                        <option value="0">100188 : ชุดไส้กรองคาร์บอน+หลอดอุล</option>
+                                                        <option value="1">SKU 1</option>
+                                                        <option value="2">SKU 2</option>
+                                                        <option value="3">SKU 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                               ที่อยู่(ใช้เครื่อง) :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <textarea id="customerAddress" name="customerAddress" rows="2"
+                                                        cols="50" class="form-control"
+                                                        placeholder="กรุณากรอกที่อยู่(ใช้เครื่อง)"
+                                                        style="width: 100%;resize:none;"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <a>
+                                                    จังหวัด :
+                                                </a>
+                                                <a style="margin-left:42%">
+                                                    <a style="color: red;">*</a> รหัสไปรษณีย์ :
+                                                </a>
+                                                <div class="input-group-append ">
+                                                    <select name="proVince" id="proVince" class="form-control"
+                                                        style="width: 50%;">
+                                                        <option value="0">ระบุจังหวัด</option>
+                                                        <option value="1">ฺBangkok(กรุงเทพมหานคร)</option>
+                                                        <option value="2">Krabi(กระบี่)</option>
+                                                        <option value="3">Kanchanaburi(กาญจนบุรี)</option>
+                                                        <option value="4">Kalasin(กาฬสินธุ์)</option>
+                                                        <option value="5">Kamphaeng Phet(กำแพงเพชร)</option>
+                                                        <option value="6">Khon Kaen(ขอนแก่น)</option>
+                                                        <option value="7">Chanthaburi(จันทบุรี)</option>
+                                                        <option value="8">Chachoengsao(ฉะเชิงเทรา)</option>
+                                                        <option value="9">Chonburi(ชลบุรี)</option>
+                                                        <option value="10">Chainat(ชัยนาท)</option>
+                                                        <option value="11">Chaiyaphum(ชัยภูมิ)</option>
+                                                        <option value="12">Chumphon(ชุมพร)</option>
+                                                        <option value="13">Chiang Rai(เชียงราย)</option>
+                                                        <option value="14">Chiang Mai(เชียงใหม่)</option>
+                                                        <option value="15">Trang(ตรัง)</option>
+                                                        <option value="16">Trat(ตราด)</option>
+                                                        <option value="17">Tak(ตาก)</option>
+                                                        <option value="18">Nakhon Nayok(นครนายก)</option>
+                                                        <option value="19">Nakhon Pathom(นครปฐม)</option>
+                                                        <option value="20">Nakhon Phanom(นครพนม)</option>
+                                                        <option value="21">Nakhon Ratchasima(นครราชสีมา)</option>
+                                                        <option value="22">Nakhon Si Thammarat(นครศรีธรรมราช)</option>
+                                                        <option value="23">Nakhon Sawan(นครสวรรค์)</option>
+                                                        <option value="24">Nonthaburi(นนทบุรี)</option>
+                                                        <option value="25">Narathiwat(นราธิวาส)</option>
+                                                        <option value="26">Nan(น่าน)</option>
+                                                        <option value="27">Bueng Kan(บึงกาฬ)</option>
+                                                        <option value="28">Buriram(บุรีรัมย์)</option>
+                                                        <option value="29">Pathum Thani(ปทุมธานี)</option>
+                                                        <option value="30">Prachuap Khiri Khan(ประจวบคีรีขันธ์)</option>
+                                                        <option value="31">Prachinburi(ปราจีนบุรี)</option>
+                                                        <option value="32">Pattani(ปัตตานี)</option>
+                                                        <option value="33">Phra Nakhon Si Ayutthaya(พระนครศรีอยุธยา)
+                                                        </option>
+                                                        <option value="34">Phayao(พะเยา)</option>
+                                                        <option value="35">Phang Nga(พังงา)</option>
+                                                        <option value="36">Phatthalung(พัทลุง)</option>
+                                                        <option value="37">Phichit(พิจิตร)</option>
+                                                        <option value="38">Phitsanulok(พิษณุโลก)</option>
+                                                        <option value="39">Phetburi(เพชรบุรี)</option>
+                                                        <option value="40">Phetchabun(เพชรบูรณ์)</option>
+                                                        <option value="41">Phrae(แพร่)</option>
+                                                        <option value="42">Phuket(ภูเก็ต)</option>
+                                                        <option value="43">Maha Sarakham(มหาสารคาม)</option>
+                                                        <option value="44">Mukdahan(มุกดาหาร)</option>
+                                                        <option value="45">Mae Hong Son(แม่ฮ่องสอน)</option>
+                                                        <option value="46">Yasothon(ยโสธร)</option>
+                                                        <option value="47">Yala(ยะลา)</option>
+                                                        <option value="48">Roi Et(ร้อยเอ็ด)</option>
+                                                        <option value="49">Ranong(ระนอง)</option>
+                                                        <option value="50">Rayong(ระยอง)</option>
+                                                        <option value="51">Ratchaburi(ราชบุรี)</option>
+                                                        <option value="52">Lopburi(ลพบุรี)</option>
+                                                        <option value="53">Lampang(ลำปาง)</option>
+                                                        <option value="54">Lamphun(ลำพูน)</option>
+                                                        <option value="55">Loei(เลย)</option>
+                                                        <option value="56">Sisaket(ศรีสะเกษ)</option>
+                                                        <option value="57">Sakon Nakhon(สกลนคร)</option>
+                                                        <option value="58">Songkhla(สงขลา)</option>
+                                                        <option value="59">Satun(สตูล)</option>
+                                                        <option value="60">Samut Prakan(สมุทรปราการ)</option>
+                                                        <option value="61">Samut Songkhram(สมุทรสงคราม)</option>
+                                                        <option value="62">Samut Sakhon(สมุทรสาคร)</option>
+                                                        <option value="63">Sa Kaeo(สระแก้ว)</option>
+                                                        <option value="64">Saraburi(สระบุรี)</option>
+                                                        <option value="65">Sing Buri(สิงห์บุรี)</option>
+                                                        <option value="66">Sukhothai(สุโขทัย)</option>
+                                                        <option value="67">Suphan Buri(สุพรรณบุรี)</option>
+                                                        <option value="68">Surat Thani(สุราษฎร์ธานี)</option>
+                                                        <option value="69">Surin(สุรินทร์)</option>
+                                                        <option value="70">Nong Khai(หนองคาย)</option>
+                                                        <option value="71">Nong Bua Lamphu(หนองบัวลำภู)</option>
+                                                        <option value="72">Ang Thong(อ่างทอง)</option>
+                                                        <option value="73">Amnat Charoen(อำนาจเจริญ)</option>
+                                                        <option value="74">Udon Thani(อุดรธานี)</option>
+                                                        <option value="75">Uttaradit(อุตรดิตถ์)</option>
+                                                        <option value="76">Uthai Thani(อุทัยธานี)</option>
+                                                        <option value="77">Ubon Ratchathani(อุบลราชธานี)</option>
+                                                    </select>
+                                                    &nbsp;&nbsp;
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <input type="text" name="postCode" [(ngModel)]="this.formText.postCode" class="form-control"
+                                                            placeholder="กรุณากรอกรหัสไปรษณีย์">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="form-group">
+                                                รหัสสมาชิก(ใช้เครื่อง) :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <input type="text" name="txtName" class="form-control"
+                                                        placeholder="กรุณากรอกรหัสสมาชิก(ใช้เครื่อง)">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a>
+                                                    <a style="color: red;">*</a> ชื่อ-นามสกุล(ใช้เครื่อง) : 
+                                                </a>
+                                                <a style="margin-left:25%">
+                                                    <a style="color: red;">*</a> เบอร์โทร :
+                                                </a>
+                                                <div class="input-group-append ">
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <input type="text" name="userName" [(ngModel)]="this.formText.userName" class="form-control"
+                                                             placeholder="กรุณากรอกชื่อ-นามสกุล(ใช้เครื่อง)">
+                                                    </div>
+                                                    &nbsp;&nbsp;
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <input type="text" name="userNo"  [(ngModel)]="this.formText.userNo" class="form-control"
+                                                            placeholder="กรุณากรอกเบอร์โทร">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                Serial No :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <input type="text" name="serialNo" class="form-control"
+                                                        placeholder="กรุณากรอก Serial No">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a style="color: red;">*</a> อาการเบื้องต้น :&nbsp;
+                                                 <div class="input-group-append ">
+                                                     <textarea id="initialSymp" name="initialSymp" rows="2"
+                                                         cols="50" class="form-control" [(ngModel)]="this.formText.initialSymp" class="form-control"
+                                                         placeholder="กรุณากรอกอาการเบื้องต้น"
+                                                         style="width: 100%;resize:none;"></textarea>
+                                                 </div>
+                                             </div>
+
+                                            <div class="form-group">
+                                                <a style="color: red;">*</a> วัน-เวลาที่สะดวกติดต่อกลับ :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <input id="date" name="replyDate" type="replyDate"
+                                                        placeholder="DD-MM-YYYY HH:mm" [(ngModel)]="this.formText.replyDate" class="form-control"
+                                                        #dwe="bsDatepicker" bsDatepicker [bsValue]="date" 
+                                                        [bsConfig]="{withTimepicker:true, isAnimated: true, dateInputFormat: 'DD-MM-YYYY HH:mm' ,containerClass:'theme-dark-blue',adaptivePosition:true}"
+                                                        style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                                    <button type="button" class="btn btn-xs btn-outline-dark"
+                                                        mat-raised-button (click)="dwe.toggle()"
+                                                        [attr.aria-expanded]="dwe.isOpen"
+                                                        style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                                            class="vp-calendar text-black"
+                                                            style="font-size: 20px;"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                            
+                       
+                    </div>
+                </div>
+                <hr>
+                <div class="row mb-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnSave" class="btn btn-amway btn-xs" (click)="onSave()"><i
+                                class="vp-save-solid"></i>&nbsp;&nbsp; Save&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                            (click)="onCancel()"><i class="vp-times-solid"></i> Cancel</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- </form> -->
+        </div>

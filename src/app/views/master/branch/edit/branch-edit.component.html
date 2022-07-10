@@ -1,0 +1,363 @@
+<div class="content" style="padding: 5px;padding-top: 10px;">
+    <form>
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">Branch Data <label class="lblEdit">Edit</label></div>
+                    <div class="col text-right"><i class="vp-edit-solid txtHead" style="font-size: 25px;"></i></div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                            Branch Code :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="branchCode" class="form-control" value="01HQ"
+                                    style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Branch Number :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="branchNumber" class="form-control"
+                                    placeholder="Please enter Branch Number"  style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Branch Name :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="branchName" class="form-control"
+                                    placeholder="Please enter Branch Name" value="สำนักงานใหญ่" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Address :&nbsp;
+                            <div class="input-group-append ">
+                                <textarea id="Address" name="Address" rows="3" cols="50" class="form-control"
+                                    placeholder="Please enter Address" style="width: 100%;resize:none;"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a>
+                                Province :
+                            </a>
+                            <a style="margin-left:40%">
+                                Region :
+                            </a>
+                            <div class="input-group-append ">
+                                <select name="proVince" id="proVince" class="form-control" style="width: 50%;">
+                                    <option value="0">Select Province</option>
+                                    <option value="1">ฺBangkok(กรุงเทพมหานคร)</option>
+                                    <option value="2">Krabi(กระบี่)</option>
+                                    <option value="3">Kanchanaburi(กาญจนบุรี)</option>
+                                    <option value="4">Kalasin(กาฬสินธุ์)</option>
+                                    <option value="5">Kamphaeng Phet(กำแพงเพชร)</option>
+                                    <option value="6">Khon Kaen(ขอนแก่น)</option>
+                                    <option value="7">Chanthaburi(จันทบุรี)</option>
+                                    <option value="8">Chachoengsao(ฉะเชิงเทรา)</option>
+                                    <option value="9">Chonburi(ชลบุรี)</option>
+                                    <option value="10">Chainat(ชัยนาท)</option>
+                                    <option value="11">Chaiyaphum(ชัยภูมิ)</option>
+                                    <option value="12">Chumphon(ชุมพร)</option>
+                                    <option value="13">Chiang Rai(เชียงราย)</option>
+                                    <option value="14">Chiang Mai(เชียงใหม่)</option>
+                                    <option value="15">Trang(ตรัง)</option>
+                                    <option value="16">Trat(ตราด)</option>
+                                    <option value="17">Tak(ตาก)</option>
+                                    <option value="18">Nakhon Nayok(นครนายก)</option>
+                                    <option value="19">Nakhon Pathom(นครปฐม)</option>
+                                    <option value="20">Nakhon Phanom(นครพนม)</option>
+                                    <option value="21">Nakhon Ratchasima(นครราชสีมา)</option>
+                                    <option value="22">Nakhon Si Thammarat(นครศรีธรรมราช)</option>
+                                    <option value="23">Nakhon Sawan(นครสวรรค์)</option>
+                                    <option value="24">Nonthaburi(นนทบุรี)</option>
+                                    <option value="25">Narathiwat(นราธิวาส)</option>
+                                    <option value="26">Nan(น่าน)</option>
+                                    <option value="27">Bueng Kan(บึงกาฬ)</option>
+                                    <option value="28">Buriram(บุรีรัมย์)</option>
+                                    <option value="29">Pathum Thani(ปทุมธานี)</option>
+                                    <option value="30">Prachuap Khiri Khan(ประจวบคีรีขันธ์)</option>
+                                    <option value="31">Prachinburi(ปราจีนบุรี)</option>
+                                    <option value="32">Pattani(ปัตตานี)</option>
+                                    <option value="33">Phra Nakhon Si Ayutthaya(พระนครศรีอยุธยา)</option>
+                                    <option value="34">Phayao(พะเยา)</option>
+                                    <option value="35">Phang Nga(พังงา)</option>
+                                    <option value="36">Phatthalung(พัทลุง)</option>
+                                    <option value="37">Phichit(พิจิตร)</option>
+                                    <option value="38">Phitsanulok(พิษณุโลก)</option>
+                                    <option value="39">Phetburi(เพชรบุรี)</option>
+                                    <option value="40">Phetchabun(เพชรบูรณ์)</option>
+                                    <option value="41">Phrae(แพร่)</option>
+                                    <option value="42">Phuket(ภูเก็ต)</option>
+                                    <option value="43">Maha Sarakham(มหาสารคาม)</option>
+                                    <option value="44">Mukdahan(มุกดาหาร)</option>
+                                    <option value="45">Mae Hong Son(แม่ฮ่องสอน)</option>
+                                    <option value="46">Yasothon(ยโสธร)</option>
+                                    <option value="47">Yala(ยะลา)</option>
+                                    <option value="48">Roi Et(ร้อยเอ็ด)</option>
+                                    <option value="49">Ranong(ระนอง)</option>
+                                    <option value="50">Rayong(ระยอง)</option>
+                                    <option value="51">Ratchaburi(ราชบุรี)</option>
+                                    <option value="52">Lopburi(ลพบุรี)</option>
+                                    <option value="53">Lampang(ลำปาง)</option>
+                                    <option value="54">Lamphun(ลำพูน)</option>
+                                    <option value="55">Loei(เลย)</option>
+                                    <option value="56">Sisaket(ศรีสะเกษ)</option>
+                                    <option value="57">Sakon Nakhon(สกลนคร)</option>
+                                    <option value="58">Songkhla(สงขลา)</option>
+                                    <option value="59">Satun(สตูล)</option>
+                                    <option value="60">Samut Prakan(สมุทรปราการ)</option>
+                                    <option value="61">Samut Songkhram(สมุทรสงคราม)</option>
+                                    <option value="62">Samut Sakhon(สมุทรสาคร)</option>
+                                    <option value="63">Sa Kaeo(สระแก้ว)</option>
+                                    <option value="64">Saraburi(สระบุรี)</option>
+                                    <option value="65">Sing Buri(สิงห์บุรี)</option>
+                                    <option value="66">Sukhothai(สุโขทัย)</option>
+                                    <option value="67">Suphan Buri(สุพรรณบุรี)</option>
+                                    <option value="68">Surat Thani(สุราษฎร์ธานี)</option>
+                                    <option value="69">Surin(สุรินทร์)</option>
+                                    <option value="70">Nong Khai(หนองคาย)</option>
+                                    <option value="71">Nong Bua Lamphu(หนองบัวลำภู)</option>
+                                    <option value="72">Ang Thong(อ่างทอง)</option>
+                                    <option value="73">Amnat Charoen(อำนาจเจริญ)</option>
+                                    <option value="74">Udon Thani(อุดรธานี)</option>
+                                    <option value="75">Uttaradit(อุตรดิตถ์)</option>
+                                    <option value="76">Uthai Thani(อุทัยธานี)</option>
+                                    <option value="77">Ubon Ratchathani(อุบลราชธานี)</option>
+                                </select>
+                                &nbsp;&nbsp;
+                                <select name="Region" id="Region" class="form-control" style="width: 50%;">
+                                    <option value="0">Select Region </option>
+                                    <option value="1">North(ภาคเหนือ)</option>
+                                    <option value="2">Central(ภาคกลาง)</option>
+                                    <option value="3">Isan(ภาคอีสาน)</option>
+                                    <option value="4">The North East(ภาคตะวันออกเฉียงเหนือ)</option>
+                                    <option value="5">Southeastern(ภาคตะวันออกเฉียงใต้)</option>
+                                    <option value="6">South(ภาคใต้)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a>
+                                Branch Tel :
+                            </a>
+                            <a style="margin-left:38%">
+                                Branch Fax :
+                            </a>
+                            <div class="input-group-append ">
+                                <input type="text" name="branchTel" class="form-control"
+                                    placeholder="Please enter Branch Tel" value="02-398-5672" style="width: 100%;">
+                                &nbsp;&nbsp;
+                                <input type="text" name="branchFax" class="form-control"
+                                    placeholder="Please enter Branch Fax" value="02-398-5672" style="width: 100%;">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6" style="padding-left: 0px;">
+                        
+                        <div class="form-group">
+                            Branch E-Mail :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="branchEmail" class="form-control"
+                                    placeholder="Please enter Branch E-Mail" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Suggested Repair Center :&nbsp;
+                            <div class="input-group-append ">
+                                <select name="suggestedRepairCenter" id="suggestedRepairCenter" class="form-control"
+                                    style="width: 100%;">
+                                    <option value="0">Select Suggested Repair Center</option>
+                                    <option value="1">ฺBangkok(กรุงเทพมหานคร)</option>
+                                    <option value="2">Krabi(กระบี่)</option>
+                                    <option value="3">Kanchanaburi(กาญจนบุรี)</option>
+                                    <option value="4">Kalasin(กาฬสินธุ์)</option>
+                                    <option value="5">Kamphaeng Phet(กำแพงเพชร)</option>
+                                    <option value="6">Khon Kaen(ขอนแก่น)</option>
+                                    <option value="7">Chanthaburi(จันทบุรี)</option>
+                                    <option value="8">Chachoengsao(ฉะเชิงเทรา)</option>
+                                    <option value="9">Chonburi(ชลบุรี)</option>
+                                    <option value="10">Chainat(ชัยนาท)</option>
+                                    <option value="11">Chaiyaphum(ชัยภูมิ)</option>
+                                    <option value="12">Chumphon(ชุมพร)</option>
+                                    <option value="13">Chiang Rai(เชียงราย)</option>
+                                    <option value="14">Chiang Mai(เชียงใหม่)</option>
+                                    <option value="15">Trang(ตรัง)</option>
+                                    <option value="16">Trat(ตราด)</option>
+                                    <option value="17">Tak(ตาก)</option>
+                                    <option value="18">Nakhon Nayok(นครนายก)</option>
+                                    <option value="19">Nakhon Pathom(นครปฐม)</option>
+                                    <option value="20">Nakhon Phanom(นครพนม)</option>
+                                    <option value="21">Nakhon Ratchasima(นครราชสีมา)</option>
+                                    <option value="22">Nakhon Si Thammarat(นครศรีธรรมราช)</option>
+                                    <option value="23">Nakhon Sawan(นครสวรรค์)</option>
+                                    <option value="24">Nonthaburi(นนทบุรี)</option>
+                                    <option value="25">Narathiwat(นราธิวาส)</option>
+                                    <option value="26">Nan(น่าน)</option>
+                                    <option value="27">Bueng Kan(บึงกาฬ)</option>
+                                    <option value="28">Buriram(บุรีรัมย์)</option>
+                                    <option value="29">Pathum Thani(ปทุมธานี)</option>
+                                    <option value="30">Prachuap Khiri Khan(ประจวบคีรีขันธ์)</option>
+                                    <option value="31">Prachinburi(ปราจีนบุรี)</option>
+                                    <option value="32">Pattani(ปัตตานี)</option>
+                                    <option value="33">Phra Nakhon Si Ayutthaya(พระนครศรีอยุธยา)</option>
+                                    <option value="34">Phayao(พะเยา)</option>
+                                    <option value="35">Phang Nga(พังงา)</option>
+                                    <option value="36">Phatthalung(พัทลุง)</option>
+                                    <option value="37">Phichit(พิจิตร)</option>
+                                    <option value="38">Phitsanulok(พิษณุโลก)</option>
+                                    <option value="39">Phetburi(เพชรบุรี)</option>
+                                    <option value="40">Phetchabun(เพชรบูรณ์)</option>
+                                    <option value="41">Phrae(แพร่)</option>
+                                    <option value="42">Phuket(ภูเก็ต)</option>
+                                    <option value="43">Maha Sarakham(มหาสารคาม)</option>
+                                    <option value="44">Mukdahan(มุกดาหาร)</option>
+                                    <option value="45">Mae Hong Son(แม่ฮ่องสอน)</option>
+                                    <option value="46">Yasothon(ยโสธร)</option>
+                                    <option value="47">Yala(ยะลา)</option>
+                                    <option value="48">Roi Et(ร้อยเอ็ด)</option>
+                                    <option value="49">Ranong(ระนอง)</option>
+                                    <option value="50">Rayong(ระยอง)</option>
+                                    <option value="51">Ratchaburi(ราชบุรี)</option>
+                                    <option value="52">Lopburi(ลพบุรี)</option>
+                                    <option value="53">Lampang(ลำปาง)</option>
+                                    <option value="54">Lamphun(ลำพูน)</option>
+                                    <option value="55">Loei(เลย)</option>
+                                    <option value="56">Sisaket(ศรีสะเกษ)</option>
+                                    <option value="57">Sakon Nakhon(สกลนคร)</option>
+                                    <option value="58">Songkhla(สงขลา)</option>
+                                    <option value="59">Satun(สตูล)</option>
+                                    <option value="60">Samut Prakan(สมุทรปราการ)</option>
+                                    <option value="61">Samut Songkhram(สมุทรสงคราม)</option>
+                                    <option value="62">Samut Sakhon(สมุทรสาคร)</option>
+                                    <option value="63">Sa Kaeo(สระแก้ว)</option>
+                                    <option value="64">Saraburi(สระบุรี)</option>
+                                    <option value="65">Sing Buri(สิงห์บุรี)</option>
+                                    <option value="66">Sukhothai(สุโขทัย)</option>
+                                    <option value="67">Suphan Buri(สุพรรณบุรี)</option>
+                                    <option value="68">Surat Thani(สุราษฎร์ธานี)</option>
+                                    <option value="69">Surin(สุรินทร์)</option>
+                                    <option value="70">Nong Khai(หนองคาย)</option>
+                                    <option value="71">Nong Bua Lamphu(หนองบัวลำภู)</option>
+                                    <option value="72">Ang Thong(อ่างทอง)</option>
+                                    <option value="73">Amnat Charoen(อำนาจเจริญ)</option>
+                                    <option value="74">Udon Thani(อุดรธานี)</option>
+                                    <option value="75">Uttaradit(อุตรดิตถ์)</option>
+                                    <option value="76">Uthai Thani(อุทัยธานี)</option>
+                                    <option value="77">Ubon Ratchathani(อุบลราชธานี)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                    Division : 
+                                <div>
+                                </div>
+                                <div class="input-group-append ">
+                                    <input type="text" name="Division" class="form-control"
+                                        placeholder="Please enter Division" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    Buffer Time (minutes) : 
+                                <div>
+                                </div>
+                                <div class="input-group-append ">
+                                    <input type="text" name="bufferTime" class="form-control"
+                                        placeholder="Please enter  Buffer Time" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="padding-top: 15px;">
+                            <aside id="info-block">
+                                <section class="file-marker">
+                                    <div>
+                                        <div class="box-title">
+                                            &nbsp;&nbsp;<a style="font-size:14px">Choose</a>&nbsp;&nbsp;
+                                        </div>
+                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                            <table>
+                                                <tr>
+                                                    <td class="text-right">
+                                                        Recieve Unit :&nbsp;
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="rdoCheck">&nbsp;Yes
+                                                &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCheck" checked>&nbsp;No
+                                                    </td>
+
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-right">
+                                                        <a>Repair Unit :&nbsp;</a>
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="rdoCounter">&nbsp;Yes
+                                                        &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCounter"
+                                                            checked>&nbsp;No
+                                                    </td>
+
+                                                </tr>
+
+                                                
+                                                <tr>
+
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                            </aside>
+
+                            <br>
+                            <aside id="info-block">
+                                <section class="file-marker">
+                                    <div>
+                                        <div class="box-title">
+                                            &nbsp;&nbsp;<a style="font-size:14px">Status</a>&nbsp;&nbsp;
+                                        </div>
+                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                            <table>
+                                                
+                                                <tr>
+                                                    <td class="text-right">
+                                                        Status :&nbsp;
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="rdoRepair">&nbsp;Active
+                                                &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoRepair" checked>&nbsp;Inactive
+                                                    </td>
+                            
+                                                </tr>
+                                                <tr>
+
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row bm-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnSave" class="btn btn-amway btn-xs" (click)="onSave()"><i
+                                class="vp-save-solid"></i>&nbsp;&nbsp; Save&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                            (click)="onCancel()"><i class="vp-times-solid"></i> Cancel</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

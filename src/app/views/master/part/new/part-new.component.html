@@ -1,0 +1,195 @@
+<div class="content" style="padding: 5px;padding-top: 20px;">
+    <form autocomplete="off">
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">Part Data <label class="lblNew">New</label></div>
+                    <div class="col text-right"><i class="vp-clipboard-list-solid txtHead" style="font-size: 25px;"></i></div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                            SKU :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="SKU" class="form-control" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Expire Period :&nbsp;<a class="text-red" style="font-size: 12px;">*ถ้าเป็น Type = Product
+                                หน่วยจะนับเป็นเดือน</a>
+                            <div class="input-group-append ">
+                                <input type="text" name="txtName" class="form-control" value="0" style="width: 50%;"> 
+                                &nbsp;
+                                <select name="type" id="type" class="form-control" style="width: 50%;">
+                                    <option value="d">Day</option>
+                                    <option value="m">Month</option>
+                                    <option value="y">Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Satisfy :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="txtName" class="form-control" value="0" style="width: 50%;"> 
+                                &nbsp;
+                                <select name="type" id="type" class="form-control" style="width: 50%;">
+                                    <option value="d">Day</option>
+                                    <option value="m">Month</option>
+                                    <option value="y">Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="form-group">
+                                    Weight Part (gram) :&nbsp;
+                                    <div class="input-group-append ">
+                                        <input type="text" name="txtName" class="form-control" value="0" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg">
+                                <div class="form-group">
+                                    Digit :&nbsp;
+                                    <div class="input-group-append ">
+                                        <input type="text" name="txtDigit" class="form-control" value="0" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Description :&nbsp;
+                            <div class="input-group-append ">
+                                <textarea id="w3review" name="w3review" rows="4" cols="50" class="form-control"
+                                style="resize:none"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-6" style="padding-left: 0px;">
+                        <div class="form-group">
+                            Name :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="txtName" class="form-control" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Category :&nbsp;
+                            <div class="input-group-append ">
+                                <select name="Category" id="Category" class="form-control">
+                                    <option value="">Category</option>
+                                    <option value="1">Category 1</option>
+                                    <option value="2">Category 2</option>
+                                    <option value="3">Category 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Type :&nbsp;
+                            <div class="input-group-append ">
+                                <select name="type" id="type" class="form-control">
+                                    <option value="">Accessory</option>
+                                    <option value="1">Accessory 1</option>
+                                    <option value="2">Accessory 2</option>
+                                    <option value="3">Accessory 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Vendor :&nbsp;
+                            <div class="input-group-append ">
+                                <select name="type" id="type" class="form-control">
+                                    <option value="">V001 : AMWAY</option>
+                                    <option value="1">V002 : AMWAY 2</option>
+                                    <option value="2">V003 : AMWAY 3</option>
+                                    <option value="3">V004 : AMWAY 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div  style="padding-top: 20px;">
+                        <aside id="info-block">
+                            <section class="file-marker">
+                                <div>
+                                    <div class="box-title">
+                                        &nbsp;&nbsp;<a style="font-size:14px">Choose</a>&nbsp;&nbsp;
+                                    </div>
+                                    <div class="box-contents" style="text-align: left;padding: 10px;">
+                                        <table>
+                                            <tr>
+                                                <td class="text-right">
+                                                    Check Old/New :&nbsp;
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="rdoCheck">&nbsp;Yes
+                                                &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCheck" checked>&nbsp;No
+                                                </td>
+                                                
+
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">
+                                                    <a> Need Serial :&nbsp;</a>
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="rdoCounter">&nbsp;Yes
+                                                &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCounter" checked>&nbsp;No
+                                                </td>
+                                                <td style="width:100px;"></td>
+                                                <td class="text-right">
+                                                    Repair Need Serial :&nbsp;
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="rdoRepair">&nbsp;Yes
+                                                &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoRepair" checked>&nbsp;No
+                                                </td>
+                                               
+                                               
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td class="text-right">
+                                                    Update Serial :&nbsp;
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="rdoUpdateSerial">&nbsp;Yes
+                                                &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoUpdateSerial" checked>&nbsp;No
+                                                </td>
+                                               <td style="width: 10px;"></td>
+                                                <td class="text-right">
+                                                    Update EM  :&nbsp;
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="rdoUpdateEM">&nbsp;Yes
+                                                    &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoUpdateEM" checked>&nbsp;No
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                               
+                                            </tr>
+                                        </table>                                      
+                                    </div>
+                               </div>   
+                            </section>
+                        </aside> 
+                    </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row bm-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnSave" class="btn btn-amway btn-xs" (click)="onSave()"><i
+                                class="vp-save-solid"></i>&nbsp;&nbsp; Save&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                            (click)="onCancel()"><i class="vp-times-solid"></i> Cancel</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

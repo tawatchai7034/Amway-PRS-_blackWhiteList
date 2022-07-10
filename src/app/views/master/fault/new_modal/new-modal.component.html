@@ -1,0 +1,96 @@
+ <aside id="info-block">
+    <section class="file-marker">
+        <div>
+            <div class="box-title">
+                &nbsp;&nbsp;<a style="font-size:14px">New</a>&nbsp;&nbsp;
+            </div>
+            <div class="box-contents" style="text-align: left;padding: 10px;">
+                <form autocomplete="off">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="form-group">
+                                Part SKU :&nbsp;
+                                <div class="input-group-append ">
+                                    <select name="type" id="type" class="form-control">
+                                        <option value="">100188 : SCREW</option>
+                                        <option value="1">100188 : Service No Part</option>
+                                        <option value="2">100188 : ข้อต่อหักศอก 90 องศา</option>
+                                        <option value="3">100188 : Service No Part</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">   
+                            <div class="form-group">
+                                Effective Start Date  :&nbsp;
+                                <div class="input-group-append">
+                                    <input   id="date_form"
+                                    name="input-name"  type="text" placeholder="DD-MM-YYYY" class="form-control"  #dp="bsDatepicker" bsDatepicker [bsValue]="bsValue" 
+                                    [bsConfig]="{ isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-dark-blue'}" style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                    <button type="button" class="btn btn-xs btn-outline-dark" mat-raised-button (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen"
+                                    style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                        class="vp-calendar text-black" style="font-size: 20px;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                        <div class="form-group">
+                            Effective End Date :&nbsp;
+                            <div class="input-group-append">
+                                <input id="date_to" name="input-name" type="text" placeholder="DD-MM-YYYY" class="form-control"
+                                    #ds="bsDatepicker" bsDatepicker [bsValue]="bsValue" 
+                                    [bsConfig]="{ isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-amway-blue'}"
+                                    style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                <button type="button" class="btn btn-xs btn-outline-dark" mat-raised-button (click)="ds.toggle()"
+                                    [attr.aria-expanded]="ds.isOpen" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                        class="vp-calendar text-black" style="font-size: 20px;"></i></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <!-- <div class="col">
+                            <div class="form-group">
+                                Man-Minute (Minutes) :&nbsp;
+                                <div class="input-group-append ">
+                                    <input type="text" name="SKU" class="form-control  text-right" style="width: 100%;" placeholder="0" >
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col">
+                            <div class="form-group">
+                                Qty (Unit) :&nbsp;
+                                <div class="input-group-append ">
+                                    <input type="text" name="SKU" class="form-control  text-right" style="width: 100%;" placeholder="0" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                Cost (Baht) :&nbsp;
+                                <div class="input-group-append">
+                                    <input type="text" name="SKU" class="form-control  text-right" style="width: 100%;" placeholder="0" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="form-group">
+                                Description :&nbsp;
+                                <div class="input-group-append ">
+                                    <textarea id="w3review" name="w3review" rows="3" cols="50" class="form-control"
+                                        style="width: 100%;"></textarea>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </section>
+</aside>
+
+
+

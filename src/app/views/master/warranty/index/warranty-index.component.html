@@ -1,0 +1,154 @@
+<div class="content" style="padding: 5px;padding-bottom: -100px;">
+    <nav class="mt-2">
+        <form autocomplete="off">
+            <div class="card">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link card-image-6" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="d-flex justify-content-between">
+                                <div class="text-gray" style="font-size:20px">
+                                    Warranty
+                                </div>
+                                <div class="text-primary">
+                                    Search
+                                    <i class="right vp-angle-down-solid" style="color:#0070c0"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            Serial No. :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="serialNo" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            SKU :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="SKU" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            Dist No. :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name=" distNo" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            Dist Name :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="distName" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            Customer No. :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="customerNo" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            Customer Name :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="customerName" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            EM Code. :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="emCode" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            Citizen Card ID :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="citizenCardID" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                
+
+                            
+                            
+                                <div class="row mb-0 text-center">
+                                    <div class="col">
+                                        <button type="button" name="btnSearch" class="btn btn-outline-primary btn-xs"><i
+                                                class="vp-search-solid"></i> Search</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </nav>
+    <div class="card" style="padding: 5px;">
+        <div class="row" style="padding: 10px;">
+            <button type="button" class="btn btn-outline-success btn-xs" title="เพิ่ม" (click)="onNew()"><i
+                    class="vp-plus-solid"></i>New
+            </button>
+        </div>
+        <table datatable [dtOptions]="dtOptions"
+            class="row-border hover table-bordered table-striped display nowrap compact">
+            <tbody>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning btn-xs" title="แก้ไข" (click)="onEdit()"><i
+                                class="vp-edit-solid"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-danger btn-xs" title="ลบ" (click)="onDelete()"><i
+                                class="vp-trash-alt"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-info btn-xs" title="ดู" (click)="onView()"><i
+                                class="vp-eye"></i>
+                        </button>
+                    </td>
+                    <td>17247C08673592A</td>
+                    <td>121637A</td>
+                    <td>22PS</td>
+                    <td>2711647</td>
+                    <td>ทดสอบระบบ-ทดสอบระบบ ไม่ต้องจัดส่งของ</td>
+                    <td>3379519</td>
+                    <td>คุณสุกัญญา ร่มศรีทอง</td>
+                    <td></td>
+                    <td>13-02-2018</td>
+                    <td>14-05-2018</td>
+                    <td>13-03-2019</td>
+                    <td>06-08-2018</td>
+                    <td>13-02-2019</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

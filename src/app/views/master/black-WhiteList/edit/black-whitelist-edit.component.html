@@ -1,0 +1,110 @@
+<div class="content" style="padding: 5px;padding-top: 20px;">
+    <form>
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">Black-White List Data <label class="lblEdit">Edit</label></div>
+                    <div class="col text-right"><i class="vp-edit-solid txtHead" style="font-size: 25px;"></i></div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                            Recieve No :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="recieveNo" class="form-control" style="width: 100%;" placeholder="Please enter Recieve No" value="30123456">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a style="color: red;">*</a> SKU :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="SKU" [(ngModel)]="this.formText.SKU" class="form-control" style="width: 100%;" placeholder="Please enter SKU" value="100188">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            Type :&nbsp;
+                            <div class="input-group-append ">
+                                <select name="type" id="type" class="form-control">
+                                    <option value="1">Blacklist</option>
+                                    <option value="2">Whitelist</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="col-6" style="padding-left: 0px;">
+                        <div class="form-group">
+                            Old Serial :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="oldSerial" class="form-control" style="width: 100%;" placeholder="Please enter Old Serial" value="1122334455">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a style="color: red;">*</a> New Serial :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="newSerial" [(ngModel)]="this.formText.newSerial" class="form-control" style="width: 100%;" placeholder="Please enter New Serial" value="2222334455">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a style="color: red;">*</a> Record Date  :&nbsp;
+                            <div class="input-group-append">
+                                <input   id="record_date"
+                                name="record_date"  type="text" placeholder="DD-MM-YYYY" [(ngModel)]="this.formText.recordDate" class="form-control"  #dp="bsDatepicker" bsDatepicker [bsValue]="date" 
+                                [bsConfig]="{ isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-dark-blue' , adaptivePosition:true}" style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                <button type="button" class="btn btn-xs btn-outline-dark" mat-raised-button (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen"
+                                style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                    class="vp-calendar text-black" style="font-size: 20px;"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12">
+                        <div  style="padding-top: 20px;">
+                            <aside id="info-block">
+                                <section class="file-marker">
+                                    <div>
+                                        <div class="box-title">
+                                            &nbsp;&nbsp;<a style="font-size:14px">Status</a>&nbsp;&nbsp;
+                                        </div>
+                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                            <table>
+                                                <tr>
+                                                    <td class="text-right">
+                                                        Status :&nbsp;
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="rdoCheck">&nbsp;Active
+                                                    &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCheck" checked>&nbsp;Inactive
+                                                    </td>
+                                                    
+    
+                                                    
+                                                </tr>
+                                                
+                                                <tr>
+                                                   
+                                                </tr>
+                                            </table>                                      
+                                        </div>
+                                   </div>   
+                                </section>
+                            </aside> 
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row bm-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnSave" class="btn btn-amway btn-xs" (click)="onSave()"><i
+                                class="vp-save-solid"></i>&nbsp;&nbsp; Save&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                            (click)="onCancel()"><i class="vp-times-solid"></i> Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

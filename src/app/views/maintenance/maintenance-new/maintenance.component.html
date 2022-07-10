@@ -1,0 +1,106 @@
+<section class="content">
+    <!--<div style="padding-left: 10px;padding-top:5px">New Repair Order</div>  -->
+    <div class="content" style="padding: 5px;">
+        <div class="card" style="margin-left: 5px;margin-right:5px;margin-top: 10px;">
+            <div class="card-header card-image-5">
+                <div class="row">
+                    <div class="col text-left">Maintenance Job Management</div>  
+                </div>
+            </div>
+            <div class="card-body">
+                <aside id="info-block">
+                    <section class="file-marker">
+                        <div>
+                            <div class="box-title">
+                                &nbsp;&nbsp;<a style="font-size:14px">ข้อมูลการรับซ่อม</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                                <div class="row">
+                                    <div class="col text-right">ระบุเลขที่ใบรับซ่อม :&nbsp;</div>
+                                    <div class="col text-left">
+                                        <div class="input-group-append">
+                                            <input type="text" id="txtCode" name="txtCode" class="form-control"  placeholder="ระบุเลขที่ใบรับซ่อม">
+                                        </div>
+                                    </div>
+                                    <div class="col text-right">Serial No :&nbsp;</div>
+                                    <div class="col text-left">
+                                        <div class="input-group-append">
+                                            <input type="text" id="txtSerialNo" name="txtSerialNo"  class="form-control" placeholder="ระบุ Serial No">
+                                        </div>
+                                    </div>
+                                    <div class="col text-right">
+                                        <button type="button" name="btnSearch" class="btn btn-outline-primary btn-xs"><i
+                                                class="vp-search-solid"></i> ตรวจสอบ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+                &nbsp;
+                <aside id="info-block">
+                    <section class="file-marker">
+                        <div>
+                            <div class="box-title">
+                                &nbsp;&nbsp;<a style="font-size:14px">ข้อมูลสินค้าที่ส่งซ่อม</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            <label class="lblTopic">เลขที่ใบรับซ่อม :</label>&nbsp;
+                                            {{code}}
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            <label class="lblTopic">Serial No :</label>&nbsp; {{serialNo}}
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            <label class="lblTopic">ประเภทสินค้า :</label>&nbsp; {{sendByType}}
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+                &nbsp;
+                <aside id="info-block">
+                    <section class="file-marker">
+                        <div>
+                            <div class="box-title">
+                                &nbsp;&nbsp;<a style="font-size:14px">สถานะการซ่อมของสินค้า</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            <label class="lblTopic">สาขาที่ซ่อม :</label>&nbsp;
+                                            {{branch}}
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            <label class="lblTopic">สถานะ :</label>&nbsp; {{status}}
+                                        </div>
+                                    </div>
+                                    <div class="col-lg"></div>
+                                </div>   
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+                &nbsp;
+                <div class="row bm-3">
+                    <div class="col text-center">
+                        <button type="button" name="btnRepair" class="btn btn-outline-amway btn-sm"
+                       (click)="onRepair()" ><i class=" vp-tools-solid"></i> เริ่มการซ่อม</button>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+</section>

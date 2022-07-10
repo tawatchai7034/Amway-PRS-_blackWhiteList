@@ -1,0 +1,150 @@
+<div class="content" style="padding: 5px; padding-bottom: -100px">
+  <nav class="mt-2">
+    <form autocomplete="off" [formGroup]="searchForm" (ngSubmit)="onSearch()">
+      <div class="card">
+        <ul
+          class="nav nav-pills nav-sidebar flex-column"
+          data-widget="treeview"
+          role="menu"
+        >
+          <li class="nav-item has-treeview">
+            <a
+              href="#"
+              class="nav-link card-image-6"
+              data-toggle="collapse"
+              data-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="d-flex justify-content-between">
+                <div class="text-gray" style="font-size: 20px">
+                  Black-White List
+                </div>
+                <div class="text-primary">
+                  Search
+                  <i
+                    class="right vp-angle-down-solid"
+                    style="color: #0070c0"
+                  ></i>
+                </div>
+              </div>
+            </a>
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="card-body">
+                <div class="row mb-3">
+                  <div class="col-lg">
+                    <div class="form-group">
+                      Recieve No. :&nbsp;
+                      <div class="input-group-append">
+                        <input
+                          type="text"
+                          formControlName="receiveNo"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg">
+                    <div class="form-group">
+                      SKU :&nbsp;
+                      <div class="input-group-append">
+                        <input type="text" formControlName="sku" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg">
+                    <div class="form-group">
+                      Old Serial :&nbsp;
+                      <div class="input-group-append">
+                        <input
+                          type="text"
+                          formControlName="serialNoOld"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg">
+                    <div class="form-group">
+                      New Serial :&nbsp;
+                      <div class="input-group-append">
+                        <input
+                          type="text"
+                          formControlName="serialNoNew"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-lg">
+                    <div class="form-group">
+                      Type :&nbsp;
+                      <div class="input-group-append">
+                        <select formControlName="type" id="type" class="form-control">
+                          <option value="">All</option>
+                          <option value="B">Blacklist</option>
+                          <option value="W">Whitelist</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg">
+                    <div class="form-group">
+                      Status :&nbsp;
+                      <div class="input-group-append">
+                        <select formControlName="status" id="status" class="form-control">
+                          <option value="">All</option>
+                          <option value="Y">Active</option>
+                          <option value="N">Inactive</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg"></div>
+                  <div class="col-lg"></div>
+                </div>
+                <div class="row mb-0 text-center">
+                  <div class="col-lg">
+                    <button
+                      type="submit"
+                      name="btnSearch"
+                      class="btn btn-outline-primary btn-xs"
+                      (click)="onSearch()" 
+                    >
+                      <i class="vp-search-solid"></i> Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </nav>
+  <div class="card" style="padding: 5px">
+    <div class="row" style="padding: 10px">
+      <button
+        type="button"
+        class="btn btn-outline-success btn-xs"
+        title="เพิ่ม"
+        (click)="onNew()"
+      >
+        <i class="vp-plus-solid"></i>New
+      </button>
+    </div>
+
+    <div class="row" style="margin-left: 0px; margin-right: 0px">
+      <div class="card shadow-none">
+        <table
+          class="row-border table-bordered table-striped display nowrap compact"
+          id = "blackWhiteTable"
+        >
+      </table>
+      </div>
+    </div>
+  </div>
+</div>

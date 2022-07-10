@@ -1,0 +1,246 @@
+<div class="content" style="padding: 5px;padding-top: 25px;">
+    <form autocomplete="off">
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">Employee Data <label class="lblNew">New</label></div>
+                    <!--<div class="col text-right"><i class="vp-clipboard-list-solid txtHead" style="font-size: 25px;"></i></div>-->
+                </div>
+            </div>
+            <div class="card-body">
+                <aside id="info-block">
+                    <section class="file-marker">
+                        <div>
+                            <div class="box-title">
+                                &nbsp;&nbsp;<a style="font-size:14px">Employee</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                               
+                                <div class="card-body">
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                Employee Code :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <input type="text" name="employeeCode" class="form-control" readonly style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                Employee Name :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <input type="text" name="employeeName" class="form-control" readonly style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                User Name :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <input type="text" name="userName" class="form-control" readonly style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                Email :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <div class="input-group-append " style="width: 100%;">
+                                                        <input type="text" name="email" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                Branch :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <div class="input-group-append " style="width: 100%;">
+                                                        <input type="text" name="branch" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <aside id="info-block">
+                                                <section class="file-marker">
+                                                    <div>
+                                                        <div class="box-title">
+                                                            &nbsp;&nbsp;<a style="font-size:14px">Choose</a>&nbsp;&nbsp;
+                                                        </div>
+                                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                            <table>
+                                                                
+                                                                <tr>
+                                                                    <td class="text-right">
+                                                                        Repair Capablitly :&nbsp;
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="radio" name="rdoCounter">&nbsp;Yes
+                                                                        &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCounter"
+                                                                            checked>&nbsp;No
+                                                                    </td>
+                                            
+                                                                </tr>
+                                                                <tr>
+                    
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                
+                                            </aside>
+                                            
+                                            
+                                            
+                                           
+                                        </div>
+                                       
+                                        <div class="col-6" style="padding-left: 0px;">
+                                            
+                                            <div class="form-group">
+                                                Work For :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <select name="workFor" id="workFor" class="form-control" style="width: 50%;"[(ngModel)]="workFor">
+                                                        <option value="">กรุณาเลือกสาขา</option>
+                                                        <option value="1">สาขาตัวเอง</option>
+                                                        <option value="2">ต่างสาขา</option>
+                                                    </select>
+                                                    &nbsp;
+                                                    <select name="work_For" id="work_For" class="form-control" style="width: 50%;"[disabled]="!(workFor ==='2')">
+                                                        <option value="0">สาขา 1</option>
+                                                        <option value="1">สาขา 2</option>
+                                                        <option value="2">สาขา 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <a>
+                                                    Line Type :
+                                                </a>
+                                                <a style="margin-left:41%">
+                                                    Assign :
+                                                </a>
+                                                <div class="input-group-append ">
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <select name="lineType" id="lineType" class="form-control" style="width: 100%;">
+                                                            <option value="0">ไม่ระบุ</option>
+                                                            <option value="1">Line Type 1</option>
+                                                            <option value="2">Line Type 2</option>
+                                                        </select>
+                                                    </div>
+                                                    &nbsp;&nbsp;
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <input type="text" name="assign" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                Supervisor :&nbsp;
+                                                <div class="input-group-append ">
+                                                    <div class="input-group-append " style="width: 100%;">
+                                                        <input type="text" name="supervisor" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a>
+                                                    Ext.Tel :
+                                                </a>
+                                                <a style="margin-left:41%">
+                                                    Mobile :
+                                                </a>
+                                                <div class="input-group-append ">
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <input type="text" name="Tel" class="form-control"
+                                                            readonly>
+                                                    </div>
+                                                    &nbsp;&nbsp;
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <input type="text" name="Mobile" class="form-control"
+                                                            readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <a>
+                                                    Join Date :
+                                                </a>
+                                                <a style="margin-left:38%">
+                                                    Resign Date :
+                                                </a>
+                                                <div class="input-group-append ">
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <input type="text" name="joinDate" class="form-control"
+                                                        readonly>
+                                                    </div>
+                                                    &nbsp;&nbsp;
+                                                    <div class="input-group-append " style="width: 50%;">
+                                                        <input type="text" name="regionDate" class="form-control"
+                                                            readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <br>
+                                            <aside id="info-block">
+                                                <section class="file-marker">
+                                                    <div>
+                                                        <div class="box-title">
+                                                            &nbsp;&nbsp;<a style="font-size:14px">Status</a>&nbsp;&nbsp;
+                                                        </div>
+                                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                            <table>
+                                                                
+                                                                <tr>
+                                                                    <td class="text-right">
+                                                                        Status :&nbsp;
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="radio" name="rdoRepair">&nbsp;Active
+                                                                &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoRepair" checked>&nbsp;Inactive
+                                                                    </td>
+                                            
+                                                                </tr>
+                                                                <tr>
+                
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                
+                                            </aside>
+                                        
+                                        </div>
+                                    </div>
+                            </div>    
+                        </div>
+                        </div>
+                    </section>
+                </aside>
+                &nbsp;
+                <aside id="info-block">
+                    <section class="file-marker">
+                        <div>
+                            <div class="box-title">
+                                &nbsp;&nbsp;<a style="font-size:14px">Role</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="box-contents" style="text-align: left;padding: 10px;height: 500px;">
+                                
+                                
+                            </div>    
+                        </div>
+                    </section>
+                </aside>
+                <hr>
+                <div class="row mb-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnSave" class="btn btn-amway btn-xs" (click)="onSave()"><i
+                                class="vp-save-solid"></i>&nbsp;&nbsp; Save&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                            (click)="onCancel()"><i class="vp-times-solid"></i> Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+  

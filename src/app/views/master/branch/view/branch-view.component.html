@@ -1,0 +1,191 @@
+<div class="content" style="padding: 5px;padding-top: 10px;">
+    <form>
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">Branch Data <label class="lblView">View</label></div>
+                    <!-- <div class="col text-right"><i class="vp-clipboard-list-solid txtHead" style="font-size: 25px;"></i></div> -->
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                            Branch Code :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="branchCode" class="form-control" value="01HQ"
+                                    style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Branch Number :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="branchNumber" class="form-control"
+                                      style="width: 100%;"readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Branch Name :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="branchName" class="form-control"
+                                   value="สำนักงานใหญ่" style="width: 100%;"readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Address :&nbsp;
+                            <div class="input-group-append ">
+                                <textarea id="Address" name="Address" rows="3" cols="50" class="form-control"
+                                    style="width: 100%;resize:none;" readonly></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a>
+                                Province :
+                            </a>
+                            <a style="margin-left:40%">
+                                Region :
+                            </a>
+                            <div class="input-group-append ">
+                                <input type="text" name="proVince" class="form-control" value="Bangkok(กรุงเทพมหานคร)" style="width: 50%;" readonly> 
+                                &nbsp;
+                                <input type="text" name="Region" class="form-control" value="Central(ภาคกลาง)" style="width: 50%;"readonly >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a>
+                            Branch Tel :
+                        </a>
+                        <a style="margin-left:38%">
+                            Branch Fax :
+                        </a>
+                        <div class="input-group-append ">
+                            <input type="text" name="branchTel" class="form-control"
+                                value="02-398-5672" style="width: 100%;"readonly>
+                            &nbsp;&nbsp;
+                            <input type="text" name="branchFax" class="form-control"
+                                value="02-398-5672" style="width: 100%;"readonly>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-6" style="padding-left: 0px;">
+                        
+                        <div class="form-group">
+                            Branch E-Mail :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="branchEmail" class="form-control"
+                                    style="width: 100%;"readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Suggested Repair Center :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="suggestedRepairCenter" class="form-control" value="Bangkok(กรุงเทพมหานคร)" style="width: 100%;"readonly >
+                            </div>
+                            <div class="form-group">
+                                    Division : 
+                                <div>
+                                </div>
+                                <div class="input-group-append ">
+                                    <input type="text" name="Division" class="form-control"
+                                         style="width: 100%;"readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                Buffer Time (minutes) : 
+                            <div>
+                            </div>
+                            <div class="input-group-append ">
+                                <input type="text" name="bufferTime" class="form-control"style="width: 100%;"readonly>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div style="padding-top: 15px;">
+                            <aside id="info-block">
+                                <section class="file-marker">
+                                    <div>
+                                        <div class="box-title">
+                                            &nbsp;&nbsp;<a style="font-size:14px">Choose</a>&nbsp;&nbsp;
+                                        </div>
+                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                            <table>
+                                                <tr>
+                                                    <td class="text-right">
+                                                        Recieve Unit :&nbsp;
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="recieveUnit"disabled>&nbsp;Yes
+                                                        &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCheck"
+                                                        checked disabled>&nbsp;No
+                                                    </td>
+
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-right">
+                                                        <a>Repair Unit :&nbsp;</a>
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="repairUnit" disabled>&nbsp;Yes
+                                                        &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCounter"
+                                                        checked disabled>&nbsp;No
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                </section>
+                            </aside>
+                            <br>
+                            <aside id="info-block">
+                                <section class="file-marker">
+                                    <div>
+                                        <div class="box-title">
+                                            &nbsp;&nbsp;<a style="font-size:14px">Status</a>&nbsp;&nbsp;
+                                        </div>
+                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                            <table>
+                                                
+                                                <tr>
+                                                    <td class="text-right">
+                                                        Status :&nbsp;
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="Active" disabled>&nbsp;Active
+                                                        &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoUpdateSerial"
+                                                        checked disabled>&nbsp;Inactive
+                                                    </td>
+                            
+                                                </tr>
+                                                <tr>
+
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row bm-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                        (click)="onClose()"><i class="vp-times-solid"></i> Close</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

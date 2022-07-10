@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+<div class="wrapper">
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="assets/amway-icons/logo-1.png" alt="AmwayLogo" height="60" width="60">
+  </div>
+  <!-- Navbar -->
+  
+
+  <nav class="main-header navbar navbar-expand prs-header-bar navbar-light">
+
+    
+<!-- Collapsible content -->
+
+
+  <!-- Links -->
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="vp-bars-solid" style="font-size: 20px;"></i></a>
+    </li>
+    <li class="nav-item">
+        <span style="font-size:18px;line-height:40px;">Product Repair Service (PRS)</span>
+    </li>
+  </ul>
+  <!-- User -->
+
+  <ul class="navbar-nav ml-auto nav-flex-icons">
+    <li class="nav-item">
+      <ul class="navbar-nav ml-auto">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="vp-bell-solid" style="font-size:30px;"></i>
+          <span class="badge badge-warning navbar-badge" style="width: 22px;">{{countMessage}}</span>
+        </a>
+      </ul>
+    </li>
+    <ul class="navbar-nav ml-auto">
+      <!-- User Dropdown Menu -->
+      <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+              <img src="assets/amway-icons/avatar5.png" class="img-circle" alt="User Image" style="width:30px;height:30px;"> 
+              &nbsp;
+              <span id="spUserNameLogin" style="vertical-align:middle;font-size:14px">{{userFName}} {{userLName}}</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <p></p>
+              <!-- The user image in the menu -->
+              <div class="user-header text-center mb-3">
+                  <img id="imgUserLogin2" src="assets/amway-icons/avatar5.png" class="img-circle" alt="User Image" width="160" height="160" style="border:dotted;border-color:dimgrey">
+
+                  <p>
+                      <span id="spUserNameLogin"></span>
+                      <small></small>
+                  </p>
+                  <div class="row">
+                    <div class="col-4 text-right">ชื่อ :</div>
+                    <div class="col text-left">{{userFName}}</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4 text-right">นามสกุล :</div>
+                    <div class="col text-left">{{userLName}}</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4 text-right">สาขา :</div>
+                    <div class="col text-left">{{branch}}</div>
+                  </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="card-group text-center">
+                <a href="" class="dropdown-item" title="Logout">
+                    <i class="vp-power-off-solid text-red" style="font-size: 20px;"></i>
+                    Logout
+                </a>
+            </div> 
+          </div>
+      </li>
+  </ul>
+  </ul>
+</nav>
+
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-light-primary elevation-4 text-black" style="background-color: #fff">
+    <!-- Brand Logo -->
+	
+    <a href="pages/home" class="brand-link text-black">
+		
+      <img src="{{imageSrc}}" alt="logo" class="brand-image elevation-0" style="opacity: 1" width="20px">
+      <span class="brand-text " style="color: black;">&nbsp;Amway-PRS</span>
+	 
+    </a>
+    <!--<a href="/home" class="brand-link" style="text-align:center;height:57px;">
+      <i class="nav-icon vp-home-solid"></i>
+  </a>-->
+
+    <!-- Sidebar -->
+    <app-navbar></app-navbar>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+    
+   <router-outlet></router-outlet>
+        <!-- /.row (main row) -->
+        
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  
+ 
+
+
+  <footer class="main-footer" style="background-color: #fcfcfc;">
+    <div class="row">
+      <div class="col"><strong>Copyright &copy; 2022 <a href="https://www.amway.co.th/">Amway</a>.</strong>
+        All rights reserved.</div>
+      <div class="col-3 text-right" style="font-size: 14px;">Build {{buildDate}}</div>
+    </div>
+   <!-- <strong>Copyright &copy; 2022 <a href="https://www.amway.co.th/">Amway</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      Build {{buildDate}}
+    </div>-->
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+</body>
+</html>
+

@@ -1,0 +1,109 @@
+<div class="content" style="padding: 5px;padding-bottom: -100px;">
+    <nav class="mt-2">
+        <form autocomplete="off">
+            <div class="card">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link card-image-6" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="d-flex justify-content-between">
+                                <div class="text-gray" style="font-size:20px">
+                                    Vendor
+                                </div>
+                                <div class="text-primary">
+                                    Search
+                                    <i class="right vp-angle-down-solid" style="color:#0070c0"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Vendor Code :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="vendorCode" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Vendor Name :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="vendorName" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Contact Person :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="contactPerson" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Vendor Type :&nbsp;
+                                            <div class="input-group-append ">
+                                                <select name="vendorType" id="vendorType" class="form-control">
+                                                    <option value="">ไม่ระบุ</option>
+                                                    <option value="1">Shopper</option>
+                                                    <option value="2">Transport</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-0 text-center">
+                                    <div class="col-lg">
+                                        <button type="button" name="btnSearch" class="btn btn-outline-primary btn-xs"><i
+                                                class="vp-search-solid"></i> Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </nav>
+    <div class="card" style="padding: 5px;">
+        <div class="row" style="padding: 10px;">
+            <button type="button" class="btn btn-outline-success btn-xs" title="เพิ่ม" (click)="onNew()"><i
+                    class="vp-plus-solid"></i>New
+            </button>
+        </div>
+        <table datatable [dtOptions]="dtOptions"
+            class="row-border hover table-bordered table-striped display nowrap compact">
+            <tbody>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning btn-xs" title="แก้ไข" (click)="onEdit()"><i
+                                class="vp-edit-solid"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-danger btn-xs" title="ลบ" (click)="onDelete()"><i
+                                class="vp-trash-alt"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-info btn-xs" title="ดู" (click)="onView()"><i
+                                class="vp-eye"></i>
+                        </button>
+                    </td>
+                    <td>V001</td>
+                    <td>AMWAY</td>
+                    <td>027258000</td>
+                    <td>027351206</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>All</td>
+                    <td>www.amwayshopping.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

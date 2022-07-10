@@ -1,0 +1,408 @@
+<section class="content">
+    <!--<div style="padding-left: 10px;padding-top:5px">New Repair Order</div>  -->
+    <div class="content" style="padding: 5px;">
+        <div class="card" style="margin-left: 5px;margin-right:5px;margin-top: 10px;">
+            <div class="card-header card-image-5">
+                <div class="row">
+                    <div class="col text-left">Service</div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3 text-center">
+                    <div class="col">เลขที่ใบรับซ่อม :&nbsp;<span class="text-primary text-bold">{{_receiveNo}}</span></div>
+                    <div class="col">ชื่อลูกค้า :&nbsp;<span class="text-primary text-bold">{{_customerName}}</span></div>
+                    <div class="col">หมายเลขโทรศัพท์ :&nbsp;<span class="text-primary text-bold">{{_customertel}}</span></div>
+                </div>
+                <hr>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="service1-tab" data-toggle="pill" href="#service1" role="tab"
+                            aria-controls="#service1" aria-selected="true">ปฏิบัติงานช่าง</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="service2-tab" data-toggle="pill" href="#service2" role="tab"
+                            aria-controls="#service2" aria-selected="true">ประวัติการซ่อม / การอนุมัติ</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="service3-tab" data-toggle="pill" href="#service3" role="tab"
+                            aria-controls="#service3" aria-selected="true">อาการเสียที่ประเมิน</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="service4-tab" data-toggle="pill" href="#service4" role="tab"
+                            aria-controls="#service4" aria-selected="true">อุปกรณ์ที่รับจากผู้ส่งซ่อม</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="service5-tab" data-toggle="pill" href="#service5" role="tab"
+                            aria-controls="#service5" aria-selected="true">ข้อมูลผู้ซื้อ / ผู้ส่งซ่อม</a>
+                    </li>
+                </ul>
+                <div class="card-body border border-top-0"  style="height: 980px;overflow: auto;">
+                    <div class="tab-content" id="serviceTabContent">
+                        <!-- --tab1-- -->
+                        <div class="tab-pane fade show active" id="service1" role="tabpanel"
+                            aria-labelledby="service1-tab">
+                            <div class="small-box shadow-none">
+                                <div class="card-header shadow-none bg-amway-header" style="height: 40px">
+                                    อาการเสียที่ต้องการซ่อม
+                                </div>
+                                <div class="card-body shadow-none border">
+                                    <div class="row mb-2">
+                                        <div class="col">
+                                            <button type="button" name="btnSave" class="btn btn-outline-success btn-xs"
+                                                title="เพิ่ม" data-toggle="modal" data-target="#exampleModalLong"><i
+                                                    class="vp-plus-solid"></i>&nbsp; เพิ่มอาการเสีย&nbsp;</button>&nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-left: 5px;">
+                                        <div class="card shadow-none">
+                                            <table id="table3" datatable [dtOptions]="dtOptions"
+                                            class="row-border hover table-bordered table-striped display compact" style="width: 100%;">
+                                            <tfoot>
+                                                <tr>
+                                                    <th class="text-right" colspan="7">ยอดรวมสุทธิ</th>
+                                                    <th class="text-right text-green text-bold"  colspan="2" style="font-size: 16px;">{{_amount}}</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <aside id="info-block">
+                                            <section class="file-marker">
+                                                <div>
+                                                    <div class="box-title">
+                                                        &nbsp;&nbsp;<a style="font-size:14px">ข้อเสนอแนะ</a>&nbsp;&nbsp;
+                                                    </div>
+                                                    <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                        <div class="row" style="padding-left: 5px;">
+                                                            <div class="card shadow-none">
+                                                                <div class="row" style="padding-left:5px"
+                                                                    *ngFor="let des of description">
+                                                                    <div class="input-group-append">
+                                                                        <p class="text-center wrapper">
+                                                                            <input type="checkbox" id="des1"
+                                                                                name="des1">&nbsp;
+                                                                            {{ des.name }}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            ข้อเสนอแนะเพิ่มเติม :&nbsp;
+                                                            <div class="input-group-append ">
+                                                                <textarea id="description" name="description" rows="4"
+                                                                    cols="50" class="form-control"
+                                                                    style="resize:none"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --tab2-- -->
+                        <div class="tab-pane fade show " id="service2" role="tabpanel" aria-labelledby="service2-tab">
+                            <div class="small-box shadow-none">
+                                <div class="card-header shadow-none bg-amway-header" style="height: 40px">
+                                    Serial และ ชื่อของสินค้า
+                                </div>
+                                <div class="card-body shadow-none border">
+                                    <div class="row" style="padding-left: 5px;">
+                                        <div class="card shadow-none">
+                                            <aside id="info-block">
+                                                <section class="file-marker">
+                                                    <div>
+                                                        <div class="box-title">
+                                                            &nbsp;&nbsp;<a style="font-size:14px">ประวัติการซ่อม</a>&nbsp;&nbsp;
+                                                        </div>
+                                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                            <table id="table3" datatable [dtOptions]="dttab2"
+                                                            class="row-border hover table-bordered table-striped display  compact">
+                                                        </table>
+                                                        </div>    
+                                                    </div>
+                                                </section>
+                                            </aside>
+                                            &nbsp;
+                                            <aside id="info-block">
+                                                <section class="file-marker">
+                                                    <div>
+                                                        <div class="box-title">
+                                                            &nbsp;&nbsp;<a style="font-size:14px">การอนุมัติ</a>&nbsp;&nbsp;
+                                                        </div>
+                                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                            <table id="table4" datatable [dtOptions]="dt2tab2"
+                                                            class="row-border hover table-bordered table-striped display  compact">
+                                                        </table>
+                                                        </div>    
+                                                    </div>
+                                                </section>
+                                            </aside>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --tab3-- -->
+                        <div class="tab-pane fade show " id="service3" role="tabpanel" aria-labelledby="service3-tab">
+                            <div class="small-box shadow-none">
+                                <div class="card-header shadow-none bg-amway-header" style="height: 40px">
+                                    ข้อมูลอาการเสีย
+                                </div> 
+                                <div class="card-body shadow-none border" style="height: 850px;overflow: auto;">
+                                    <table  datatable [dtOptions]="dttab3" class="row-border hover table-bordered table-striped display compact">  
+                                        <tfoot>
+                                            <tr  style="height: 40px;">
+                                                <td class="text-right" colspan="2">ยอดรวมสุทธิ&nbsp;&nbsp;&nbsp;</td>
+                                                <td class="text-right text-green text-bold"style="font-size: 16px;">
+                                                    {{_total}}
+                                                </td>
+                                                <td colspan="1"></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --tab4-- -->
+                        <div class="tab-pane fade show " id="service4" role="tabpanel" aria-labelledby="service4-tab">
+                            <div class="tab-pane fade show " id="service2" role="tabpanel" aria-labelledby="service2-tab">
+                                <div class="small-box shadow-none">
+                                    <div class="card-header shadow-none bg-amway-header" style="height: 40px">
+                                        ข้อมูลรายการที่ได้รับจากผู้ส่งซ่อม
+                                    </div>
+                                    <div class="card-body shadow-none border"style="height: 850px;overflow: auto;">
+                                        <div class="row">
+                                            <table id="table4" datatable [dtOptions]="dttab4"
+                                            class="row-border hover table-bordered table-striped display  compact">
+                                        </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --tab5-- -->
+                        <div class="tab-pane fade show " id="service5" role="tabpanel" aria-labelledby="service5-tab">
+                            <div class="tab-pane fade show " id="service2" role="tabpanel" aria-labelledby="service2-tab">
+                                <div class="small-box shadow-none">
+                                    <div class="card-header shadow-none bg-amway-header" style="height: 40px">
+                                        ข้อมูลผู้ซื้อสินค้าและผู้ส่งซ่อม
+                                    </div>
+                                    <div class="card-body shadow-none border">
+                                        <div class="row mb-2">
+                                            <div class="col-lg">
+                                                <aside id="info-block">
+                                                    <section class="file-marker">
+                                                        <div>
+                                                            <div class="box-title">
+                                                                &nbsp;&nbsp;<a style="font-size:14px">นักธุรกิจแอมเวย์ผู้ซื้อเครื่อง</a>&nbsp;&nbsp;
+                                                            </div>
+                                                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                                <div class="row mb-1">
+                                                                    <div class="col-4 text-right"> รหัสนักธุรกิจ :</div>
+                                                                    <div class="col">2711647</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-4 text-right"> ชื่อนักธุรกิจ :</div>
+                                                                    <div class="col">คุณนักธุรกิจทดสอบระบบ</div>
+                                                                </div>
+                                                            </div>
+                                                       </div>   
+                                                    </section>
+                                                </aside>
+                                                &nbsp;
+                                                <aside id="info-block">
+                                                    <section class="file-marker">
+                                                        <div>
+                                                            <div class="box-title">
+                                                                &nbsp;&nbsp;<a style="font-size:14px">ชื่อลูกค้าผู้ใช้สินค้า</a>&nbsp;&nbsp;
+                                                            </div>
+                                                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                                <div class="row mb-1">
+                                                                    <div class="col-4 text-right"> รหัสลูกค้า :</div>
+                                                                    <div class="col">01234567</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-4 text-right"> ชื่อลูกค้า :</div>
+                                                                    <div class="col">คุณทดสอบ</div>
+                                                                </div>
+                                                            </div>    
+                                                        </div>
+                                                    </section>
+                                                </aside>
+                                                &nbsp;
+                                                <aside id="info-block">
+                                                    <section class="file-marker">
+                                                        <div>
+                                                            <div class="box-title">
+                                                                &nbsp;&nbsp;<a style="font-size:14px">ผู้ส่งซ่อม</a>&nbsp;&nbsp;
+                                                            </div>
+                                                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                                <div class="row mb-1">
+                                                                    <div class="col-4 text-right"> รหัสผู้ส่งซ่อม :</div>
+                                                                    <div class="col">01234567</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-4 text-right"> ชื่อผู้ส่งซ่อม :</div>
+                                                                    <div class="col">คุณทดสอบ</div>
+                                                                </div>
+                                                            </div>    
+                                                        </div>
+                                                    </section>
+                                                </aside>
+                                            </div>
+                                            &nbsp;
+                                            <div class="col-lg">
+                                                <aside id="info-block">
+                                                    <section class="file-marker">
+                                                        <div>
+                                                            <div class="box-title">
+                                                                &nbsp;&nbsp;<a style="font-size:14px">สินค้า</a>&nbsp;&nbsp;
+                                                            </div>
+                                                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                                                                <div class="row mb-1">
+                                                                    <div class="col-4 text-right"> SKU :</div>
+                                                                    <div class="col">100188</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-4 text-right"> ประเภทสินค้า :</div>
+                                                                    <div class="col">เครื่องกรองน้ำอีสปริง</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-4 text-right"> บริษัทผู้ผลิต :</div>
+                                                                    <div class="col">Amway</div>
+                                                                </div>
+                                                                
+                                                        </div>
+                                                    </div>
+                                                    </section>
+                                                </aside>
+                                              &nbsp;
+                                              <aside id="info-block">
+                                                <section class="file-marker"  style="height: 170px;">
+                                                    <div>
+                                                        <div class="box-title">
+                                                            &nbsp;&nbsp;<a style="font-size:14px">การรับประกัน</a>&nbsp;&nbsp;
+                                                        </div>
+                                                        <div class="box-contents" style="text-align: left;padding: 10px;">  
+                                                            <div class="row mb-1">
+                                                                <div class="col-4 text-right"> วันซื้อสินค้า :</div>
+                                                                <div class="col">13/02/2018</div>
+                                                            </div>
+                                                            <div class="row mb-1">
+                                                                <div class="col-4 text-right"> วันเริ่มรับประกัน :</div>
+                                                                <div class="col">13/02/2018</div>
+                                                            </div>
+                                                            <div class="row mb-1">
+                                                                <div class="col-4 text-right"> วันหมดรับประกัน :</div>
+                                                                <div class="col">13/02/2020</div>
+                                                            </div>   
+                                                            <div class="row">
+                                                                <div class="col-4 text-right"> สถานะ :</div>
+                                                                <div class="col" style="color:red">นอกการรับประกัน</div>
+                                                            </div>
+                                                           
+                                                    </div>
+                                                </div>
+                                                </section>
+                                            </aside>
+                                            </div>
+                                            
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mb-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnPending" class="btn btn-outline-primary btn-sm" title="Pending" data-toggle="modal"
+                            data-target="#pendingModal"><i class="vp-plus-solid"></i>&nbsp; Pending&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-danger btn-sm" title="ปิด" data-toggle="modal"
+                            data-target="#closeModal"><i class="vp-times-solid"></i> ปิดงาน</button>&nbsp;
+                        <button type="button" name="btnBack" class="btn btn-outline-dark btn-sm" (click)="onClose()"><i
+                                class="vp-undo-solid"></i> กลับ</button>
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                เพิ่มอาการเสีย
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <app-maintenance-service-modal></app-maintenance-service-modal>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-amway btn-xs"><i class="vp-check-solid"></i>&nbsp;&nbsp;
+                    OK&nbsp;</button>&nbsp;
+                <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs" data-dismiss="modal"><i
+                        class="vp-times-solid"></i> Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Pending -->
+<div class="modal fade" id="pendingModal" tabindex="-1" role="dialog" aria-labelledby="pendingModalTitle"
+    aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Pending Job
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <app-maintenance-pending-modal></app-maintenance-pending-modal>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-amway btn-xs"><i class="vp-check-solid"></i>&nbsp;&nbsp;
+                    OK&nbsp;</button>&nbsp;
+                <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs" data-dismiss="modal"><i
+                        class="vp-times-solid"></i> Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Close -->
+<div class="modal fade" id="closeModal" tabindex="-1" role="dialog" aria-labelledby="closeModalTitle"
+    aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Close Job
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <app-maintenance-close-modal></app-maintenance-close-modal>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnComplete" class="btn btn-amway btn-xs" (click)="onComplete()"  data-dismiss="modal"><i class="vp-check-solid"></i>&nbsp;&nbsp;
+                    OK&nbsp;</button>&nbsp;
+                <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs" data-dismiss="modal"><i
+                        class="vp-times-solid"></i> Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

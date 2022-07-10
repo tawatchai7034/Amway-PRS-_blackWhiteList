@@ -1,0 +1,7149 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?mno17p') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?mno17p') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?mno17p##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.viconerror {
+  &:before {
+    content: $viconerror; 
+  }
+}
+.viconerror_outline {
+  &:before {
+    content: $viconerror_outline; 
+  }
+}
+.viconwarning {
+  &:before {
+    content: $viconwarning; 
+  }
+}
+.viconadd_alert {
+  &:before {
+    content: $viconadd_alert; 
+  }
+}
+.viconnotification_important {
+  &:before {
+    content: $viconnotification_important; 
+  }
+}
+.viconalbum {
+  &:before {
+    content: $viconalbum; 
+  }
+}
+.viconav_timer {
+  &:before {
+    content: $viconav_timer; 
+  }
+}
+.viconclosed_caption {
+  &:before {
+    content: $viconclosed_caption; 
+  }
+}
+.viconequalizer {
+  &:before {
+    content: $viconequalizer; 
+  }
+}
+.viconexplicit {
+  &:before {
+    content: $viconexplicit; 
+  }
+}
+.viconfast_forward {
+  &:before {
+    content: $viconfast_forward; 
+  }
+}
+.viconfast_rewind {
+  &:before {
+    content: $viconfast_rewind; 
+  }
+}
+.vicongames {
+  &:before {
+    content: $vicongames; 
+  }
+}
+.viconhearing {
+  &:before {
+    content: $viconhearing; 
+  }
+}
+.viconhigh_quality {
+  &:before {
+    content: $viconhigh_quality; 
+  }
+}
+.viconloop {
+  &:before {
+    content: $viconloop; 
+  }
+}
+.viconmic {
+  &:before {
+    content: $viconmic; 
+  }
+}
+.viconmic_none {
+  &:before {
+    content: $viconmic_none; 
+  }
+}
+.viconmic_off {
+  &:before {
+    content: $viconmic_off; 
+  }
+}
+.viconmovie {
+  &:before {
+    content: $viconmovie; 
+  }
+}
+.viconlibrary_add {
+  &:before {
+    content: $viconlibrary_add; 
+  }
+}
+.viconlibrary_books {
+  &:before {
+    content: $viconlibrary_books; 
+  }
+}
+.viconlibrary_music {
+  &:before {
+    content: $viconlibrary_music; 
+  }
+}
+.viconnew_releases {
+  &:before {
+    content: $viconnew_releases; 
+  }
+}
+.viconnot_interested {
+  &:before {
+    content: $viconnot_interested; 
+  }
+}
+.viconpause {
+  &:before {
+    content: $viconpause; 
+  }
+}
+.viconpause_circle_filled {
+  &:before {
+    content: $viconpause_circle_filled; 
+  }
+}
+.viconpause_circle_outline {
+  &:before {
+    content: $viconpause_circle_outline; 
+  }
+}
+.viconplay_arrow {
+  &:before {
+    content: $viconplay_arrow; 
+  }
+}
+.viconplay_circle_filled {
+  &:before {
+    content: $viconplay_circle_filled; 
+  }
+}
+.viconplay_circle_outline {
+  &:before {
+    content: $viconplay_circle_outline; 
+  }
+}
+.viconplaylist_add {
+  &:before {
+    content: $viconplaylist_add; 
+  }
+}
+.viconqueue_music {
+  &:before {
+    content: $viconqueue_music; 
+  }
+}
+.viconradio {
+  &:before {
+    content: $viconradio; 
+  }
+}
+.viconrecent_actors {
+  &:before {
+    content: $viconrecent_actors; 
+  }
+}
+.viconrepeat {
+  &:before {
+    content: $viconrepeat; 
+  }
+}
+.viconrepeat_one {
+  &:before {
+    content: $viconrepeat_one; 
+  }
+}
+.viconreplay {
+  &:before {
+    content: $viconreplay; 
+  }
+}
+.viconshuffle {
+  &:before {
+    content: $viconshuffle; 
+  }
+}
+.viconskip_next {
+  &:before {
+    content: $viconskip_next; 
+  }
+}
+.viconskip_previous {
+  &:before {
+    content: $viconskip_previous; 
+  }
+}
+.viconsnooze {
+  &:before {
+    content: $viconsnooze; 
+  }
+}
+.viconstop {
+  &:before {
+    content: $viconstop; 
+  }
+}
+.viconsubtitles {
+  &:before {
+    content: $viconsubtitles; 
+  }
+}
+.viconsurround_sound {
+  &:before {
+    content: $viconsurround_sound; 
+  }
+}
+.viconvideo_library {
+  &:before {
+    content: $viconvideo_library; 
+  }
+}
+.viconvideocam {
+  &:before {
+    content: $viconvideocam; 
+  }
+}
+.viconvideocam_off {
+  &:before {
+    content: $viconvideocam_off; 
+  }
+}
+.viconvolume_down {
+  &:before {
+    content: $viconvolume_down; 
+  }
+}
+.viconvolume_mute {
+  &:before {
+    content: $viconvolume_mute; 
+  }
+}
+.viconvolume_off {
+  &:before {
+    content: $viconvolume_off; 
+  }
+}
+.viconvolume_up {
+  &:before {
+    content: $viconvolume_up; 
+  }
+}
+.viconweb {
+  &:before {
+    content: $viconweb; 
+  }
+}
+.viconhd {
+  &:before {
+    content: $viconhd; 
+  }
+}
+.viconsort_by_alpha {
+  &:before {
+    content: $viconsort_by_alpha; 
+  }
+}
+.viconairplay {
+  &:before {
+    content: $viconairplay; 
+  }
+}
+.viconforward_10 {
+  &:before {
+    content: $viconforward_10; 
+  }
+}
+.viconforward_30 {
+  &:before {
+    content: $viconforward_30; 
+  }
+}
+.viconforward_5 {
+  &:before {
+    content: $viconforward_5; 
+  }
+}
+.viconreplay_10 {
+  &:before {
+    content: $viconreplay_10; 
+  }
+}
+.viconreplay_30 {
+  &:before {
+    content: $viconreplay_30; 
+  }
+}
+.viconreplay_5 {
+  &:before {
+    content: $viconreplay_5; 
+  }
+}
+.viconadd_to_queue {
+  &:before {
+    content: $viconadd_to_queue; 
+  }
+}
+.viconfiber_dvr {
+  &:before {
+    content: $viconfiber_dvr; 
+  }
+}
+.viconfiber_new {
+  &:before {
+    content: $viconfiber_new; 
+  }
+}
+.viconplaylist_play {
+  &:before {
+    content: $viconplaylist_play; 
+  }
+}
+.viconart_track {
+  &:before {
+    content: $viconart_track; 
+  }
+}
+.viconfiber_manual_record {
+  &:before {
+    content: $viconfiber_manual_record; 
+  }
+}
+.viconfiber_smart_record {
+  &:before {
+    content: $viconfiber_smart_record; 
+  }
+}
+.viconmusic_video {
+  &:before {
+    content: $viconmusic_video; 
+  }
+}
+.viconsubscriptions {
+  &:before {
+    content: $viconsubscriptions; 
+  }
+}
+.viconplaylist_add_check {
+  &:before {
+    content: $viconplaylist_add_check; 
+  }
+}
+.viconqueue_play_next {
+  &:before {
+    content: $viconqueue_play_next; 
+  }
+}
+.viconremove_from_queue {
+  &:before {
+    content: $viconremove_from_queue; 
+  }
+}
+.viconslow_motion_video {
+  &:before {
+    content: $viconslow_motion_video; 
+  }
+}
+.viconweb_asset {
+  &:before {
+    content: $viconweb_asset; 
+  }
+}
+.viconfiber_pin {
+  &:before {
+    content: $viconfiber_pin; 
+  }
+}
+.viconbranding_watermark {
+  &:before {
+    content: $viconbranding_watermark; 
+  }
+}
+.viconcall_to_action {
+  &:before {
+    content: $viconcall_to_action; 
+  }
+}
+.viconfeatured_play_list {
+  &:before {
+    content: $viconfeatured_play_list; 
+  }
+}
+.viconfeatured_video {
+  &:before {
+    content: $viconfeatured_video; 
+  }
+}
+.viconnote {
+  &:before {
+    content: $viconnote; 
+  }
+}
+.viconvideo_call {
+  &:before {
+    content: $viconvideo_call; 
+  }
+}
+.viconvideo_label {
+  &:before {
+    content: $viconvideo_label; 
+  }
+}
+.vicon4k {
+  &:before {
+    content: $vicon4k; 
+  }
+}
+.viconmissed_video_call {
+  &:before {
+    content: $viconmissed_video_call; 
+  }
+}
+.viconcontrol_camera {
+  &:before {
+    content: $viconcontrol_camera; 
+  }
+}
+.viconbusiness {
+  &:before {
+    content: $viconbusiness; 
+  }
+}
+.viconcall {
+  &:before {
+    content: $viconcall; 
+  }
+}
+.viconcall_end {
+  &:before {
+    content: $viconcall_end; 
+  }
+}
+.viconcall_made {
+  &:before {
+    content: $viconcall_made; 
+  }
+}
+.viconcall_merge {
+  &:before {
+    content: $viconcall_merge; 
+  }
+}
+.viconcall_missed {
+  &:before {
+    content: $viconcall_missed; 
+  }
+}
+.viconcall_received {
+  &:before {
+    content: $viconcall_received; 
+  }
+}
+.viconcall_split {
+  &:before {
+    content: $viconcall_split; 
+  }
+}
+.viconchat {
+  &:before {
+    content: $viconchat; 
+  }
+}
+.viconclear_all {
+  &:before {
+    content: $viconclear_all; 
+  }
+}
+.viconcomment {
+  &:before {
+    content: $viconcomment; 
+  }
+}
+.viconcontacts {
+  &:before {
+    content: $viconcontacts; 
+  }
+}
+.vicondialer_sip {
+  &:before {
+    content: $vicondialer_sip; 
+  }
+}
+.vicondialpad {
+  &:before {
+    content: $vicondialpad; 
+  }
+}
+.viconemail {
+  &:before {
+    content: $viconemail; 
+  }
+}
+.viconforum {
+  &:before {
+    content: $viconforum; 
+  }
+}
+.viconimport_export {
+  &:before {
+    content: $viconimport_export; 
+  }
+}
+.viconinvert_colors_off {
+  &:before {
+    content: $viconinvert_colors_off; 
+  }
+}
+.viconlive_help {
+  &:before {
+    content: $viconlive_help; 
+  }
+}
+.viconlocation_off {
+  &:before {
+    content: $viconlocation_off; 
+  }
+}
+.viconlocation_on {
+  &:before {
+    content: $viconlocation_on; 
+  }
+}
+.viconmessage {
+  &:before {
+    content: $viconmessage; 
+  }
+}
+.viconchat_bubble {
+  &:before {
+    content: $viconchat_bubble; 
+  }
+}
+.viconchat_bubble_outline {
+  &:before {
+    content: $viconchat_bubble_outline; 
+  }
+}
+.viconno_sim {
+  &:before {
+    content: $viconno_sim; 
+  }
+}
+.viconphone {
+  &:before {
+    content: $viconphone; 
+  }
+}
+.viconportable_wifi_off {
+  &:before {
+    content: $viconportable_wifi_off; 
+  }
+}
+.viconcontact_phone {
+  &:before {
+    content: $viconcontact_phone; 
+  }
+}
+.viconcontact_mail {
+  &:before {
+    content: $viconcontact_mail; 
+  }
+}
+.viconring_volume {
+  &:before {
+    content: $viconring_volume; 
+  }
+}
+.viconspeaker_phone {
+  &:before {
+    content: $viconspeaker_phone; 
+  }
+}
+.viconstay_current_landscape {
+  &:before {
+    content: $viconstay_current_landscape; 
+  }
+}
+.viconstay_current_portrait {
+  &:before {
+    content: $viconstay_current_portrait; 
+  }
+}
+.viconswap_calls {
+  &:before {
+    content: $viconswap_calls; 
+  }
+}
+.vicontextsms {
+  &:before {
+    content: $vicontextsms; 
+  }
+}
+.viconvoicemail {
+  &:before {
+    content: $viconvoicemail; 
+  }
+}
+.viconvpn_key {
+  &:before {
+    content: $viconvpn_key; 
+  }
+}
+.viconphonelink_erase {
+  &:before {
+    content: $viconphonelink_erase; 
+  }
+}
+.viconphonelink_lock {
+  &:before {
+    content: $viconphonelink_lock; 
+  }
+}
+.viconphonelink_ring {
+  &:before {
+    content: $viconphonelink_ring; 
+  }
+}
+.viconphonelink_setup {
+  &:before {
+    content: $viconphonelink_setup; 
+  }
+}
+.viconpresent_to_all {
+  &:before {
+    content: $viconpresent_to_all; 
+  }
+}
+.viconimport_contacts {
+  &:before {
+    content: $viconimport_contacts; 
+  }
+}
+.viconmail_outline {
+  &:before {
+    content: $viconmail_outline; 
+  }
+}
+.viconscreen_share {
+  &:before {
+    content: $viconscreen_share; 
+  }
+}
+.viconstop_screen_share {
+  &:before {
+    content: $viconstop_screen_share; 
+  }
+}
+.viconcall_missed_outgoing {
+  &:before {
+    content: $viconcall_missed_outgoing; 
+  }
+}
+.viconrss_feed {
+  &:before {
+    content: $viconrss_feed; 
+  }
+}
+.viconalternate_email {
+  &:before {
+    content: $viconalternate_email; 
+  }
+}
+.viconmobile_screen_share {
+  &:before {
+    content: $viconmobile_screen_share; 
+  }
+}
+.viconadd_call {
+  &:before {
+    content: $viconadd_call; 
+  }
+}
+.viconcancel_presentation {
+  &:before {
+    content: $viconcancel_presentation; 
+  }
+}
+.viconpause_presentation {
+  &:before {
+    content: $viconpause_presentation; 
+  }
+}
+.viconunsubscribe {
+  &:before {
+    content: $viconunsubscribe; 
+  }
+}
+.viconcell_wifi {
+  &:before {
+    content: $viconcell_wifi; 
+  }
+}
+.viconsentiment_satisfied_alt {
+  &:before {
+    content: $viconsentiment_satisfied_alt; 
+  }
+}
+.viconlist_alt {
+  &:before {
+    content: $viconlist_alt; 
+  }
+}
+.vicondomain_disabled {
+  &:before {
+    content: $vicondomain_disabled; 
+  }
+}
+.viconlightbulb {
+  &:before {
+    content: $viconlightbulb; 
+  }
+}
+.viconadd {
+  &:before {
+    content: $viconadd; 
+  }
+}
+.viconadd_box {
+  &:before {
+    content: $viconadd_box; 
+  }
+}
+.viconadd_circle {
+  &:before {
+    content: $viconadd_circle; 
+  }
+}
+.viconadd_circle_outline {
+  &:before {
+    content: $viconadd_circle_outline; 
+  }
+}
+.viconarchive {
+  &:before {
+    content: $viconarchive; 
+  }
+}
+.viconbackspace {
+  &:before {
+    content: $viconbackspace; 
+  }
+}
+.viconblock {
+  &:before {
+    content: $viconblock; 
+  }
+}
+.viconclear {
+  &:before {
+    content: $viconclear; 
+  }
+}
+.viconcontent_copy {
+  &:before {
+    content: $viconcontent_copy; 
+  }
+}
+.viconcontent_cut {
+  &:before {
+    content: $viconcontent_cut; 
+  }
+}
+.viconcontent_paste {
+  &:before {
+    content: $viconcontent_paste; 
+  }
+}
+.viconcreate {
+  &:before {
+    content: $viconcreate; 
+  }
+}
+.vicondrafts {
+  &:before {
+    content: $vicondrafts; 
+  }
+}
+.viconfilter_list {
+  &:before {
+    content: $viconfilter_list; 
+  }
+}
+.viconflag {
+  &:before {
+    content: $viconflag; 
+  }
+}
+.viconforward {
+  &:before {
+    content: $viconforward; 
+  }
+}
+.vicongesture {
+  &:before {
+    content: $vicongesture; 
+  }
+}
+.viconinbox {
+  &:before {
+    content: $viconinbox; 
+  }
+}
+.viconlink {
+  &:before {
+    content: $viconlink; 
+  }
+}
+.viconredo {
+  &:before {
+    content: $viconredo; 
+  }
+}
+.viconremove {
+  &:before {
+    content: $viconremove; 
+  }
+}
+.viconremove_circle {
+  &:before {
+    content: $viconremove_circle; 
+  }
+}
+.viconremove_circle_outline {
+  &:before {
+    content: $viconremove_circle_outline; 
+  }
+}
+.viconreply {
+  &:before {
+    content: $viconreply; 
+  }
+}
+.viconreply_all {
+  &:before {
+    content: $viconreply_all; 
+  }
+}
+.viconreport {
+  &:before {
+    content: $viconreport; 
+  }
+}
+.viconsave {
+  &:before {
+    content: $viconsave; 
+  }
+}
+.viconselect_all {
+  &:before {
+    content: $viconselect_all; 
+  }
+}
+.viconsend {
+  &:before {
+    content: $viconsend; 
+  }
+}
+.viconsort {
+  &:before {
+    content: $viconsort; 
+  }
+}
+.vicontext_format {
+  &:before {
+    content: $vicontext_format; 
+  }
+}
+.viconundo {
+  &:before {
+    content: $viconundo; 
+  }
+}
+.viconfont_download {
+  &:before {
+    content: $viconfont_download; 
+  }
+}
+.viconmove_to_inbox {
+  &:before {
+    content: $viconmove_to_inbox; 
+  }
+}
+.viconunarchive {
+  &:before {
+    content: $viconunarchive; 
+  }
+}
+.viconnext_week {
+  &:before {
+    content: $viconnext_week; 
+  }
+}
+.viconweekend {
+  &:before {
+    content: $viconweekend; 
+  }
+}
+.vicondelete_sweep {
+  &:before {
+    content: $vicondelete_sweep; 
+  }
+}
+.viconlow_priority {
+  &:before {
+    content: $viconlow_priority; 
+  }
+}
+.viconoutlined_flag {
+  &:before {
+    content: $viconoutlined_flag; 
+  }
+}
+.viconlink_off {
+  &:before {
+    content: $viconlink_off; 
+  }
+}
+.viconreport_off {
+  &:before {
+    content: $viconreport_off; 
+  }
+}
+.viconsave_alt {
+  &:before {
+    content: $viconsave_alt; 
+  }
+}
+.viconballot {
+  &:before {
+    content: $viconballot; 
+  }
+}
+.viconfile_copy {
+  &:before {
+    content: $viconfile_copy; 
+  }
+}
+.viconhow_to_reg {
+  &:before {
+    content: $viconhow_to_reg; 
+  }
+}
+.viconhow_to_vote {
+  &:before {
+    content: $viconhow_to_vote; 
+  }
+}
+.viconwaves {
+  &:before {
+    content: $viconwaves; 
+  }
+}
+.viconwhere_to_vote {
+  &:before {
+    content: $viconwhere_to_vote; 
+  }
+}
+.viconadd_link {
+  &:before {
+    content: $viconadd_link; 
+  }
+}
+.viconinventory {
+  &:before {
+    content: $viconinventory; 
+  }
+}
+.viconaccess_alarm {
+  &:before {
+    content: $viconaccess_alarm; 
+  }
+}
+.viconaccess_alarms {
+  &:before {
+    content: $viconaccess_alarms; 
+  }
+}
+.viconaccess_time {
+  &:before {
+    content: $viconaccess_time; 
+  }
+}
+.viconadd_alarm {
+  &:before {
+    content: $viconadd_alarm; 
+  }
+}
+.viconairplanemode_off {
+  &:before {
+    content: $viconairplanemode_off; 
+  }
+}
+.viconairplanemode_on {
+  &:before {
+    content: $viconairplanemode_on; 
+  }
+}
+.viconbattery_alert {
+  &:before {
+    content: $viconbattery_alert; 
+  }
+}
+.viconbattery_charging_full {
+  &:before {
+    content: $viconbattery_charging_full; 
+  }
+}
+.viconbattery_full {
+  &:before {
+    content: $viconbattery_full; 
+  }
+}
+.viconbattery_unknown {
+  &:before {
+    content: $viconbattery_unknown; 
+  }
+}
+.viconbluetooth {
+  &:before {
+    content: $viconbluetooth; 
+  }
+}
+.viconbluetooth_connected {
+  &:before {
+    content: $viconbluetooth_connected; 
+  }
+}
+.viconbluetooth_disabled {
+  &:before {
+    content: $viconbluetooth_disabled; 
+  }
+}
+.viconbluetooth_searching {
+  &:before {
+    content: $viconbluetooth_searching; 
+  }
+}
+.viconbrightness_auto {
+  &:before {
+    content: $viconbrightness_auto; 
+  }
+}
+.viconbrightness_high {
+  &:before {
+    content: $viconbrightness_high; 
+  }
+}
+.viconbrightness_low {
+  &:before {
+    content: $viconbrightness_low; 
+  }
+}
+.viconbrightness_medium {
+  &:before {
+    content: $viconbrightness_medium; 
+  }
+}
+.vicondata_usage {
+  &:before {
+    content: $vicondata_usage; 
+  }
+}
+.vicondeveloper_mode {
+  &:before {
+    content: $vicondeveloper_mode; 
+  }
+}
+.vicondevices {
+  &:before {
+    content: $vicondevices; 
+  }
+}
+.vicondvr {
+  &:before {
+    content: $vicondvr; 
+  }
+}
+.vicongps_fixed {
+  &:before {
+    content: $vicongps_fixed; 
+  }
+}
+.vicongps_not_fixed {
+  &:before {
+    content: $vicongps_not_fixed; 
+  }
+}
+.vicongps_off {
+  &:before {
+    content: $vicongps_off; 
+  }
+}
+.vicongraphic_eq {
+  &:before {
+    content: $vicongraphic_eq; 
+  }
+}
+.viconnetwork_cell {
+  &:before {
+    content: $viconnetwork_cell; 
+  }
+}
+.viconnetwork_wifi {
+  &:before {
+    content: $viconnetwork_wifi; 
+  }
+}
+.viconnfc {
+  &:before {
+    content: $viconnfc; 
+  }
+}
+.viconnow_wallpaper {
+  &:before {
+    content: $viconnow_wallpaper; 
+  }
+}
+.viconnow_widgets {
+  &:before {
+    content: $viconnow_widgets; 
+  }
+}
+.viconscreen_lock_landscape {
+  &:before {
+    content: $viconscreen_lock_landscape; 
+  }
+}
+.viconscreen_lock_portrait {
+  &:before {
+    content: $viconscreen_lock_portrait; 
+  }
+}
+.viconscreen_lock_rotation {
+  &:before {
+    content: $viconscreen_lock_rotation; 
+  }
+}
+.viconscreen_rotation {
+  &:before {
+    content: $viconscreen_rotation; 
+  }
+}
+.viconsd_storage {
+  &:before {
+    content: $viconsd_storage; 
+  }
+}
+.viconsettings_system_daydream {
+  &:before {
+    content: $viconsettings_system_daydream; 
+  }
+}
+.viconsignal_cellular_4_bar {
+  &:before {
+    content: $viconsignal_cellular_4_bar; 
+  }
+}
+.viconsignal_cellular_connected_no_internet_4_bar {
+  &:before {
+    content: $viconsignal_cellular_connected_no_internet_4_bar; 
+  }
+}
+.viconsignal_cellular_null {
+  &:before {
+    content: $viconsignal_cellular_null; 
+  }
+}
+.viconsignal_cellular_off {
+  &:before {
+    content: $viconsignal_cellular_off; 
+  }
+}
+.viconsignal_wifi_4_bar {
+  &:before {
+    content: $viconsignal_wifi_4_bar; 
+  }
+}
+.viconsignal_wifi_4_bar_lock {
+  &:before {
+    content: $viconsignal_wifi_4_bar_lock; 
+  }
+}
+.viconsignal_wifi_off {
+  &:before {
+    content: $viconsignal_wifi_off; 
+  }
+}
+.viconstorage {
+  &:before {
+    content: $viconstorage; 
+  }
+}
+.viconusb {
+  &:before {
+    content: $viconusb; 
+  }
+}
+.viconwifi_lock {
+  &:before {
+    content: $viconwifi_lock; 
+  }
+}
+.viconwifi_tethering {
+  &:before {
+    content: $viconwifi_tethering; 
+  }
+}
+.viconadd_to_home_screen {
+  &:before {
+    content: $viconadd_to_home_screen; 
+  }
+}
+.vicondevice_thermostat {
+  &:before {
+    content: $vicondevice_thermostat; 
+  }
+}
+.viconmobile_friendly {
+  &:before {
+    content: $viconmobile_friendly; 
+  }
+}
+.viconmobile_off {
+  &:before {
+    content: $viconmobile_off; 
+  }
+}
+.viconsignal_cellular_alt {
+  &:before {
+    content: $viconsignal_cellular_alt; 
+  }
+}
+.viconattach_file {
+  &:before {
+    content: $viconattach_file; 
+  }
+}
+.viconattach_money {
+  &:before {
+    content: $viconattach_money; 
+  }
+}
+.viconborder_all {
+  &:before {
+    content: $viconborder_all; 
+  }
+}
+.viconborder_bottom {
+  &:before {
+    content: $viconborder_bottom; 
+  }
+}
+.viconborder_clear {
+  &:before {
+    content: $viconborder_clear; 
+  }
+}
+.viconborder_color {
+  &:before {
+    content: $viconborder_color; 
+  }
+}
+.viconborder_horizontal {
+  &:before {
+    content: $viconborder_horizontal; 
+  }
+}
+.viconborder_inner {
+  &:before {
+    content: $viconborder_inner; 
+  }
+}
+.viconborder_left {
+  &:before {
+    content: $viconborder_left; 
+  }
+}
+.viconborder_outer {
+  &:before {
+    content: $viconborder_outer; 
+  }
+}
+.viconborder_right {
+  &:before {
+    content: $viconborder_right; 
+  }
+}
+.viconborder_style {
+  &:before {
+    content: $viconborder_style; 
+  }
+}
+.viconborder_top {
+  &:before {
+    content: $viconborder_top; 
+  }
+}
+.viconborder_vertical {
+  &:before {
+    content: $viconborder_vertical; 
+  }
+}
+.viconformat_align_center {
+  &:before {
+    content: $viconformat_align_center; 
+  }
+}
+.viconformat_align_justify {
+  &:before {
+    content: $viconformat_align_justify; 
+  }
+}
+.viconformat_align_left {
+  &:before {
+    content: $viconformat_align_left; 
+  }
+}
+.viconformat_align_right {
+  &:before {
+    content: $viconformat_align_right; 
+  }
+}
+.viconformat_bold {
+  &:before {
+    content: $viconformat_bold; 
+  }
+}
+.viconformat_clear {
+  &:before {
+    content: $viconformat_clear; 
+  }
+}
+.viconformat_color_fill {
+  &:before {
+    content: $viconformat_color_fill; 
+  }
+}
+.viconformat_color_reset {
+  &:before {
+    content: $viconformat_color_reset; 
+  }
+}
+.viconformat_color_text {
+  &:before {
+    content: $viconformat_color_text; 
+  }
+}
+.viconformat_indent_decrease {
+  &:before {
+    content: $viconformat_indent_decrease; 
+  }
+}
+.viconformat_indent_increase {
+  &:before {
+    content: $viconformat_indent_increase; 
+  }
+}
+.viconformat_italic {
+  &:before {
+    content: $viconformat_italic; 
+  }
+}
+.viconformat_line_spacing {
+  &:before {
+    content: $viconformat_line_spacing; 
+  }
+}
+.viconformat_list_bulleted {
+  &:before {
+    content: $viconformat_list_bulleted; 
+  }
+}
+.viconformat_list_numbered {
+  &:before {
+    content: $viconformat_list_numbered; 
+  }
+}
+.viconformat_paint {
+  &:before {
+    content: $viconformat_paint; 
+  }
+}
+.viconformat_quote {
+  &:before {
+    content: $viconformat_quote; 
+  }
+}
+.viconformat_size {
+  &:before {
+    content: $viconformat_size; 
+  }
+}
+.viconformat_strikethrough {
+  &:before {
+    content: $viconformat_strikethrough; 
+  }
+}
+.viconformat_textdirection_l_to_r {
+  &:before {
+    content: $viconformat_textdirection_l_to_r; 
+  }
+}
+.viconformat_textdirection_r_to_l {
+  &:before {
+    content: $viconformat_textdirection_r_to_l; 
+  }
+}
+.viconformat_underlined {
+  &:before {
+    content: $viconformat_underlined; 
+  }
+}
+.viconfunctions {
+  &:before {
+    content: $viconfunctions; 
+  }
+}
+.viconinsert_chart {
+  &:before {
+    content: $viconinsert_chart; 
+  }
+}
+.viconinsert_comment {
+  &:before {
+    content: $viconinsert_comment; 
+  }
+}
+.viconinsert_drive_file {
+  &:before {
+    content: $viconinsert_drive_file; 
+  }
+}
+.viconinsert_emoticon {
+  &:before {
+    content: $viconinsert_emoticon; 
+  }
+}
+.viconinsert_invitation {
+  &:before {
+    content: $viconinsert_invitation; 
+  }
+}
+.viconinsert_photo {
+  &:before {
+    content: $viconinsert_photo; 
+  }
+}
+.viconmode_comment {
+  &:before {
+    content: $viconmode_comment; 
+  }
+}
+.viconpublish {
+  &:before {
+    content: $viconpublish; 
+  }
+}
+.viconspace_bar {
+  &:before {
+    content: $viconspace_bar; 
+  }
+}
+.viconstrikethrough_s {
+  &:before {
+    content: $viconstrikethrough_s; 
+  }
+}
+.viconvertical_align_bottom {
+  &:before {
+    content: $viconvertical_align_bottom; 
+  }
+}
+.viconvertical_align_center {
+  &:before {
+    content: $viconvertical_align_center; 
+  }
+}
+.viconvertical_align_top {
+  &:before {
+    content: $viconvertical_align_top; 
+  }
+}
+.viconwrap_text {
+  &:before {
+    content: $viconwrap_text; 
+  }
+}
+.viconmoney_off {
+  &:before {
+    content: $viconmoney_off; 
+  }
+}
+.vicondrag_handle {
+  &:before {
+    content: $vicondrag_handle; 
+  }
+}
+.viconformat_shapes {
+  &:before {
+    content: $viconformat_shapes; 
+  }
+}
+.viconhighlight {
+  &:before {
+    content: $viconhighlight; 
+  }
+}
+.viconlinear_scale {
+  &:before {
+    content: $viconlinear_scale; 
+  }
+}
+.viconshort_text {
+  &:before {
+    content: $viconshort_text; 
+  }
+}
+.vicontext_fields {
+  &:before {
+    content: $vicontext_fields; 
+  }
+}
+.viconmonetization_on {
+  &:before {
+    content: $viconmonetization_on; 
+  }
+}
+.vicontitle {
+  &:before {
+    content: $vicontitle; 
+  }
+}
+.vicontable_chart {
+  &:before {
+    content: $vicontable_chart; 
+  }
+}
+.viconadd_comment {
+  &:before {
+    content: $viconadd_comment; 
+  }
+}
+.viconformat_list_numbered_rtl {
+  &:before {
+    content: $viconformat_list_numbered_rtl; 
+  }
+}
+.viconscatter_plot {
+  &:before {
+    content: $viconscatter_plot; 
+  }
+}
+.viconscore {
+  &:before {
+    content: $viconscore; 
+  }
+}
+.viconinsert_chart_outlined {
+  &:before {
+    content: $viconinsert_chart_outlined; 
+  }
+}
+.viconbar_chart {
+  &:before {
+    content: $viconbar_chart; 
+  }
+}
+.viconnotes {
+  &:before {
+    content: $viconnotes; 
+  }
+}
+.viconattachment {
+  &:before {
+    content: $viconattachment; 
+  }
+}
+.viconcloud {
+  &:before {
+    content: $viconcloud; 
+  }
+}
+.viconcloud_circle {
+  &:before {
+    content: $viconcloud_circle; 
+  }
+}
+.viconcloud_done {
+  &:before {
+    content: $viconcloud_done; 
+  }
+}
+.viconcloud_download {
+  &:before {
+    content: $viconcloud_download; 
+  }
+}
+.viconcloud_off {
+  &:before {
+    content: $viconcloud_off; 
+  }
+}
+.viconcloud_queue {
+  &:before {
+    content: $viconcloud_queue; 
+  }
+}
+.viconcloud_upload {
+  &:before {
+    content: $viconcloud_upload; 
+  }
+}
+.viconfile_download {
+  &:before {
+    content: $viconfile_download; 
+  }
+}
+.viconfile_upload {
+  &:before {
+    content: $viconfile_upload; 
+  }
+}
+.viconfolder {
+  &:before {
+    content: $viconfolder; 
+  }
+}
+.viconfolder_open {
+  &:before {
+    content: $viconfolder_open; 
+  }
+}
+.viconfolder_shared {
+  &:before {
+    content: $viconfolder_shared; 
+  }
+}
+.viconcreate_new_folder {
+  &:before {
+    content: $viconcreate_new_folder; 
+  }
+}
+.viconcast {
+  &:before {
+    content: $viconcast; 
+  }
+}
+.viconcast_connected {
+  &:before {
+    content: $viconcast_connected; 
+  }
+}
+.viconcomputer {
+  &:before {
+    content: $viconcomputer; 
+  }
+}
+.vicondesktop_mac {
+  &:before {
+    content: $vicondesktop_mac; 
+  }
+}
+.vicondesktop_windows {
+  &:before {
+    content: $vicondesktop_windows; 
+  }
+}
+.vicondeveloper_board {
+  &:before {
+    content: $vicondeveloper_board; 
+  }
+}
+.vicondock {
+  &:before {
+    content: $vicondock; 
+  }
+}
+.viconheadset {
+  &:before {
+    content: $viconheadset; 
+  }
+}
+.viconheadset_mic {
+  &:before {
+    content: $viconheadset_mic; 
+  }
+}
+.viconkeyboard {
+  &:before {
+    content: $viconkeyboard; 
+  }
+}
+.viconkeyboard_arrow_down {
+  &:before {
+    content: $viconkeyboard_arrow_down; 
+  }
+}
+.viconkeyboard_arrow_left {
+  &:before {
+    content: $viconkeyboard_arrow_left; 
+  }
+}
+.viconkeyboard_arrow_right {
+  &:before {
+    content: $viconkeyboard_arrow_right; 
+  }
+}
+.viconkeyboard_arrow_up {
+  &:before {
+    content: $viconkeyboard_arrow_up; 
+  }
+}
+.viconkeyboard_backspace {
+  &:before {
+    content: $viconkeyboard_backspace; 
+  }
+}
+.viconkeyboard_capslock {
+  &:before {
+    content: $viconkeyboard_capslock; 
+  }
+}
+.viconkeyboard_hide {
+  &:before {
+    content: $viconkeyboard_hide; 
+  }
+}
+.viconkeyboard_return {
+  &:before {
+    content: $viconkeyboard_return; 
+  }
+}
+.viconkeyboard_tab {
+  &:before {
+    content: $viconkeyboard_tab; 
+  }
+}
+.viconkeyboard_voice {
+  &:before {
+    content: $viconkeyboard_voice; 
+  }
+}
+.viconlaptop_chromebook {
+  &:before {
+    content: $viconlaptop_chromebook; 
+  }
+}
+.viconlaptop_mac {
+  &:before {
+    content: $viconlaptop_mac; 
+  }
+}
+.viconlaptop_windows {
+  &:before {
+    content: $viconlaptop_windows; 
+  }
+}
+.viconmemory {
+  &:before {
+    content: $viconmemory; 
+  }
+}
+.viconmouse {
+  &:before {
+    content: $viconmouse; 
+  }
+}
+.viconphone_android {
+  &:before {
+    content: $viconphone_android; 
+  }
+}
+.viconphone_iphone {
+  &:before {
+    content: $viconphone_iphone; 
+  }
+}
+.viconphonelink_off {
+  &:before {
+    content: $viconphonelink_off; 
+  }
+}
+.viconrouter {
+  &:before {
+    content: $viconrouter; 
+  }
+}
+.viconscanner {
+  &:before {
+    content: $viconscanner; 
+  }
+}
+.viconsecurity {
+  &:before {
+    content: $viconsecurity; 
+  }
+}
+.viconsim_card {
+  &:before {
+    content: $viconsim_card; 
+  }
+}
+.viconspeaker {
+  &:before {
+    content: $viconspeaker; 
+  }
+}
+.viconspeaker_group {
+  &:before {
+    content: $viconspeaker_group; 
+  }
+}
+.vicontablet {
+  &:before {
+    content: $vicontablet; 
+  }
+}
+.vicontablet_android {
+  &:before {
+    content: $vicontablet_android; 
+  }
+}
+.vicontablet_mac {
+  &:before {
+    content: $vicontablet_mac; 
+  }
+}
+.vicontoys {
+  &:before {
+    content: $vicontoys; 
+  }
+}
+.vicontv {
+  &:before {
+    content: $vicontv; 
+  }
+}
+.viconwatch {
+  &:before {
+    content: $viconwatch; 
+  }
+}
+.vicondevice_hub {
+  &:before {
+    content: $vicondevice_hub; 
+  }
+}
+.viconpower_input {
+  &:before {
+    content: $viconpower_input; 
+  }
+}
+.vicondevices_other {
+  &:before {
+    content: $vicondevices_other; 
+  }
+}
+.viconvideogame_asset {
+  &:before {
+    content: $viconvideogame_asset; 
+  }
+}
+.vicondevice_unknown {
+  &:before {
+    content: $vicondevice_unknown; 
+  }
+}
+.viconheadset_off {
+  &:before {
+    content: $viconheadset_off; 
+  }
+}
+.viconadjust {
+  &:before {
+    content: $viconadjust; 
+  }
+}
+.viconassistant {
+  &:before {
+    content: $viconassistant; 
+  }
+}
+.viconaudiotrack {
+  &:before {
+    content: $viconaudiotrack; 
+  }
+}
+.viconblur_circular {
+  &:before {
+    content: $viconblur_circular; 
+  }
+}
+.viconblur_linear {
+  &:before {
+    content: $viconblur_linear; 
+  }
+}
+.viconblur_off {
+  &:before {
+    content: $viconblur_off; 
+  }
+}
+.viconblur_on {
+  &:before {
+    content: $viconblur_on; 
+  }
+}
+.viconbrightness_1 {
+  &:before {
+    content: $viconbrightness_1; 
+  }
+}
+.viconbrightness_2 {
+  &:before {
+    content: $viconbrightness_2; 
+  }
+}
+.viconbrightness_3 {
+  &:before {
+    content: $viconbrightness_3; 
+  }
+}
+.viconbrightness_4 {
+  &:before {
+    content: $viconbrightness_4; 
+  }
+}
+.viconbroken_image {
+  &:before {
+    content: $viconbroken_image; 
+  }
+}
+.viconbrush {
+  &:before {
+    content: $viconbrush; 
+  }
+}
+.viconcamera {
+  &:before {
+    content: $viconcamera; 
+  }
+}
+.viconcamera_alt {
+  &:before {
+    content: $viconcamera_alt; 
+  }
+}
+.viconcamera_front {
+  &:before {
+    content: $viconcamera_front; 
+  }
+}
+.viconcamera_rear {
+  &:before {
+    content: $viconcamera_rear; 
+  }
+}
+.viconcamera_roll {
+  &:before {
+    content: $viconcamera_roll; 
+  }
+}
+.viconcenter_focus_strong {
+  &:before {
+    content: $viconcenter_focus_strong; 
+  }
+}
+.viconcenter_focus_weak {
+  &:before {
+    content: $viconcenter_focus_weak; 
+  }
+}
+.viconcollections {
+  &:before {
+    content: $viconcollections; 
+  }
+}
+.viconcolor_lens {
+  &:before {
+    content: $viconcolor_lens; 
+  }
+}
+.viconcolorize {
+  &:before {
+    content: $viconcolorize; 
+  }
+}
+.viconcompare {
+  &:before {
+    content: $viconcompare; 
+  }
+}
+.viconcontrol_point_duplicate {
+  &:before {
+    content: $viconcontrol_point_duplicate; 
+  }
+}
+.viconcrop_16_9 {
+  &:before {
+    content: $viconcrop_16_9; 
+  }
+}
+.viconcrop_3_2 {
+  &:before {
+    content: $viconcrop_3_2; 
+  }
+}
+.viconcrop {
+  &:before {
+    content: $viconcrop; 
+  }
+}
+.viconcrop_5_4 {
+  &:before {
+    content: $viconcrop_5_4; 
+  }
+}
+.viconcrop_7_5 {
+  &:before {
+    content: $viconcrop_7_5; 
+  }
+}
+.viconcrop_din {
+  &:before {
+    content: $viconcrop_din; 
+  }
+}
+.viconcrop_free {
+  &:before {
+    content: $viconcrop_free; 
+  }
+}
+.viconcrop_original {
+  &:before {
+    content: $viconcrop_original; 
+  }
+}
+.viconcrop_portrait {
+  &:before {
+    content: $viconcrop_portrait; 
+  }
+}
+.viconcrop_square {
+  &:before {
+    content: $viconcrop_square; 
+  }
+}
+.vicondehaze {
+  &:before {
+    content: $vicondehaze; 
+  }
+}
+.vicondetails {
+  &:before {
+    content: $vicondetails; 
+  }
+}
+.viconexposure {
+  &:before {
+    content: $viconexposure; 
+  }
+}
+.viconexposure_neg_1 {
+  &:before {
+    content: $viconexposure_neg_1; 
+  }
+}
+.viconexposure_neg_2 {
+  &:before {
+    content: $viconexposure_neg_2; 
+  }
+}
+.viconexposure_plus_1 {
+  &:before {
+    content: $viconexposure_plus_1; 
+  }
+}
+.viconexposure_plus_2 {
+  &:before {
+    content: $viconexposure_plus_2; 
+  }
+}
+.viconexposure_zero {
+  &:before {
+    content: $viconexposure_zero; 
+  }
+}
+.viconfilter_1 {
+  &:before {
+    content: $viconfilter_1; 
+  }
+}
+.viconfilter_2 {
+  &:before {
+    content: $viconfilter_2; 
+  }
+}
+.viconfilter_3 {
+  &:before {
+    content: $viconfilter_3; 
+  }
+}
+.viconfilter {
+  &:before {
+    content: $viconfilter; 
+  }
+}
+.viconfilter_4 {
+  &:before {
+    content: $viconfilter_4; 
+  }
+}
+.viconfilter_5 {
+  &:before {
+    content: $viconfilter_5; 
+  }
+}
+.viconfilter_6 {
+  &:before {
+    content: $viconfilter_6; 
+  }
+}
+.viconfilter_7 {
+  &:before {
+    content: $viconfilter_7; 
+  }
+}
+.viconfilter_8 {
+  &:before {
+    content: $viconfilter_8; 
+  }
+}
+.viconfilter_9 {
+  &:before {
+    content: $viconfilter_9; 
+  }
+}
+.viconfilter_9_plus {
+  &:before {
+    content: $viconfilter_9_plus; 
+  }
+}
+.viconfilter_b_and_w {
+  &:before {
+    content: $viconfilter_b_and_w; 
+  }
+}
+.viconfilter_center_focus {
+  &:before {
+    content: $viconfilter_center_focus; 
+  }
+}
+.viconfilter_drama {
+  &:before {
+    content: $viconfilter_drama; 
+  }
+}
+.viconfilter_frames {
+  &:before {
+    content: $viconfilter_frames; 
+  }
+}
+.viconfilter_hdr {
+  &:before {
+    content: $viconfilter_hdr; 
+  }
+}
+.viconfilter_none {
+  &:before {
+    content: $viconfilter_none; 
+  }
+}
+.viconfilter_tilt_shift {
+  &:before {
+    content: $viconfilter_tilt_shift; 
+  }
+}
+.viconfilter_vintage {
+  &:before {
+    content: $viconfilter_vintage; 
+  }
+}
+.viconflare {
+  &:before {
+    content: $viconflare; 
+  }
+}
+.viconflash_auto {
+  &:before {
+    content: $viconflash_auto; 
+  }
+}
+.viconflash_off {
+  &:before {
+    content: $viconflash_off; 
+  }
+}
+.viconflash_on {
+  &:before {
+    content: $viconflash_on; 
+  }
+}
+.viconflip {
+  &:before {
+    content: $viconflip; 
+  }
+}
+.vicongradient {
+  &:before {
+    content: $vicongradient; 
+  }
+}
+.vicongrain {
+  &:before {
+    content: $vicongrain; 
+  }
+}
+.vicongrid_off {
+  &:before {
+    content: $vicongrid_off; 
+  }
+}
+.vicongrid_on {
+  &:before {
+    content: $vicongrid_on; 
+  }
+}
+.viconhdr_off {
+  &:before {
+    content: $viconhdr_off; 
+  }
+}
+.viconhdr_on {
+  &:before {
+    content: $viconhdr_on; 
+  }
+}
+.viconhdr_strong {
+  &:before {
+    content: $viconhdr_strong; 
+  }
+}
+.viconhdr_weak {
+  &:before {
+    content: $viconhdr_weak; 
+  }
+}
+.viconhealing {
+  &:before {
+    content: $viconhealing; 
+  }
+}
+.viconimage_aspect_ratio {
+  &:before {
+    content: $viconimage_aspect_ratio; 
+  }
+}
+.viconiso {
+  &:before {
+    content: $viconiso; 
+  }
+}
+.viconleak_add {
+  &:before {
+    content: $viconleak_add; 
+  }
+}
+.viconleak_remove {
+  &:before {
+    content: $viconleak_remove; 
+  }
+}
+.viconlens {
+  &:before {
+    content: $viconlens; 
+  }
+}
+.viconlooks_3 {
+  &:before {
+    content: $viconlooks_3; 
+  }
+}
+.viconlooks {
+  &:before {
+    content: $viconlooks; 
+  }
+}
+.viconlooks_4 {
+  &:before {
+    content: $viconlooks_4; 
+  }
+}
+.viconlooks_5 {
+  &:before {
+    content: $viconlooks_5; 
+  }
+}
+.viconlooks_6 {
+  &:before {
+    content: $viconlooks_6; 
+  }
+}
+.viconlooks_one {
+  &:before {
+    content: $viconlooks_one; 
+  }
+}
+.viconlooks_two {
+  &:before {
+    content: $viconlooks_two; 
+  }
+}
+.viconloupe {
+  &:before {
+    content: $viconloupe; 
+  }
+}
+.viconmonochrome_photos {
+  &:before {
+    content: $viconmonochrome_photos; 
+  }
+}
+.viconmusic_note {
+  &:before {
+    content: $viconmusic_note; 
+  }
+}
+.viconnature {
+  &:before {
+    content: $viconnature; 
+  }
+}
+.viconnature_people {
+  &:before {
+    content: $viconnature_people; 
+  }
+}
+.viconnavigate_before {
+  &:before {
+    content: $viconnavigate_before; 
+  }
+}
+.viconnavigate_next {
+  &:before {
+    content: $viconnavigate_next; 
+  }
+}
+.viconpanorama {
+  &:before {
+    content: $viconpanorama; 
+  }
+}
+.viconpanorama_fisheye {
+  &:before {
+    content: $viconpanorama_fisheye; 
+  }
+}
+.viconpanorama_horizontal {
+  &:before {
+    content: $viconpanorama_horizontal; 
+  }
+}
+.viconpanorama_vertical {
+  &:before {
+    content: $viconpanorama_vertical; 
+  }
+}
+.viconpanorama_wide_angle {
+  &:before {
+    content: $viconpanorama_wide_angle; 
+  }
+}
+.viconphoto_album {
+  &:before {
+    content: $viconphoto_album; 
+  }
+}
+.viconpicture_as_pdf {
+  &:before {
+    content: $viconpicture_as_pdf; 
+  }
+}
+.viconportrait {
+  &:before {
+    content: $viconportrait; 
+  }
+}
+.viconremove_red_eye {
+  &:before {
+    content: $viconremove_red_eye; 
+  }
+}
+.viconrotate_90_degrees_ccw {
+  &:before {
+    content: $viconrotate_90_degrees_ccw; 
+  }
+}
+.viconrotate_left {
+  &:before {
+    content: $viconrotate_left; 
+  }
+}
+.viconrotate_right {
+  &:before {
+    content: $viconrotate_right; 
+  }
+}
+.viconslideshow {
+  &:before {
+    content: $viconslideshow; 
+  }
+}
+.viconstraighten {
+  &:before {
+    content: $viconstraighten; 
+  }
+}
+.viconstyle {
+  &:before {
+    content: $viconstyle; 
+  }
+}
+.viconswitch_camera {
+  &:before {
+    content: $viconswitch_camera; 
+  }
+}
+.viconswitch_video {
+  &:before {
+    content: $viconswitch_video; 
+  }
+}
+.vicontexture {
+  &:before {
+    content: $vicontexture; 
+  }
+}
+.vicontimelapse {
+  &:before {
+    content: $vicontimelapse; 
+  }
+}
+.vicontimer_10 {
+  &:before {
+    content: $vicontimer_10; 
+  }
+}
+.vicontimer_3 {
+  &:before {
+    content: $vicontimer_3; 
+  }
+}
+.vicontimer {
+  &:before {
+    content: $vicontimer; 
+  }
+}
+.vicontimer_off {
+  &:before {
+    content: $vicontimer_off; 
+  }
+}
+.vicontonality {
+  &:before {
+    content: $vicontonality; 
+  }
+}
+.vicontransform {
+  &:before {
+    content: $vicontransform; 
+  }
+}
+.vicontune {
+  &:before {
+    content: $vicontune; 
+  }
+}
+.viconview_comfy {
+  &:before {
+    content: $viconview_comfy; 
+  }
+}
+.viconview_compact {
+  &:before {
+    content: $viconview_compact; 
+  }
+}
+.viconwb_auto {
+  &:before {
+    content: $viconwb_auto; 
+  }
+}
+.viconwb_cloudy {
+  &:before {
+    content: $viconwb_cloudy; 
+  }
+}
+.viconwb_incandescent {
+  &:before {
+    content: $viconwb_incandescent; 
+  }
+}
+.viconwb_sunny {
+  &:before {
+    content: $viconwb_sunny; 
+  }
+}
+.viconcollections_bookmark {
+  &:before {
+    content: $viconcollections_bookmark; 
+  }
+}
+.viconphoto_size_select_actual {
+  &:before {
+    content: $viconphoto_size_select_actual; 
+  }
+}
+.viconphoto_size_select_large {
+  &:before {
+    content: $viconphoto_size_select_large; 
+  }
+}
+.viconphoto_size_select_small {
+  &:before {
+    content: $viconphoto_size_select_small; 
+  }
+}
+.viconvignette {
+  &:before {
+    content: $viconvignette; 
+  }
+}
+.viconwb_iridescent {
+  &:before {
+    content: $viconwb_iridescent; 
+  }
+}
+.viconcrop_rotate {
+  &:before {
+    content: $viconcrop_rotate; 
+  }
+}
+.viconlinked_camera {
+  &:before {
+    content: $viconlinked_camera; 
+  }
+}
+.viconadd_a_photo {
+  &:before {
+    content: $viconadd_a_photo; 
+  }
+}
+.viconmovie_filter {
+  &:before {
+    content: $viconmovie_filter; 
+  }
+}
+.viconphoto_filter {
+  &:before {
+    content: $viconphoto_filter; 
+  }
+}
+.viconburst_mode {
+  &:before {
+    content: $viconburst_mode; 
+  }
+}
+.viconshutter_speed {
+  &:before {
+    content: $viconshutter_speed; 
+  }
+}
+.viconadd_photo_alternate {
+  &:before {
+    content: $viconadd_photo_alternate; 
+  }
+}
+.viconimage_search {
+  &:before {
+    content: $viconimage_search; 
+  }
+}
+.viconmusic_off {
+  &:before {
+    content: $viconmusic_off; 
+  }
+}
+.viconbeenhere {
+  &:before {
+    content: $viconbeenhere; 
+  }
+}
+.vicondirections {
+  &:before {
+    content: $vicondirections; 
+  }
+}
+.vicondirections_bike {
+  &:before {
+    content: $vicondirections_bike; 
+  }
+}
+.vicondirections_bus {
+  &:before {
+    content: $vicondirections_bus; 
+  }
+}
+.vicondirections_car {
+  &:before {
+    content: $vicondirections_car; 
+  }
+}
+.vicondirections_ferry {
+  &:before {
+    content: $vicondirections_ferry; 
+  }
+}
+.vicondirections_subway {
+  &:before {
+    content: $vicondirections_subway; 
+  }
+}
+.vicondirections_train {
+  &:before {
+    content: $vicondirections_train; 
+  }
+}
+.vicondirections_walk {
+  &:before {
+    content: $vicondirections_walk; 
+  }
+}
+.viconhotel {
+  &:before {
+    content: $viconhotel; 
+  }
+}
+.viconlayers {
+  &:before {
+    content: $viconlayers; 
+  }
+}
+.viconlayers_clear {
+  &:before {
+    content: $viconlayers_clear; 
+  }
+}
+.viconlocal_atm {
+  &:before {
+    content: $viconlocal_atm; 
+  }
+}
+.viconlocal_attraction {
+  &:before {
+    content: $viconlocal_attraction; 
+  }
+}
+.viconlocal_bar {
+  &:before {
+    content: $viconlocal_bar; 
+  }
+}
+.viconlocal_cafe {
+  &:before {
+    content: $viconlocal_cafe; 
+  }
+}
+.viconlocal_car_wash {
+  &:before {
+    content: $viconlocal_car_wash; 
+  }
+}
+.viconlocal_convenience_store {
+  &:before {
+    content: $viconlocal_convenience_store; 
+  }
+}
+.viconlocal_drink {
+  &:before {
+    content: $viconlocal_drink; 
+  }
+}
+.viconlocal_florist {
+  &:before {
+    content: $viconlocal_florist; 
+  }
+}
+.viconlocal_gas_station {
+  &:before {
+    content: $viconlocal_gas_station; 
+  }
+}
+.viconlocal_grocery_store {
+  &:before {
+    content: $viconlocal_grocery_store; 
+  }
+}
+.viconlocal_hospital {
+  &:before {
+    content: $viconlocal_hospital; 
+  }
+}
+.viconlocal_laundry_service {
+  &:before {
+    content: $viconlocal_laundry_service; 
+  }
+}
+.viconlocal_library {
+  &:before {
+    content: $viconlocal_library; 
+  }
+}
+.viconlocal_mall {
+  &:before {
+    content: $viconlocal_mall; 
+  }
+}
+.viconlocal_movies {
+  &:before {
+    content: $viconlocal_movies; 
+  }
+}
+.viconlocal_offer {
+  &:before {
+    content: $viconlocal_offer; 
+  }
+}
+.viconlocal_parking {
+  &:before {
+    content: $viconlocal_parking; 
+  }
+}
+.viconlocal_pharmacy {
+  &:before {
+    content: $viconlocal_pharmacy; 
+  }
+}
+.viconlocal_pizza {
+  &:before {
+    content: $viconlocal_pizza; 
+  }
+}
+.viconlocal_printshop {
+  &:before {
+    content: $viconlocal_printshop; 
+  }
+}
+.viconlocal_restaurant {
+  &:before {
+    content: $viconlocal_restaurant; 
+  }
+}
+.viconlocal_shipping {
+  &:before {
+    content: $viconlocal_shipping; 
+  }
+}
+.viconlocal_taxi {
+  &:before {
+    content: $viconlocal_taxi; 
+  }
+}
+.viconlocation_history {
+  &:before {
+    content: $viconlocation_history; 
+  }
+}
+.viconmap {
+  &:before {
+    content: $viconmap; 
+  }
+}
+.viconnavigation {
+  &:before {
+    content: $viconnavigation; 
+  }
+}
+.viconpin_drop {
+  &:before {
+    content: $viconpin_drop; 
+  }
+}
+.viconrate_review {
+  &:before {
+    content: $viconrate_review; 
+  }
+}
+.viconsatellite {
+  &:before {
+    content: $viconsatellite; 
+  }
+}
+.viconstore_mall_directory {
+  &:before {
+    content: $viconstore_mall_directory; 
+  }
+}
+.vicontraffic {
+  &:before {
+    content: $vicontraffic; 
+  }
+}
+.vicondirections_run {
+  &:before {
+    content: $vicondirections_run; 
+  }
+}
+.viconadd_location {
+  &:before {
+    content: $viconadd_location; 
+  }
+}
+.viconedit_location {
+  &:before {
+    content: $viconedit_location; 
+  }
+}
+.viconnear_me {
+  &:before {
+    content: $viconnear_me; 
+  }
+}
+.viconperson_pin_circle {
+  &:before {
+    content: $viconperson_pin_circle; 
+  }
+}
+.viconzoom_out_map {
+  &:before {
+    content: $viconzoom_out_map; 
+  }
+}
+.viconrestaurant {
+  &:before {
+    content: $viconrestaurant; 
+  }
+}
+.viconev_station {
+  &:before {
+    content: $viconev_station; 
+  }
+}
+.viconstreetview {
+  &:before {
+    content: $viconstreetview; 
+  }
+}
+.viconsubway {
+  &:before {
+    content: $viconsubway; 
+  }
+}
+.vicontrain {
+  &:before {
+    content: $vicontrain; 
+  }
+}
+.vicontram {
+  &:before {
+    content: $vicontram; 
+  }
+}
+.vicontransfer_within_a_station {
+  &:before {
+    content: $vicontransfer_within_a_station; 
+  }
+}
+.viconatm {
+  &:before {
+    content: $viconatm; 
+  }
+}
+.viconcategory {
+  &:before {
+    content: $viconcategory; 
+  }
+}
+.viconnot_listed_location {
+  &:before {
+    content: $viconnot_listed_location; 
+  }
+}
+.vicondeparture_board {
+  &:before {
+    content: $vicondeparture_board; 
+  }
+}
+.vicon360 {
+  &:before {
+    content: $vicon360; 
+  }
+}
+.viconedit_attributes {
+  &:before {
+    content: $viconedit_attributes; 
+  }
+}
+.vicontransit_enterexit {
+  &:before {
+    content: $vicontransit_enterexit; 
+  }
+}
+.viconfastfood {
+  &:before {
+    content: $viconfastfood; 
+  }
+}
+.vicontrip_origin {
+  &:before {
+    content: $vicontrip_origin; 
+  }
+}
+.viconcompass_calibration {
+  &:before {
+    content: $viconcompass_calibration; 
+  }
+}
+.viconmoney {
+  &:before {
+    content: $viconmoney; 
+  }
+}
+.viconapps {
+  &:before {
+    content: $viconapps; 
+  }
+}
+.viconarrow_back {
+  &:before {
+    content: $viconarrow_back; 
+  }
+}
+.viconarrow_drop_down {
+  &:before {
+    content: $viconarrow_drop_down; 
+  }
+}
+.viconarrow_drop_down_circle {
+  &:before {
+    content: $viconarrow_drop_down_circle; 
+  }
+}
+.viconarrow_drop_up {
+  &:before {
+    content: $viconarrow_drop_up; 
+  }
+}
+.viconarrow_forward {
+  &:before {
+    content: $viconarrow_forward; 
+  }
+}
+.viconcancel {
+  &:before {
+    content: $viconcancel; 
+  }
+}
+.viconcheck {
+  &:before {
+    content: $viconcheck; 
+  }
+}
+.viconexpand_less {
+  &:before {
+    content: $viconexpand_less; 
+  }
+}
+.viconexpand_more {
+  &:before {
+    content: $viconexpand_more; 
+  }
+}
+.viconfullscreen {
+  &:before {
+    content: $viconfullscreen; 
+  }
+}
+.viconfullscreen_exit {
+  &:before {
+    content: $viconfullscreen_exit; 
+  }
+}
+.viconmenu {
+  &:before {
+    content: $viconmenu; 
+  }
+}
+.viconkeyboard_control {
+  &:before {
+    content: $viconkeyboard_control; 
+  }
+}
+.viconmore_vert {
+  &:before {
+    content: $viconmore_vert; 
+  }
+}
+.viconrefresh {
+  &:before {
+    content: $viconrefresh; 
+  }
+}
+.viconunfold_less {
+  &:before {
+    content: $viconunfold_less; 
+  }
+}
+.viconunfold_more {
+  &:before {
+    content: $viconunfold_more; 
+  }
+}
+.viconarrow_upward {
+  &:before {
+    content: $viconarrow_upward; 
+  }
+}
+.viconsubdirectory_arrow_left {
+  &:before {
+    content: $viconsubdirectory_arrow_left; 
+  }
+}
+.viconsubdirectory_arrow_right {
+  &:before {
+    content: $viconsubdirectory_arrow_right; 
+  }
+}
+.viconarrow_downward {
+  &:before {
+    content: $viconarrow_downward; 
+  }
+}
+.viconfirst_page {
+  &:before {
+    content: $viconfirst_page; 
+  }
+}
+.viconlast_page {
+  &:before {
+    content: $viconlast_page; 
+  }
+}
+.viconarrow_left {
+  &:before {
+    content: $viconarrow_left; 
+  }
+}
+.viconarrow_right {
+  &:before {
+    content: $viconarrow_right; 
+  }
+}
+.viconarrow_back_ios {
+  &:before {
+    content: $viconarrow_back_ios; 
+  }
+}
+.viconarrow_forward_ios {
+  &:before {
+    content: $viconarrow_forward_ios; 
+  }
+}
+.viconadb {
+  &:before {
+    content: $viconadb; 
+  }
+}
+.vicondisc_full {
+  &:before {
+    content: $vicondisc_full; 
+  }
+}
+.vicondo_not_disturb_alt {
+  &:before {
+    content: $vicondo_not_disturb_alt; 
+  }
+}
+.vicondrive_eta {
+  &:before {
+    content: $vicondrive_eta; 
+  }
+}
+.viconevent_available {
+  &:before {
+    content: $viconevent_available; 
+  }
+}
+.viconevent_busy {
+  &:before {
+    content: $viconevent_busy; 
+  }
+}
+.viconevent_note {
+  &:before {
+    content: $viconevent_note; 
+  }
+}
+.viconfolder_special {
+  &:before {
+    content: $viconfolder_special; 
+  }
+}
+.viconmms {
+  &:before {
+    content: $viconmms; 
+  }
+}
+.viconmore {
+  &:before {
+    content: $viconmore; 
+  }
+}
+.viconnetwork_locked {
+  &:before {
+    content: $viconnetwork_locked; 
+  }
+}
+.viconphone_bluetooth_speaker {
+  &:before {
+    content: $viconphone_bluetooth_speaker; 
+  }
+}
+.viconphone_forwarded {
+  &:before {
+    content: $viconphone_forwarded; 
+  }
+}
+.viconphone_in_talk {
+  &:before {
+    content: $viconphone_in_talk; 
+  }
+}
+.viconphone_locked {
+  &:before {
+    content: $viconphone_locked; 
+  }
+}
+.viconphone_missed {
+  &:before {
+    content: $viconphone_missed; 
+  }
+}
+.viconphone_paused {
+  &:before {
+    content: $viconphone_paused; 
+  }
+}
+.viconsim_card_alert {
+  &:before {
+    content: $viconsim_card_alert; 
+  }
+}
+.viconsms_failed {
+  &:before {
+    content: $viconsms_failed; 
+  }
+}
+.viconsync_disabled {
+  &:before {
+    content: $viconsync_disabled; 
+  }
+}
+.viconsync_problem {
+  &:before {
+    content: $viconsync_problem; 
+  }
+}
+.viconsystem_update {
+  &:before {
+    content: $viconsystem_update; 
+  }
+}
+.vicontap_and_play {
+  &:before {
+    content: $vicontap_and_play; 
+  }
+}
+.viconvibration {
+  &:before {
+    content: $viconvibration; 
+  }
+}
+.viconvoice_chat {
+  &:before {
+    content: $viconvoice_chat; 
+  }
+}
+.viconvpn_lock {
+  &:before {
+    content: $viconvpn_lock; 
+  }
+}
+.viconairline_seat_flat {
+  &:before {
+    content: $viconairline_seat_flat; 
+  }
+}
+.viconairline_seat_flat_angled {
+  &:before {
+    content: $viconairline_seat_flat_angled; 
+  }
+}
+.viconairline_seat_individual_suite {
+  &:before {
+    content: $viconairline_seat_individual_suite; 
+  }
+}
+.viconairline_seat_legroom_extra {
+  &:before {
+    content: $viconairline_seat_legroom_extra; 
+  }
+}
+.viconairline_seat_legroom_normal {
+  &:before {
+    content: $viconairline_seat_legroom_normal; 
+  }
+}
+.viconairline_seat_legroom_reduced {
+  &:before {
+    content: $viconairline_seat_legroom_reduced; 
+  }
+}
+.viconairline_seat_recline_extra {
+  &:before {
+    content: $viconairline_seat_recline_extra; 
+  }
+}
+.viconairline_seat_recline_normal {
+  &:before {
+    content: $viconairline_seat_recline_normal; 
+  }
+}
+.viconconfirmation_number {
+  &:before {
+    content: $viconconfirmation_number; 
+  }
+}
+.viconlive_tv {
+  &:before {
+    content: $viconlive_tv; 
+  }
+}
+.viconondemand_video {
+  &:before {
+    content: $viconondemand_video; 
+  }
+}
+.viconpersonal_video {
+  &:before {
+    content: $viconpersonal_video; 
+  }
+}
+.viconpower {
+  &:before {
+    content: $viconpower; 
+  }
+}
+.viconwc {
+  &:before {
+    content: $viconwc; 
+  }
+}
+.viconwifi {
+  &:before {
+    content: $viconwifi; 
+  }
+}
+.viconenhanced_encryption {
+  &:before {
+    content: $viconenhanced_encryption; 
+  }
+}
+.viconnetwork_check {
+  &:before {
+    content: $viconnetwork_check; 
+  }
+}
+.viconno_encryption {
+  &:before {
+    content: $viconno_encryption; 
+  }
+}
+.viconrv_hookup {
+  &:before {
+    content: $viconrv_hookup; 
+  }
+}
+.vicondo_not_disturb_off {
+  &:before {
+    content: $vicondo_not_disturb_off; 
+  }
+}
+.viconpriority_high {
+  &:before {
+    content: $viconpriority_high; 
+  }
+}
+.viconpower_off {
+  &:before {
+    content: $viconpower_off; 
+  }
+}
+.vicontv_off {
+  &:before {
+    content: $vicontv_off; 
+  }
+}
+.viconwifi_off {
+  &:before {
+    content: $viconwifi_off; 
+  }
+}
+.viconphone_callback {
+  &:before {
+    content: $viconphone_callback; 
+  }
+}
+.viconpie_chart {
+  &:before {
+    content: $viconpie_chart; 
+  }
+}
+.viconpie_chart_outlined {
+  &:before {
+    content: $viconpie_chart_outlined; 
+  }
+}
+.viconbubble_chart {
+  &:before {
+    content: $viconbubble_chart; 
+  }
+}
+.viconmultiline_chart {
+  &:before {
+    content: $viconmultiline_chart; 
+  }
+}
+.viconshow_chart {
+  &:before {
+    content: $viconshow_chart; 
+  }
+}
+.viconcake {
+  &:before {
+    content: $viconcake; 
+  }
+}
+.vicongroup {
+  &:before {
+    content: $vicongroup; 
+  }
+}
+.vicongroup_add {
+  &:before {
+    content: $vicongroup_add; 
+  }
+}
+.viconlocation_city {
+  &:before {
+    content: $viconlocation_city; 
+  }
+}
+.viconmood_bad {
+  &:before {
+    content: $viconmood_bad; 
+  }
+}
+.viconnotifications {
+  &:before {
+    content: $viconnotifications; 
+  }
+}
+.viconnotifications_none {
+  &:before {
+    content: $viconnotifications_none; 
+  }
+}
+.viconnotifications_off {
+  &:before {
+    content: $viconnotifications_off; 
+  }
+}
+.viconnotifications_on {
+  &:before {
+    content: $viconnotifications_on; 
+  }
+}
+.viconnotifications_paused {
+  &:before {
+    content: $viconnotifications_paused; 
+  }
+}
+.viconpages {
+  &:before {
+    content: $viconpages; 
+  }
+}
+.viconparty_mode {
+  &:before {
+    content: $viconparty_mode; 
+  }
+}
+.viconpeople_outline {
+  &:before {
+    content: $viconpeople_outline; 
+  }
+}
+.viconperson {
+  &:before {
+    content: $viconperson; 
+  }
+}
+.viconperson_add {
+  &:before {
+    content: $viconperson_add; 
+  }
+}
+.viconperson_outline {
+  &:before {
+    content: $viconperson_outline; 
+  }
+}
+.viconplus_one {
+  &:before {
+    content: $viconplus_one; 
+  }
+}
+.viconpublic {
+  &:before {
+    content: $viconpublic; 
+  }
+}
+.viconschool {
+  &:before {
+    content: $viconschool; 
+  }
+}
+.viconshare {
+  &:before {
+    content: $viconshare; 
+  }
+}
+.viconwhatshot {
+  &:before {
+    content: $viconwhatshot; 
+  }
+}
+.viconsentiment_dissatisfied {
+  &:before {
+    content: $viconsentiment_dissatisfied; 
+  }
+}
+.viconsentiment_neutral {
+  &:before {
+    content: $viconsentiment_neutral; 
+  }
+}
+.viconsentiment_satisfied {
+  &:before {
+    content: $viconsentiment_satisfied; 
+  }
+}
+.viconsentiment_very_dissatisfied {
+  &:before {
+    content: $viconsentiment_very_dissatisfied; 
+  }
+}
+.viconsentiment_very_satisfied {
+  &:before {
+    content: $viconsentiment_very_satisfied; 
+  }
+}
+.viconthumb_down_alt {
+  &:before {
+    content: $viconthumb_down_alt; 
+  }
+}
+.viconthumb_up_alt {
+  &:before {
+    content: $viconthumb_up_alt; 
+  }
+}
+.viconcheck_box {
+  &:before {
+    content: $viconcheck_box; 
+  }
+}
+.viconcheck_box_outline_blank {
+  &:before {
+    content: $viconcheck_box_outline_blank; 
+  }
+}
+.viconradio_button_on {
+  &:before {
+    content: $viconradio_button_on; 
+  }
+}
+.viconstar {
+  &:before {
+    content: $viconstar; 
+  }
+}
+.viconstar_half {
+  &:before {
+    content: $viconstar_half; 
+  }
+}
+.viconstar_outline {
+  &:before {
+    content: $viconstar_outline; 
+  }
+}
+.vicon3d_rotation {
+  &:before {
+    content: $vicon3d_rotation; 
+  }
+}
+.viconaccessibility {
+  &:before {
+    content: $viconaccessibility; 
+  }
+}
+.viconaccount_balance {
+  &:before {
+    content: $viconaccount_balance; 
+  }
+}
+.viconaccount_balance_wallet {
+  &:before {
+    content: $viconaccount_balance_wallet; 
+  }
+}
+.viconaccount_box {
+  &:before {
+    content: $viconaccount_box; 
+  }
+}
+.viconaccount_circle {
+  &:before {
+    content: $viconaccount_circle; 
+  }
+}
+.viconadd_shopping_cart {
+  &:before {
+    content: $viconadd_shopping_cart; 
+  }
+}
+.viconalarm_off {
+  &:before {
+    content: $viconalarm_off; 
+  }
+}
+.viconalarm_on {
+  &:before {
+    content: $viconalarm_on; 
+  }
+}
+.viconandroid {
+  &:before {
+    content: $viconandroid; 
+  }
+}
+.viconannouncement {
+  &:before {
+    content: $viconannouncement; 
+  }
+}
+.viconaspect_ratio {
+  &:before {
+    content: $viconaspect_ratio; 
+  }
+}
+.viconassignment {
+  &:before {
+    content: $viconassignment; 
+  }
+}
+.viconassignment_ind {
+  &:before {
+    content: $viconassignment_ind; 
+  }
+}
+.viconassignment_late {
+  &:before {
+    content: $viconassignment_late; 
+  }
+}
+.viconassignment_return {
+  &:before {
+    content: $viconassignment_return; 
+  }
+}
+.viconassignment_returned {
+  &:before {
+    content: $viconassignment_returned; 
+  }
+}
+.viconassignment_turned_in {
+  &:before {
+    content: $viconassignment_turned_in; 
+  }
+}
+.viconautorenew {
+  &:before {
+    content: $viconautorenew; 
+  }
+}
+.viconbook {
+  &:before {
+    content: $viconbook; 
+  }
+}
+.viconbookmark {
+  &:before {
+    content: $viconbookmark; 
+  }
+}
+.viconbookmark_outline {
+  &:before {
+    content: $viconbookmark_outline; 
+  }
+}
+.viconbug_report {
+  &:before {
+    content: $viconbug_report; 
+  }
+}
+.viconbuild {
+  &:before {
+    content: $viconbuild; 
+  }
+}
+.viconcached {
+  &:before {
+    content: $viconcached; 
+  }
+}
+.viconchange_history {
+  &:before {
+    content: $viconchange_history; 
+  }
+}
+.viconcheck_circle {
+  &:before {
+    content: $viconcheck_circle; 
+  }
+}
+.viconchrome_reader_mode {
+  &:before {
+    content: $viconchrome_reader_mode; 
+  }
+}
+.viconcode {
+  &:before {
+    content: $viconcode; 
+  }
+}
+.viconcredit_card {
+  &:before {
+    content: $viconcredit_card; 
+  }
+}
+.vicondashboard {
+  &:before {
+    content: $vicondashboard; 
+  }
+}
+.vicondelete {
+  &:before {
+    content: $vicondelete; 
+  }
+}
+.vicondescription {
+  &:before {
+    content: $vicondescription; 
+  }
+}
+.vicondns {
+  &:before {
+    content: $vicondns; 
+  }
+}
+.vicondone {
+  &:before {
+    content: $vicondone; 
+  }
+}
+.vicondone_all {
+  &:before {
+    content: $vicondone_all; 
+  }
+}
+.viconexit_to_app {
+  &:before {
+    content: $viconexit_to_app; 
+  }
+}
+.viconexplore {
+  &:before {
+    content: $viconexplore; 
+  }
+}
+.viconextension {
+  &:before {
+    content: $viconextension; 
+  }
+}
+.viconface {
+  &:before {
+    content: $viconface; 
+  }
+}
+.viconfavorite {
+  &:before {
+    content: $viconfavorite; 
+  }
+}
+.viconfavorite_outline {
+  &:before {
+    content: $viconfavorite_outline; 
+  }
+}
+.viconfind_in_page {
+  &:before {
+    content: $viconfind_in_page; 
+  }
+}
+.viconfind_replace {
+  &:before {
+    content: $viconfind_replace; 
+  }
+}
+.viconflip_to_back {
+  &:before {
+    content: $viconflip_to_back; 
+  }
+}
+.viconflip_to_front {
+  &:before {
+    content: $viconflip_to_front; 
+  }
+}
+.vicongroup_work {
+  &:before {
+    content: $vicongroup_work; 
+  }
+}
+.viconhelp {
+  &:before {
+    content: $viconhelp; 
+  }
+}
+.viconhighlight_remove {
+  &:before {
+    content: $viconhighlight_remove; 
+  }
+}
+.viconhistory {
+  &:before {
+    content: $viconhistory; 
+  }
+}
+.viconhome {
+  &:before {
+    content: $viconhome; 
+  }
+}
+.viconhourglass_empty {
+  &:before {
+    content: $viconhourglass_empty; 
+  }
+}
+.viconhourglass_full {
+  &:before {
+    content: $viconhourglass_full; 
+  }
+}
+.viconhttps {
+  &:before {
+    content: $viconhttps; 
+  }
+}
+.viconinfo {
+  &:before {
+    content: $viconinfo; 
+  }
+}
+.viconinfo_outline {
+  &:before {
+    content: $viconinfo_outline; 
+  }
+}
+.viconinput {
+  &:before {
+    content: $viconinput; 
+  }
+}
+.viconinvert_colors_on {
+  &:before {
+    content: $viconinvert_colors_on; 
+  }
+}
+.viconlabel {
+  &:before {
+    content: $viconlabel; 
+  }
+}
+.viconlabel_outline {
+  &:before {
+    content: $viconlabel_outline; 
+  }
+}
+.viconlanguage {
+  &:before {
+    content: $viconlanguage; 
+  }
+}
+.viconlaunch {
+  &:before {
+    content: $viconlaunch; 
+  }
+}
+.viconlist {
+  &:before {
+    content: $viconlist; 
+  }
+}
+.viconlock_open {
+  &:before {
+    content: $viconlock_open; 
+  }
+}
+.viconlock_outline {
+  &:before {
+    content: $viconlock_outline; 
+  }
+}
+.viconloyalty {
+  &:before {
+    content: $viconloyalty; 
+  }
+}
+.viconmarkunread_mailbox {
+  &:before {
+    content: $viconmarkunread_mailbox; 
+  }
+}
+.viconnote_add {
+  &:before {
+    content: $viconnote_add; 
+  }
+}
+.viconopen_in_browser {
+  &:before {
+    content: $viconopen_in_browser; 
+  }
+}
+.viconopen_with {
+  &:before {
+    content: $viconopen_with; 
+  }
+}
+.viconpageview {
+  &:before {
+    content: $viconpageview; 
+  }
+}
+.viconperm_camera_mic {
+  &:before {
+    content: $viconperm_camera_mic; 
+  }
+}
+.viconperm_contact_calendar {
+  &:before {
+    content: $viconperm_contact_calendar; 
+  }
+}
+.viconperm_data_setting {
+  &:before {
+    content: $viconperm_data_setting; 
+  }
+}
+.viconperm_device_information {
+  &:before {
+    content: $viconperm_device_information; 
+  }
+}
+.viconperm_media {
+  &:before {
+    content: $viconperm_media; 
+  }
+}
+.viconperm_phone_msg {
+  &:before {
+    content: $viconperm_phone_msg; 
+  }
+}
+.viconperm_scan_wifi {
+  &:before {
+    content: $viconperm_scan_wifi; 
+  }
+}
+.viconpicture_in_picture {
+  &:before {
+    content: $viconpicture_in_picture; 
+  }
+}
+.viconpolymer {
+  &:before {
+    content: $viconpolymer; 
+  }
+}
+.viconpower_settings_new {
+  &:before {
+    content: $viconpower_settings_new; 
+  }
+}
+.viconreceipt {
+  &:before {
+    content: $viconreceipt; 
+  }
+}
+.viconredeem {
+  &:before {
+    content: $viconredeem; 
+  }
+}
+.viconsearch {
+  &:before {
+    content: $viconsearch; 
+  }
+}
+.viconsettings {
+  &:before {
+    content: $viconsettings; 
+  }
+}
+.viconsettings_applications {
+  &:before {
+    content: $viconsettings_applications; 
+  }
+}
+.viconsettings_backup_restore {
+  &:before {
+    content: $viconsettings_backup_restore; 
+  }
+}
+.viconsettings_bluetooth {
+  &:before {
+    content: $viconsettings_bluetooth; 
+  }
+}
+.viconsettings_cell {
+  &:before {
+    content: $viconsettings_cell; 
+  }
+}
+.viconsettings_display {
+  &:before {
+    content: $viconsettings_display; 
+  }
+}
+.viconsettings_ethernet {
+  &:before {
+    content: $viconsettings_ethernet; 
+  }
+}
+.viconsettings_input_antenna {
+  &:before {
+    content: $viconsettings_input_antenna; 
+  }
+}
+.viconsettings_input_component {
+  &:before {
+    content: $viconsettings_input_component; 
+  }
+}
+.viconsettings_input_hdmi {
+  &:before {
+    content: $viconsettings_input_hdmi; 
+  }
+}
+.viconsettings_input_svideo {
+  &:before {
+    content: $viconsettings_input_svideo; 
+  }
+}
+.viconsettings_overscan {
+  &:before {
+    content: $viconsettings_overscan; 
+  }
+}
+.viconsettings_phone {
+  &:before {
+    content: $viconsettings_phone; 
+  }
+}
+.viconsettings_power {
+  &:before {
+    content: $viconsettings_power; 
+  }
+}
+.viconsettings_remote {
+  &:before {
+    content: $viconsettings_remote; 
+  }
+}
+.viconsettings_voice {
+  &:before {
+    content: $viconsettings_voice; 
+  }
+}
+.viconshop {
+  &:before {
+    content: $viconshop; 
+  }
+}
+.viconshop_two {
+  &:before {
+    content: $viconshop_two; 
+  }
+}
+.viconshopping_basket {
+  &:before {
+    content: $viconshopping_basket; 
+  }
+}
+.viconspeaker_notes {
+  &:before {
+    content: $viconspeaker_notes; 
+  }
+}
+.viconspellcheck {
+  &:before {
+    content: $viconspellcheck; 
+  }
+}
+.viconstars {
+  &:before {
+    content: $viconstars; 
+  }
+}
+.viconsubject {
+  &:before {
+    content: $viconsubject; 
+  }
+}
+.viconsupervisor_account {
+  &:before {
+    content: $viconsupervisor_account; 
+  }
+}
+.viconswap_horiz {
+  &:before {
+    content: $viconswap_horiz; 
+  }
+}
+.viconswap_vert {
+  &:before {
+    content: $viconswap_vert; 
+  }
+}
+.viconswap_vertical_circle {
+  &:before {
+    content: $viconswap_vertical_circle; 
+  }
+}
+.viconsystem_update_tv {
+  &:before {
+    content: $viconsystem_update_tv; 
+  }
+}
+.vicontab {
+  &:before {
+    content: $vicontab; 
+  }
+}
+.vicontab_unselected {
+  &:before {
+    content: $vicontab_unselected; 
+  }
+}
+.viconthumb_down {
+  &:before {
+    content: $viconthumb_down; 
+  }
+}
+.viconthumb_up {
+  &:before {
+    content: $viconthumb_up; 
+  }
+}
+.viconthumbs_up_down {
+  &:before {
+    content: $viconthumbs_up_down; 
+  }
+}
+.vicontoc {
+  &:before {
+    content: $vicontoc; 
+  }
+}
+.vicontoday {
+  &:before {
+    content: $vicontoday; 
+  }
+}
+.vicontoll {
+  &:before {
+    content: $vicontoll; 
+  }
+}
+.vicontrack_changes {
+  &:before {
+    content: $vicontrack_changes; 
+  }
+}
+.vicontranslate {
+  &:before {
+    content: $vicontranslate; 
+  }
+}
+.vicontrending_down {
+  &:before {
+    content: $vicontrending_down; 
+  }
+}
+.vicontrending_neutral {
+  &:before {
+    content: $vicontrending_neutral; 
+  }
+}
+.vicontrending_up {
+  &:before {
+    content: $vicontrending_up; 
+  }
+}
+.viconverified_user {
+  &:before {
+    content: $viconverified_user; 
+  }
+}
+.viconview_agenda {
+  &:before {
+    content: $viconview_agenda; 
+  }
+}
+.viconview_array {
+  &:before {
+    content: $viconview_array; 
+  }
+}
+.viconview_carousel {
+  &:before {
+    content: $viconview_carousel; 
+  }
+}
+.viconview_column {
+  &:before {
+    content: $viconview_column; 
+  }
+}
+.viconview_day {
+  &:before {
+    content: $viconview_day; 
+  }
+}
+.viconview_headline {
+  &:before {
+    content: $viconview_headline; 
+  }
+}
+.viconview_list {
+  &:before {
+    content: $viconview_list; 
+  }
+}
+.viconview_module {
+  &:before {
+    content: $viconview_module; 
+  }
+}
+.viconview_quilt {
+  &:before {
+    content: $viconview_quilt; 
+  }
+}
+.viconview_stream {
+  &:before {
+    content: $viconview_stream; 
+  }
+}
+.viconview_week {
+  &:before {
+    content: $viconview_week; 
+  }
+}
+.viconvisibility_off {
+  &:before {
+    content: $viconvisibility_off; 
+  }
+}
+.viconcard_membership {
+  &:before {
+    content: $viconcard_membership; 
+  }
+}
+.viconcard_travel {
+  &:before {
+    content: $viconcard_travel; 
+  }
+}
+.viconwork {
+  &:before {
+    content: $viconwork; 
+  }
+}
+.viconyoutube_searched_for {
+  &:before {
+    content: $viconyoutube_searched_for; 
+  }
+}
+.viconeject {
+  &:before {
+    content: $viconeject; 
+  }
+}
+.viconcamera_enhance {
+  &:before {
+    content: $viconcamera_enhance; 
+  }
+}
+.viconhelp_outline {
+  &:before {
+    content: $viconhelp_outline; 
+  }
+}
+.viconreorder {
+  &:before {
+    content: $viconreorder; 
+  }
+}
+.viconzoom_in {
+  &:before {
+    content: $viconzoom_in; 
+  }
+}
+.viconzoom_out {
+  &:before {
+    content: $viconzoom_out; 
+  }
+}
+.viconhttp {
+  &:before {
+    content: $viconhttp; 
+  }
+}
+.viconevent_seat {
+  &:before {
+    content: $viconevent_seat; 
+  }
+}
+.viconflight_land {
+  &:before {
+    content: $viconflight_land; 
+  }
+}
+.viconflight_takeoff {
+  &:before {
+    content: $viconflight_takeoff; 
+  }
+}
+.viconplay_for_work {
+  &:before {
+    content: $viconplay_for_work; 
+  }
+}
+.vicongif {
+  &:before {
+    content: $vicongif; 
+  }
+}
+.viconindeterminate_check_box {
+  &:before {
+    content: $viconindeterminate_check_box; 
+  }
+}
+.viconoffline_pin {
+  &:before {
+    content: $viconoffline_pin; 
+  }
+}
+.viconall_out {
+  &:before {
+    content: $viconall_out; 
+  }
+}
+.viconcopyright {
+  &:before {
+    content: $viconcopyright; 
+  }
+}
+.viconfingerprint {
+  &:before {
+    content: $viconfingerprint; 
+  }
+}
+.vicongavel {
+  &:before {
+    content: $vicongavel; 
+  }
+}
+.viconlightbulb_outline {
+  &:before {
+    content: $viconlightbulb_outline; 
+  }
+}
+.viconpicture_in_picture_alt {
+  &:before {
+    content: $viconpicture_in_picture_alt; 
+  }
+}
+.viconimportant_devices {
+  &:before {
+    content: $viconimportant_devices; 
+  }
+}
+.vicontouch_app {
+  &:before {
+    content: $vicontouch_app; 
+  }
+}
+.viconaccessible {
+  &:before {
+    content: $viconaccessible; 
+  }
+}
+.viconcompare_arrows {
+  &:before {
+    content: $viconcompare_arrows; 
+  }
+}
+.vicondate_range {
+  &:before {
+    content: $vicondate_range; 
+  }
+}
+.vicondonut_large {
+  &:before {
+    content: $vicondonut_large; 
+  }
+}
+.vicondonut_small {
+  &:before {
+    content: $vicondonut_small; 
+  }
+}
+.viconline_style {
+  &:before {
+    content: $viconline_style; 
+  }
+}
+.viconline_weight {
+  &:before {
+    content: $viconline_weight; 
+  }
+}
+.viconmotorcycle {
+  &:before {
+    content: $viconmotorcycle; 
+  }
+}
+.viconopacity {
+  &:before {
+    content: $viconopacity; 
+  }
+}
+.viconpets {
+  &:before {
+    content: $viconpets; 
+  }
+}
+.viconpregnant_woman {
+  &:before {
+    content: $viconpregnant_woman; 
+  }
+}
+.viconrecord_voice_over {
+  &:before {
+    content: $viconrecord_voice_over; 
+  }
+}
+.viconrounded_corner {
+  &:before {
+    content: $viconrounded_corner; 
+  }
+}
+.viconrowing {
+  &:before {
+    content: $viconrowing; 
+  }
+}
+.vicontimeline {
+  &:before {
+    content: $vicontimeline; 
+  }
+}
+.viconupdate {
+  &:before {
+    content: $viconupdate; 
+  }
+}
+.viconwatch_later {
+  &:before {
+    content: $viconwatch_later; 
+  }
+}
+.viconpan_tool {
+  &:before {
+    content: $viconpan_tool; 
+  }
+}
+.viconeuro_symbol {
+  &:before {
+    content: $viconeuro_symbol; 
+  }
+}
+.vicong_translate {
+  &:before {
+    content: $vicong_translate; 
+  }
+}
+.viconremove_shopping_cart {
+  &:before {
+    content: $viconremove_shopping_cart; 
+  }
+}
+.viconrestore_page {
+  &:before {
+    content: $viconrestore_page; 
+  }
+}
+.viconspeaker_notes_off {
+  &:before {
+    content: $viconspeaker_notes_off; 
+  }
+}
+.vicondelete_forever {
+  &:before {
+    content: $vicondelete_forever; 
+  }
+}
+.viconaccessibility_new {
+  &:before {
+    content: $viconaccessibility_new; 
+  }
+}
+.viconcheck_circle_outline {
+  &:before {
+    content: $viconcheck_circle_outline; 
+  }
+}
+.vicondelete_outline {
+  &:before {
+    content: $vicondelete_outline; 
+  }
+}
+.vicondone_outline {
+  &:before {
+    content: $vicondone_outline; 
+  }
+}
+.viconmaximize {
+  &:before {
+    content: $viconmaximize; 
+  }
+}
+.viconminimize {
+  &:before {
+    content: $viconminimize; 
+  }
+}
+.viconoffline_bolt {
+  &:before {
+    content: $viconoffline_bolt; 
+  }
+}
+.viconswap_horizontal_circle {
+  &:before {
+    content: $viconswap_horizontal_circle; 
+  }
+}
+.viconaccessible_forward {
+  &:before {
+    content: $viconaccessible_forward; 
+  }
+}
+.viconcalendar_today {
+  &:before {
+    content: $viconcalendar_today; 
+  }
+}
+.viconcalendar_view_day {
+  &:before {
+    content: $viconcalendar_view_day; 
+  }
+}
+.viconlabel_important {
+  &:before {
+    content: $viconlabel_important; 
+  }
+}
+.viconrestore_from_trash {
+  &:before {
+    content: $viconrestore_from_trash; 
+  }
+}
+.viconsupervised_user_circle {
+  &:before {
+    content: $viconsupervised_user_circle; 
+  }
+}
+.vicontext_rotate_up {
+  &:before {
+    content: $vicontext_rotate_up; 
+  }
+}
+.vicontext_rotate_vertical {
+  &:before {
+    content: $vicontext_rotate_vertical; 
+  }
+}
+.vicontext_rotation_angledown {
+  &:before {
+    content: $vicontext_rotation_angledown; 
+  }
+}
+.vicontext_rotation_angleup {
+  &:before {
+    content: $vicontext_rotation_angleup; 
+  }
+}
+.vicontext_rotation_down {
+  &:before {
+    content: $vicontext_rotation_down; 
+  }
+}
+.vicontext_rotation_none {
+  &:before {
+    content: $vicontext_rotation_none; 
+  }
+}
+.viconcommute {
+  &:before {
+    content: $viconcommute; 
+  }
+}
+.viconarrow_right_alt {
+  &:before {
+    content: $viconarrow_right_alt; 
+  }
+}
+.viconwork_off {
+  &:before {
+    content: $viconwork_off; 
+  }
+}
+.viconwork_outline {
+  &:before {
+    content: $viconwork_outline; 
+  }
+}
+.vicondrag_indicator {
+  &:before {
+    content: $vicondrag_indicator; 
+  }
+}
+.viconhorizontal_split {
+  &:before {
+    content: $viconhorizontal_split; 
+  }
+}
+.viconlabel_important_outline {
+  &:before {
+    content: $viconlabel_important_outline; 
+  }
+}
+.viconvertical_split {
+  &:before {
+    content: $viconvertical_split; 
+  }
+}
+.viconvoice_over_off {
+  &:before {
+    content: $viconvoice_over_off; 
+  }
+}
+.viconsegment {
+  &:before {
+    content: $viconsegment; 
+  }
+}
+.viconcontact_support {
+  &:before {
+    content: $viconcontact_support; 
+  }
+}
+.viconcompress {
+  &:before {
+    content: $viconcompress; 
+  }
+}
+.viconfilter_list_alt {
+  &:before {
+    content: $viconfilter_list_alt; 
+  }
+}
+.viconexpand {
+  &:before {
+    content: $viconexpand; 
+  }
+}
+.viconedit_off {
+  &:before {
+    content: $viconedit_off; 
+  }
+}
+.vicon10k {
+  &:before {
+    content: $vicon10k; 
+  }
+}
+.vicon10mp {
+  &:before {
+    content: $vicon10mp; 
+  }
+}
+.vicon11mp {
+  &:before {
+    content: $vicon11mp; 
+  }
+}
+.vicon12mp {
+  &:before {
+    content: $vicon12mp; 
+  }
+}
+.vicon13mp {
+  &:before {
+    content: $vicon13mp; 
+  }
+}
+.vicon14mp {
+  &:before {
+    content: $vicon14mp; 
+  }
+}
+.vicon15mp {
+  &:before {
+    content: $vicon15mp; 
+  }
+}
+.vicon16mp {
+  &:before {
+    content: $vicon16mp; 
+  }
+}
+.vicon17mp {
+  &:before {
+    content: $vicon17mp; 
+  }
+}
+.vicon18mp {
+  &:before {
+    content: $vicon18mp; 
+  }
+}
+.vicon19mp {
+  &:before {
+    content: $vicon19mp; 
+  }
+}
+.vicon1k {
+  &:before {
+    content: $vicon1k; 
+  }
+}
+.vicon1k_plus {
+  &:before {
+    content: $vicon1k_plus; 
+  }
+}
+.vicon20mp {
+  &:before {
+    content: $vicon20mp; 
+  }
+}
+.vicon21mp {
+  &:before {
+    content: $vicon21mp; 
+  }
+}
+.vicon22mp {
+  &:before {
+    content: $vicon22mp; 
+  }
+}
+.vicon23mp {
+  &:before {
+    content: $vicon23mp; 
+  }
+}
+.vicon24mp {
+  &:before {
+    content: $vicon24mp; 
+  }
+}
+.vicon2k {
+  &:before {
+    content: $vicon2k; 
+  }
+}
+.vicon2k_plus {
+  &:before {
+    content: $vicon2k_plus; 
+  }
+}
+.vicon2mp {
+  &:before {
+    content: $vicon2mp; 
+  }
+}
+.vicon3k {
+  &:before {
+    content: $vicon3k; 
+  }
+}
+.vicon3k_plus {
+  &:before {
+    content: $vicon3k_plus; 
+  }
+}
+.vicon3mp {
+  &:before {
+    content: $vicon3mp; 
+  }
+}
+.vicon4k_plus {
+  &:before {
+    content: $vicon4k_plus; 
+  }
+}
+.vicon4mp {
+  &:before {
+    content: $vicon4mp; 
+  }
+}
+.vicon5k {
+  &:before {
+    content: $vicon5k; 
+  }
+}
+.vicon5k_plus {
+  &:before {
+    content: $vicon5k_plus; 
+  }
+}
+.vicon5mp {
+  &:before {
+    content: $vicon5mp; 
+  }
+}
+.vicon6k {
+  &:before {
+    content: $vicon6k; 
+  }
+}
+.vicon6k_plus {
+  &:before {
+    content: $vicon6k_plus; 
+  }
+}
+.vicon6mp {
+  &:before {
+    content: $vicon6mp; 
+  }
+}
+.vicon7k {
+  &:before {
+    content: $vicon7k; 
+  }
+}
+.vicon7k_plus {
+  &:before {
+    content: $vicon7k_plus; 
+  }
+}
+.vicon7mp {
+  &:before {
+    content: $vicon7mp; 
+  }
+}
+.vicon8k {
+  &:before {
+    content: $vicon8k; 
+  }
+}
+.vicon8k_plus {
+  &:before {
+    content: $vicon8k_plus; 
+  }
+}
+.vicon8mp {
+  &:before {
+    content: $vicon8mp; 
+  }
+}
+.vicon9k {
+  &:before {
+    content: $vicon9k; 
+  }
+}
+.vicon9k_plus {
+  &:before {
+    content: $vicon9k_plus; 
+  }
+}
+.vicon9mp {
+  &:before {
+    content: $vicon9mp; 
+  }
+}
+.viconaccount_tree {
+  &:before {
+    content: $viconaccount_tree; 
+  }
+}
+.viconadd_chart {
+  &:before {
+    content: $viconadd_chart; 
+  }
+}
+.viconadd_ic_call {
+  &:before {
+    content: $viconadd_ic_call; 
+  }
+}
+.viconadd_moderator {
+  &:before {
+    content: $viconadd_moderator; 
+  }
+}
+.viconall_inbox {
+  &:before {
+    content: $viconall_inbox; 
+  }
+}
+.viconapproval {
+  &:before {
+    content: $viconapproval; 
+  }
+}
+.viconassistant_direction {
+  &:before {
+    content: $viconassistant_direction; 
+  }
+}
+.viconassistant_navigation {
+  &:before {
+    content: $viconassistant_navigation; 
+  }
+}
+.viconbookmarks {
+  &:before {
+    content: $viconbookmarks; 
+  }
+}
+.viconbus_alert {
+  &:before {
+    content: $viconbus_alert; 
+  }
+}
+.viconcases {
+  &:before {
+    content: $viconcases; 
+  }
+}
+.viconcircle_notifications {
+  &:before {
+    content: $viconcircle_notifications; 
+  }
+}
+.viconclosed_caption_off {
+  &:before {
+    content: $viconclosed_caption_off; 
+  }
+}
+.viconconnected_tv {
+  &:before {
+    content: $viconconnected_tv; 
+  }
+}
+.vicondangerous {
+  &:before {
+    content: $vicondangerous; 
+  }
+}
+.vicondashboard_customize {
+  &:before {
+    content: $vicondashboard_customize; 
+  }
+}
+.vicondesktop_access_disabled {
+  &:before {
+    content: $vicondesktop_access_disabled; 
+  }
+}
+.vicondrive_file_move_outline {
+  &:before {
+    content: $vicondrive_file_move_outline; 
+  }
+}
+.vicondrive_file_rename_outline {
+  &:before {
+    content: $vicondrive_file_rename_outline; 
+  }
+}
+.vicondrive_folder_upload {
+  &:before {
+    content: $vicondrive_folder_upload; 
+  }
+}
+.viconduo {
+  &:before {
+    content: $viconduo; 
+  }
+}
+.viconexplore_off {
+  &:before {
+    content: $viconexplore_off; 
+  }
+}
+.viconfile_download_done {
+  &:before {
+    content: $viconfile_download_done; 
+  }
+}
+.viconrtt {
+  &:before {
+    content: $viconrtt; 
+  }
+}
+.vicongrid_view {
+  &:before {
+    content: $vicongrid_view; 
+  }
+}
+.viconhail {
+  &:before {
+    content: $viconhail; 
+  }
+}
+.viconhome_filled {
+  &:before {
+    content: $viconhome_filled; 
+  }
+}
+.viconimagesearch_roller {
+  &:before {
+    content: $viconimagesearch_roller; 
+  }
+}
+.viconlabel_off {
+  &:before {
+    content: $viconlabel_off; 
+  }
+}
+.viconlibrary_add_check {
+  &:before {
+    content: $viconlibrary_add_check; 
+  }
+}
+.viconlogout {
+  &:before {
+    content: $viconlogout; 
+  }
+}
+.viconmargin {
+  &:before {
+    content: $viconmargin; 
+  }
+}
+.viconmark_as_unread {
+  &:before {
+    content: $viconmark_as_unread; 
+  }
+}
+.viconmenu_open {
+  &:before {
+    content: $viconmenu_open; 
+  }
+}
+.viconmp {
+  &:before {
+    content: $viconmp; 
+  }
+}
+.viconoffline_share {
+  &:before {
+    content: $viconoffline_share; 
+  }
+}
+.viconpadding {
+  &:before {
+    content: $viconpadding; 
+  }
+}
+.viconpanorama_photosphere {
+  &:before {
+    content: $viconpanorama_photosphere; 
+  }
+}
+.viconpanorama_photosphere_select {
+  &:before {
+    content: $viconpanorama_photosphere_select; 
+  }
+}
+.viconperson_add_disabled {
+  &:before {
+    content: $viconperson_add_disabled; 
+  }
+}
+.viconphone_disabled {
+  &:before {
+    content: $viconphone_disabled; 
+  }
+}
+.viconphone_enabled {
+  &:before {
+    content: $viconphone_enabled; 
+  }
+}
+.viconpivot_table_chart {
+  &:before {
+    content: $viconpivot_table_chart; 
+  }
+}
+.viconprint_disabled {
+  &:before {
+    content: $viconprint_disabled; 
+  }
+}
+.viconrailway_alert {
+  &:before {
+    content: $viconrailway_alert; 
+  }
+}
+.viconrecommend {
+  &:before {
+    content: $viconrecommend; 
+  }
+}
+.viconremove_done {
+  &:before {
+    content: $viconremove_done; 
+  }
+}
+.viconremove_moderator {
+  &:before {
+    content: $viconremove_moderator; 
+  }
+}
+.viconrepeat_on {
+  &:before {
+    content: $viconrepeat_on; 
+  }
+}
+.viconrepeat_one_on {
+  &:before {
+    content: $viconrepeat_one_on; 
+  }
+}
+.viconreplay_circle_filled {
+  &:before {
+    content: $viconreplay_circle_filled; 
+  }
+}
+.viconreset_tv {
+  &:before {
+    content: $viconreset_tv; 
+  }
+}
+.viconsd {
+  &:before {
+    content: $viconsd; 
+  }
+}
+.viconshield {
+  &:before {
+    content: $viconshield; 
+  }
+}
+.viconshuffle_on {
+  &:before {
+    content: $viconshuffle_on; 
+  }
+}
+.viconspeed {
+  &:before {
+    content: $viconspeed; 
+  }
+}
+.viconstacked_bar_chart {
+  &:before {
+    content: $viconstacked_bar_chart; 
+  }
+}
+.viconstream {
+  &:before {
+    content: $viconstream; 
+  }
+}
+.viconswipe {
+  &:before {
+    content: $viconswipe; 
+  }
+}
+.viconswitch_account {
+  &:before {
+    content: $viconswitch_account; 
+  }
+}
+.vicontag {
+  &:before {
+    content: $vicontag; 
+  }
+}
+.viconthumb_down_off_alt {
+  &:before {
+    content: $viconthumb_down_off_alt; 
+  }
+}
+.viconthumb_up_off_alt {
+  &:before {
+    content: $viconthumb_up_off_alt; 
+  }
+}
+.vicontoggle_off {
+  &:before {
+    content: $vicontoggle_off; 
+  }
+}
+.vicontoggle_on {
+  &:before {
+    content: $vicontoggle_on; 
+  }
+}
+.vicontwo_wheeler {
+  &:before {
+    content: $vicontwo_wheeler; 
+  }
+}
+.viconupload_file {
+  &:before {
+    content: $viconupload_file; 
+  }
+}
+.viconview_in_ar {
+  &:before {
+    content: $viconview_in_ar; 
+  }
+}
+.viconwaterfall_chart {
+  &:before {
+    content: $viconwaterfall_chart; 
+  }
+}
+.viconwb_shade {
+  &:before {
+    content: $viconwb_shade; 
+  }
+}
+.viconwb_twighlight {
+  &:before {
+    content: $viconwb_twighlight; 
+  }
+}
+.viconhome_work {
+  &:before {
+    content: $viconhome_work; 
+  }
+}
+.viconschedule_send {
+  &:before {
+    content: $viconschedule_send; 
+  }
+}
+.viconbolt {
+  &:before {
+    content: $viconbolt; 
+  }
+}
+.viconsend_and_archive {
+  &:before {
+    content: $viconsend_and_archive; 
+  }
+}
+.viconworkspaces_filled {
+  &:before {
+    content: $viconworkspaces_filled; 
+  }
+}
+.viconfile_present {
+  &:before {
+    content: $viconfile_present; 
+  }
+}
+.viconworkspaces_outline {
+  &:before {
+    content: $viconworkspaces_outline; 
+  }
+}
+.viconfit_screen {
+  &:before {
+    content: $viconfit_screen; 
+  }
+}
+.viconsaved_search {
+  &:before {
+    content: $viconsaved_search; 
+  }
+}
+.viconstorefront {
+  &:before {
+    content: $viconstorefront; 
+  }
+}
+.viconamp_stories {
+  &:before {
+    content: $viconamp_stories; 
+  }
+}
+.vicondynamic_feed {
+  &:before {
+    content: $vicondynamic_feed; 
+  }
+}
+.viconeuro {
+  &:before {
+    content: $viconeuro; 
+  }
+}
+.viconheight {
+  &:before {
+    content: $viconheight; 
+  }
+}
+.viconpolicy {
+  &:before {
+    content: $viconpolicy; 
+  }
+}
+.viconsync_alt {
+  &:before {
+    content: $viconsync_alt; 
+  }
+}
+.viconmenu_book {
+  &:before {
+    content: $viconmenu_book; 
+  }
+}
+.viconemoji_flags {
+  &:before {
+    content: $viconemoji_flags; 
+  }
+}
+.viconemoji_food_beverage {
+  &:before {
+    content: $viconemoji_food_beverage; 
+  }
+}
+.viconemoji_nature {
+  &:before {
+    content: $viconemoji_nature; 
+  }
+}
+.viconemoji_people {
+  &:before {
+    content: $viconemoji_people; 
+  }
+}
+.viconemoji_symbols {
+  &:before {
+    content: $viconemoji_symbols; 
+  }
+}
+.viconemoji_transportation {
+  &:before {
+    content: $viconemoji_transportation; 
+  }
+}
+.viconpost_add {
+  &:before {
+    content: $viconpost_add; 
+  }
+}
+.viconpeople_alt {
+  &:before {
+    content: $viconpeople_alt; 
+  }
+}
+.viconemoji_emotions {
+  &:before {
+    content: $viconemoji_emotions; 
+  }
+}
+.viconemoji_events {
+  &:before {
+    content: $viconemoji_events; 
+  }
+}
+.viconemoji_objects {
+  &:before {
+    content: $viconemoji_objects; 
+  }
+}
+.viconsports_basketball {
+  &:before {
+    content: $viconsports_basketball; 
+  }
+}
+.viconsports_cricket {
+  &:before {
+    content: $viconsports_cricket; 
+  }
+}
+.viconsports_esports {
+  &:before {
+    content: $viconsports_esports; 
+  }
+}
+.viconsports_football {
+  &:before {
+    content: $viconsports_football; 
+  }
+}
+.viconsports_golf {
+  &:before {
+    content: $viconsports_golf; 
+  }
+}
+.viconsports_hockey {
+  &:before {
+    content: $viconsports_hockey; 
+  }
+}
+.viconsports_mma {
+  &:before {
+    content: $viconsports_mma; 
+  }
+}
+.viconsports_motorsports {
+  &:before {
+    content: $viconsports_motorsports; 
+  }
+}
+.viconsports_rugby {
+  &:before {
+    content: $viconsports_rugby; 
+  }
+}
+.viconsports_soccer {
+  &:before {
+    content: $viconsports_soccer; 
+  }
+}
+.viconsports {
+  &:before {
+    content: $viconsports; 
+  }
+}
+.viconsports_volleyball {
+  &:before {
+    content: $viconsports_volleyball; 
+  }
+}
+.viconsports_tennis {
+  &:before {
+    content: $viconsports_tennis; 
+  }
+}
+.viconsports_handball {
+  &:before {
+    content: $viconsports_handball; 
+  }
+}
+.viconsports_kabaddi {
+  &:before {
+    content: $viconsports_kabaddi; 
+  }
+}
+.viconeco {
+  &:before {
+    content: $viconeco; 
+  }
+}
+.viconmuseum {
+  &:before {
+    content: $viconmuseum; 
+  }
+}
+.viconflip_camera_android {
+  &:before {
+    content: $viconflip_camera_android; 
+  }
+}
+.viconflip_camera_ios {
+  &:before {
+    content: $viconflip_camera_ios; 
+  }
+}
+.viconcancel_schedule_send {
+  &:before {
+    content: $viconcancel_schedule_send; 
+  }
+}
+.viconapartment {
+  &:before {
+    content: $viconapartment; 
+  }
+}
+.viconbathtub {
+  &:before {
+    content: $viconbathtub; 
+  }
+}
+.vicondeck {
+  &:before {
+    content: $vicondeck; 
+  }
+}
+.viconfireplace {
+  &:before {
+    content: $viconfireplace; 
+  }
+}
+.viconhouse {
+  &:before {
+    content: $viconhouse; 
+  }
+}
+.viconking_bed {
+  &:before {
+    content: $viconking_bed; 
+  }
+}
+.viconnights_stay {
+  &:before {
+    content: $viconnights_stay; 
+  }
+}
+.viconoutdoor_grill {
+  &:before {
+    content: $viconoutdoor_grill; 
+  }
+}
+.viconsingle_bed {
+  &:before {
+    content: $viconsingle_bed; 
+  }
+}
+.viconsquare_foot {
+  &:before {
+    content: $viconsquare_foot; 
+  }
+}
+.vicondouble_arrow {
+  &:before {
+    content: $vicondouble_arrow; 
+  }
+}
+.viconsports_baseball {
+  &:before {
+    content: $viconsports_baseball; 
+  }
+}
+.viconattractions {
+  &:before {
+    content: $viconattractions; 
+  }
+}
+.viconbakery_dining {
+  &:before {
+    content: $viconbakery_dining; 
+  }
+}
+.viconbreakfast_dining {
+  &:before {
+    content: $viconbreakfast_dining; 
+  }
+}
+.viconcar_rental {
+  &:before {
+    content: $viconcar_rental; 
+  }
+}
+.viconcar_repair {
+  &:before {
+    content: $viconcar_repair; 
+  }
+}
+.vicondinner_dining {
+  &:before {
+    content: $vicondinner_dining; 
+  }
+}
+.vicondry_cleaning {
+  &:before {
+    content: $vicondry_cleaning; 
+  }
+}
+.viconhardware {
+  &:before {
+    content: $viconhardware; 
+  }
+}
+.viconliquor {
+  &:before {
+    content: $viconliquor; 
+  }
+}
+.viconlunch_dining {
+  &:before {
+    content: $viconlunch_dining; 
+  }
+}
+.viconnightlife {
+  &:before {
+    content: $viconnightlife; 
+  }
+}
+.viconpark {
+  &:before {
+    content: $viconpark; 
+  }
+}
+.viconramen_dining {
+  &:before {
+    content: $viconramen_dining; 
+  }
+}
+.viconcelebration {
+  &:before {
+    content: $viconcelebration; 
+  }
+}
+.vicontheater_comedy {
+  &:before {
+    content: $vicontheater_comedy; 
+  }
+}
+.viconbadge {
+  &:before {
+    content: $viconbadge; 
+  }
+}
+.viconfestival {
+  &:before {
+    content: $viconfestival; 
+  }
+}
+.viconicecream {
+  &:before {
+    content: $viconicecream; 
+  }
+}
+.viconvolunteer_activism {
+  &:before {
+    content: $viconvolunteer_activism; 
+  }
+}
+.viconcontactless {
+  &:before {
+    content: $viconcontactless; 
+  }
+}
+.vicondelivery_dining {
+  &:before {
+    content: $vicondelivery_dining; 
+  }
+}
+.viconbrunch_dining {
+  &:before {
+    content: $viconbrunch_dining; 
+  }
+}
+.vicontakeout_dining {
+  &:before {
+    content: $vicontakeout_dining; 
+  }
+}
+.viconac_unit {
+  &:before {
+    content: $viconac_unit; 
+  }
+}
+.viconairport_shuttle {
+  &:before {
+    content: $viconairport_shuttle; 
+  }
+}
+.viconall_inclusive {
+  &:before {
+    content: $viconall_inclusive; 
+  }
+}
+.viconbeach_access {
+  &:before {
+    content: $viconbeach_access; 
+  }
+}
+.viconbusiness_center {
+  &:before {
+    content: $viconbusiness_center; 
+  }
+}
+.viconcasino {
+  &:before {
+    content: $viconcasino; 
+  }
+}
+.viconchild_care {
+  &:before {
+    content: $viconchild_care; 
+  }
+}
+.viconchild_friendly {
+  &:before {
+    content: $viconchild_friendly; 
+  }
+}
+.viconfitness_center {
+  &:before {
+    content: $viconfitness_center; 
+  }
+}
+.vicongolf_course {
+  &:before {
+    content: $vicongolf_course; 
+  }
+}
+.viconhot_tub {
+  &:before {
+    content: $viconhot_tub; 
+  }
+}
+.viconkitchen {
+  &:before {
+    content: $viconkitchen; 
+  }
+}
+.viconpool {
+  &:before {
+    content: $viconpool; 
+  }
+}
+.viconroom_service {
+  &:before {
+    content: $viconroom_service; 
+  }
+}
+.viconsmoke_free {
+  &:before {
+    content: $viconsmoke_free; 
+  }
+}
+.viconsmoking_rooms {
+  &:before {
+    content: $viconsmoking_rooms; 
+  }
+}
+.viconspa {
+  &:before {
+    content: $viconspa; 
+  }
+}
+.viconno_meeting_room {
+  &:before {
+    content: $viconno_meeting_room; 
+  }
+}
+.viconmeeting_room {
+  &:before {
+    content: $viconmeeting_room; 
+  }
+}
+.vicongoat {
+  &:before {
+    content: $vicongoat; 
+  }
+}
+.vicon5g {
+  &:before {
+    content: $vicon5g; 
+  }
+}
+.viconad_units {
+  &:before {
+    content: $viconad_units; 
+  }
+}
+.viconadd_business {
+  &:before {
+    content: $viconadd_business; 
+  }
+}
+.viconadd_location_alt {
+  &:before {
+    content: $viconadd_location_alt; 
+  }
+}
+.viconadd_road {
+  &:before {
+    content: $viconadd_road; 
+  }
+}
+.viconadd_to_drive {
+  &:before {
+    content: $viconadd_to_drive; 
+  }
+}
+.viconaddchart {
+  &:before {
+    content: $viconaddchart; 
+  }
+}
+.viconadmin_panel_settings {
+  &:before {
+    content: $viconadmin_panel_settings; 
+  }
+}
+.viconagriculture {
+  &:before {
+    content: $viconagriculture; 
+  }
+}
+.viconalt_route {
+  &:before {
+    content: $viconalt_route; 
+  }
+}
+.viconanalytics {
+  &:before {
+    content: $viconanalytics; 
+  }
+}
+.viconanchor {
+  &:before {
+    content: $viconanchor; 
+  }
+}
+.viconanimation {
+  &:before {
+    content: $viconanimation; 
+  }
+}
+.viconapi {
+  &:before {
+    content: $viconapi; 
+  }
+}
+.viconapp_blocking {
+  &:before {
+    content: $viconapp_blocking; 
+  }
+}
+.viconapp_registration {
+  &:before {
+    content: $viconapp_registration; 
+  }
+}
+.viconapp_settings_alt {
+  &:before {
+    content: $viconapp_settings_alt; 
+  }
+}
+.viconarchitecture {
+  &:before {
+    content: $viconarchitecture; 
+  }
+}
+.viconarrow_circle_down {
+  &:before {
+    content: $viconarrow_circle_down; 
+  }
+}
+.viconarrow_circle_up {
+  &:before {
+    content: $viconarrow_circle_up; 
+  }
+}
+.viconarticle {
+  &:before {
+    content: $viconarticle; 
+  }
+}
+.viconattach_email {
+  &:before {
+    content: $viconattach_email; 
+  }
+}
+.viconauto_awesome {
+  &:before {
+    content: $viconauto_awesome; 
+  }
+}
+.viconauto_awesome_mosaic {
+  &:before {
+    content: $viconauto_awesome_mosaic; 
+  }
+}
+.viconauto_awesome_motion {
+  &:before {
+    content: $viconauto_awesome_motion; 
+  }
+}
+.viconauto_delete {
+  &:before {
+    content: $viconauto_delete; 
+  }
+}
+.viconauto_fix_high {
+  &:before {
+    content: $viconauto_fix_high; 
+  }
+}
+.viconauto_fix_normal {
+  &:before {
+    content: $viconauto_fix_normal; 
+  }
+}
+.viconauto_fix_off {
+  &:before {
+    content: $viconauto_fix_off; 
+  }
+}
+.viconauto_stories {
+  &:before {
+    content: $viconauto_stories; 
+  }
+}
+.viconbaby_changing_station {
+  &:before {
+    content: $viconbaby_changing_station; 
+  }
+}
+.viconbackpack {
+  &:before {
+    content: $viconbackpack; 
+  }
+}
+.viconbackup_table {
+  &:before {
+    content: $viconbackup_table; 
+  }
+}
+.viconbatch_prediction {
+  &:before {
+    content: $viconbatch_prediction; 
+  }
+}
+.viconbedtime {
+  &:before {
+    content: $viconbedtime; 
+  }
+}
+.viconbento {
+  &:before {
+    content: $viconbento; 
+  }
+}
+.viconbike_scooter {
+  &:before {
+    content: $viconbike_scooter; 
+  }
+}
+.viconbiotech {
+  &:before {
+    content: $viconbiotech; 
+  }
+}
+.viconblock_flipped {
+  &:before {
+    content: $viconblock_flipped; 
+  }
+}
+.viconbrowser_not_supported {
+  &:before {
+    content: $viconbrowser_not_supported; 
+  }
+}
+.viconbuild_circle {
+  &:before {
+    content: $viconbuild_circle; 
+  }
+}
+.viconcalculate {
+  &:before {
+    content: $viconcalculate; 
+  }
+}
+.viconcampaign {
+  &:before {
+    content: $viconcampaign; 
+  }
+}
+.viconcarpenter {
+  &:before {
+    content: $viconcarpenter; 
+  }
+}
+.viconcast_for_education {
+  &:before {
+    content: $viconcast_for_education; 
+  }
+}
+.viconcharging_station {
+  &:before {
+    content: $viconcharging_station; 
+  }
+}
+.viconcheckroom {
+  &:before {
+    content: $viconcheckroom; 
+  }
+}
+.viconcircle {
+  &:before {
+    content: $viconcircle; 
+  }
+}
+.viconcleaning_services {
+  &:before {
+    content: $viconcleaning_services; 
+  }
+}
+.viconclose_fullscreen {
+  &:before {
+    content: $viconclose_fullscreen; 
+  }
+}
+.viconclosed_caption_disabled {
+  &:before {
+    content: $viconclosed_caption_disabled; 
+  }
+}
+.viconcomment_bank {
+  &:before {
+    content: $viconcomment_bank; 
+  }
+}
+.viconconstruction {
+  &:before {
+    content: $viconconstruction; 
+  }
+}
+.viconcorporate_fare {
+  &:before {
+    content: $viconcorporate_fare; 
+  }
+}
+.viconcountertops {
+  &:before {
+    content: $viconcountertops; 
+  }
+}
+.vicondesign_services {
+  &:before {
+    content: $vicondesign_services; 
+  }
+}
+.vicondirections_off {
+  &:before {
+    content: $vicondirections_off; 
+  }
+}
+.vicondirty_lens {
+  &:before {
+    content: $vicondirty_lens; 
+  }
+}
+.vicondo_not_step {
+  &:before {
+    content: $vicondo_not_step; 
+  }
+}
+.vicondo_not_touch {
+  &:before {
+    content: $vicondo_not_touch; 
+  }
+}
+.vicondomain_verification {
+  &:before {
+    content: $vicondomain_verification; 
+  }
+}
+.vicondrive_file_move {
+  &:before {
+    content: $vicondrive_file_move; 
+  }
+}
+.vicondry {
+  &:before {
+    content: $vicondry; 
+  }
+}
+.vicondynamic_form {
+  &:before {
+    content: $vicondynamic_form; 
+  }
+}
+.viconeast {
+  &:before {
+    content: $viconeast; 
+  }
+}
+.viconedit_road {
+  &:before {
+    content: $viconedit_road; 
+  }
+}
+.viconelectric_bike {
+  &:before {
+    content: $viconelectric_bike; 
+  }
+}
+.viconelectric_car {
+  &:before {
+    content: $viconelectric_car; 
+  }
+}
+.viconelectric_moped {
+  &:before {
+    content: $viconelectric_moped; 
+  }
+}
+.viconelectric_rickshaw {
+  &:before {
+    content: $viconelectric_rickshaw; 
+  }
+}
+.viconelectric_scooter {
+  &:before {
+    content: $viconelectric_scooter; 
+  }
+}
+.viconelectrical_services {
+  &:before {
+    content: $viconelectrical_services; 
+  }
+}
+.viconelevator {
+  &:before {
+    content: $viconelevator; 
+  }
+}
+.viconengineering {
+  &:before {
+    content: $viconengineering; 
+  }
+}
+.viconescalator {
+  &:before {
+    content: $viconescalator; 
+  }
+}
+.viconescalator_warning {
+  &:before {
+    content: $viconescalator_warning; 
+  }
+}
+.viconface_retouching_natural {
+  &:before {
+    content: $viconface_retouching_natural; 
+  }
+}
+.viconfact_check {
+  &:before {
+    content: $viconfact_check; 
+  }
+}
+.viconfamily_restroom {
+  &:before {
+    content: $viconfamily_restroom; 
+  }
+}
+.viconfence {
+  &:before {
+    content: $viconfence; 
+  }
+}
+.viconfilter_alt {
+  &:before {
+    content: $viconfilter_alt; 
+  }
+}
+.viconfire_extinguisher {
+  &:before {
+    content: $viconfire_extinguisher; 
+  }
+}
+.viconflaky {
+  &:before {
+    content: $viconflaky; 
+  }
+}
+.viconfood_bank {
+  &:before {
+    content: $viconfood_bank; 
+  }
+}
+.viconforward_to_inbox {
+  &:before {
+    content: $viconforward_to_inbox; 
+  }
+}
+.viconfoundation {
+  &:before {
+    content: $viconfoundation; 
+  }
+}
+.vicongrading {
+  &:before {
+    content: $vicongrading; 
+  }
+}
+.vicongrass {
+  &:before {
+    content: $vicongrass; 
+  }
+}
+.viconhandyman {
+  &:before {
+    content: $viconhandyman; 
+  }
+}
+.viconhdr_enhanced_select {
+  &:before {
+    content: $viconhdr_enhanced_select; 
+  }
+}
+.viconhearing_disabled {
+  &:before {
+    content: $viconhearing_disabled; 
+  }
+}
+.viconhelp_center {
+  &:before {
+    content: $viconhelp_center; 
+  }
+}
+.viconhighlight_alt {
+  &:before {
+    content: $viconhighlight_alt; 
+  }
+}
+.viconhistory_edu {
+  &:before {
+    content: $viconhistory_edu; 
+  }
+}
+.viconhistory_toggle_off {
+  &:before {
+    content: $viconhistory_toggle_off; 
+  }
+}
+.viconhome_repair_service {
+  &:before {
+    content: $viconhome_repair_service; 
+  }
+}
+.viconhorizontal_rule {
+  &:before {
+    content: $viconhorizontal_rule; 
+  }
+}
+.viconhourglass_bottom {
+  &:before {
+    content: $viconhourglass_bottom; 
+  }
+}
+.viconhourglass_disabled {
+  &:before {
+    content: $viconhourglass_disabled; 
+  }
+}
+.viconhourglass_top {
+  &:before {
+    content: $viconhourglass_top; 
+  }
+}
+.viconhouse_siding {
+  &:before {
+    content: $viconhouse_siding; 
+  }
+}
+.viconhvac {
+  &:before {
+    content: $viconhvac; 
+  }
+}
+.viconimage_not_supported {
+  &:before {
+    content: $viconimage_not_supported; 
+  }
+}
+.viconinsights {
+  &:before {
+    content: $viconinsights; 
+  }
+}
+.viconintegration_instructions {
+  &:before {
+    content: $viconintegration_instructions; 
+  }
+}
+.viconios_share {
+  &:before {
+    content: $viconios_share; 
+  }
+}
+.viconlegend_toggle {
+  &:before {
+    content: $viconlegend_toggle; 
+  }
+}
+.viconlocal_fire_department {
+  &:before {
+    content: $viconlocal_fire_department; 
+  }
+}
+.viconlocal_police {
+  &:before {
+    content: $viconlocal_police; 
+  }
+}
+.viconlocation_pin {
+  &:before {
+    content: $viconlocation_pin; 
+  }
+}
+.viconlock_clock {
+  &:before {
+    content: $viconlock_clock; 
+  }
+}
+.viconlogin {
+  &:before {
+    content: $viconlogin; 
+  }
+}
+.viconmaps_ugc {
+  &:before {
+    content: $viconmaps_ugc; 
+  }
+}
+.viconmark_chat_read {
+  &:before {
+    content: $viconmark_chat_read; 
+  }
+}
+.viconmark_chat_unread {
+  &:before {
+    content: $viconmark_chat_unread; 
+  }
+}
+.viconmark_email_read {
+  &:before {
+    content: $viconmark_email_read; 
+  }
+}
+.viconmark_email_unread {
+  &:before {
+    content: $viconmark_email_unread; 
+  }
+}
+.viconmediation {
+  &:before {
+    content: $viconmediation; 
+  }
+}
+.viconmedical_services {
+  &:before {
+    content: $viconmedical_services; 
+  }
+}
+.viconmic_external_off {
+  &:before {
+    content: $viconmic_external_off; 
+  }
+}
+.viconmic_external_on {
+  &:before {
+    content: $viconmic_external_on; 
+  }
+}
+.viconmicrowave {
+  &:before {
+    content: $viconmicrowave; 
+  }
+}
+.viconmilitary_tech {
+  &:before {
+    content: $viconmilitary_tech; 
+  }
+}
+.viconmiscellaneous_services {
+  &:before {
+    content: $viconmiscellaneous_services; 
+  }
+}
+.viconmodel_training {
+  &:before {
+    content: $viconmodel_training; 
+  }
+}
+.viconmonitor {
+  &:before {
+    content: $viconmonitor; 
+  }
+}
+.viconmoped {
+  &:before {
+    content: $viconmoped; 
+  }
+}
+.viconmore_time {
+  &:before {
+    content: $viconmore_time; 
+  }
+}
+.viconmotion_photos_off {
+  &:before {
+    content: $viconmotion_photos_off; 
+  }
+}
+.viconmotion_photos_on {
+  &:before {
+    content: $viconmotion_photos_on; 
+  }
+}
+.viconmotion_photos_paused {
+  &:before {
+    content: $viconmotion_photos_paused; 
+  }
+}
+.viconmultiple_stop {
+  &:before {
+    content: $viconmultiple_stop; 
+  }
+}
+.viconnat {
+  &:before {
+    content: $viconnat; 
+  }
+}
+.viconnear_me_disabled {
+  &:before {
+    content: $viconnear_me_disabled; 
+  }
+}
+.viconnext_plan {
+  &:before {
+    content: $viconnext_plan; 
+  }
+}
+.viconnight_shelter {
+  &:before {
+    content: $viconnight_shelter; 
+  }
+}
+.viconnightlight_round {
+  &:before {
+    content: $viconnightlight_round; 
+  }
+}
+.viconno_cell {
+  &:before {
+    content: $viconno_cell; 
+  }
+}
+.viconno_drinks {
+  &:before {
+    content: $viconno_drinks; 
+  }
+}
+.viconno_flash {
+  &:before {
+    content: $viconno_flash; 
+  }
+}
+.viconno_food {
+  &:before {
+    content: $viconno_food; 
+  }
+}
+.viconno_meals {
+  &:before {
+    content: $viconno_meals; 
+  }
+}
+.viconno_photography {
+  &:before {
+    content: $viconno_photography; 
+  }
+}
+.viconno_stroller {
+  &:before {
+    content: $viconno_stroller; 
+  }
+}
+.viconno_transfer {
+  &:before {
+    content: $viconno_transfer; 
+  }
+}
+.viconnorth {
+  &:before {
+    content: $viconnorth; 
+  }
+}
+.viconnorth_east {
+  &:before {
+    content: $viconnorth_east; 
+  }
+}
+.viconnorth_west {
+  &:before {
+    content: $viconnorth_west; 
+  }
+}
+.viconnot_accessible {
+  &:before {
+    content: $viconnot_accessible; 
+  }
+}
+.viconnot_started {
+  &:before {
+    content: $viconnot_started; 
+  }
+}
+.vicononline_prediction {
+  &:before {
+    content: $vicononline_prediction; 
+  }
+}
+.viconopen_in_full {
+  &:before {
+    content: $viconopen_in_full; 
+  }
+}
+.viconoutbox {
+  &:before {
+    content: $viconoutbox; 
+  }
+}
+.viconoutgoing_mail {
+  &:before {
+    content: $viconoutgoing_mail; 
+  }
+}
+.viconoutlet {
+  &:before {
+    content: $viconoutlet; 
+  }
+}
+.viconpanorama_horizontal_select {
+  &:before {
+    content: $viconpanorama_horizontal_select; 
+  }
+}
+.viconpanorama_vertical_select {
+  &:before {
+    content: $viconpanorama_vertical_select; 
+  }
+}
+.viconpanorama_wide_angle_select {
+  &:before {
+    content: $viconpanorama_wide_angle_select; 
+  }
+}
+.viconpayments {
+  &:before {
+    content: $viconpayments; 
+  }
+}
+.viconpedal_bike {
+  &:before {
+    content: $viconpedal_bike; 
+  }
+}
+.viconpending {
+  &:before {
+    content: $viconpending; 
+  }
+}
+.viconpending_actions {
+  &:before {
+    content: $viconpending_actions; 
+  }
+}
+.viconperson_add_alt {
+  &:before {
+    content: $viconperson_add_alt; 
+  }
+}
+.viconperson_add_alt_1 {
+  &:before {
+    content: $viconperson_add_alt_1; 
+  }
+}
+.viconperson_remove {
+  &:before {
+    content: $viconperson_remove; 
+  }
+}
+.viconperson_search {
+  &:before {
+    content: $viconperson_search; 
+  }
+}
+.viconpest_control {
+  &:before {
+    content: $viconpest_control; 
+  }
+}
+.viconpest_control_rodent {
+  &:before {
+    content: $viconpest_control_rodent; 
+  }
+}
+.viconphoto_camera_back {
+  &:before {
+    content: $viconphoto_camera_back; 
+  }
+}
+.viconphoto_camera_front {
+  &:before {
+    content: $viconphoto_camera_front; 
+  }
+}
+.viconplagiarism {
+  &:before {
+    content: $viconplagiarism; 
+  }
+}
+.viconplay_disabled {
+  &:before {
+    content: $viconplay_disabled; 
+  }
+}
+.viconplumbing {
+  &:before {
+    content: $viconplumbing; 
+  }
+}
+.viconpoint_of_sale {
+  &:before {
+    content: $viconpoint_of_sale; 
+  }
+}
+.viconpreview {
+  &:before {
+    content: $viconpreview; 
+  }
+}
+.viconprivacy_tip {
+  &:before {
+    content: $viconprivacy_tip; 
+  }
+}
+.viconpsychology {
+  &:before {
+    content: $viconpsychology; 
+  }
+}
+.viconpublic_off {
+  &:before {
+    content: $viconpublic_off; 
+  }
+}
+.viconpush_pin {
+  &:before {
+    content: $viconpush_pin; 
+  }
+}
+.viconqr_code {
+  &:before {
+    content: $viconqr_code; 
+  }
+}
+.viconqr_code_scanner {
+  &:before {
+    content: $viconqr_code_scanner; 
+  }
+}
+.viconquickreply {
+  &:before {
+    content: $viconquickreply; 
+  }
+}
+.viconread_more {
+  &:before {
+    content: $viconread_more; 
+  }
+}
+.viconreceipt_long {
+  &:before {
+    content: $viconreceipt_long; 
+  }
+}
+.viconrequest_quote {
+  &:before {
+    content: $viconrequest_quote; 
+  }
+}
+.viconrice_bowl {
+  &:before {
+    content: $viconrice_bowl; 
+  }
+}
+.viconroofing {
+  &:before {
+    content: $viconroofing; 
+  }
+}
+.viconroom_preferences {
+  &:before {
+    content: $viconroom_preferences; 
+  }
+}
+.viconrule {
+  &:before {
+    content: $viconrule; 
+  }
+}
+.viconrule_folder {
+  &:before {
+    content: $viconrule_folder; 
+  }
+}
+.viconrun_circle {
+  &:before {
+    content: $viconrun_circle; 
+  }
+}
+.viconscience {
+  &:before {
+    content: $viconscience; 
+  }
+}
+.viconscreen_search_desktop {
+  &:before {
+    content: $viconscreen_search_desktop; 
+  }
+}
+.viconsearch_off {
+  &:before {
+    content: $viconsearch_off; 
+  }
+}
+.viconself_improvement {
+  &:before {
+    content: $viconself_improvement; 
+  }
+}
+.viconsensor_door {
+  &:before {
+    content: $viconsensor_door; 
+  }
+}
+.viconsensor_window {
+  &:before {
+    content: $viconsensor_window; 
+  }
+}
+.viconset_meal {
+  &:before {
+    content: $viconset_meal; 
+  }
+}
+.viconshopping_bag {
+  &:before {
+    content: $viconshopping_bag; 
+  }
+}
+.viconsignal_cellular_0_bar {
+  &:before {
+    content: $viconsignal_cellular_0_bar; 
+  }
+}
+.viconsignal_wifi_0_bar {
+  &:before {
+    content: $viconsignal_wifi_0_bar; 
+  }
+}
+.viconsmart_button {
+  &:before {
+    content: $viconsmart_button; 
+  }
+}
+.viconsnippet_folder {
+  &:before {
+    content: $viconsnippet_folder; 
+  }
+}
+.viconsoap {
+  &:before {
+    content: $viconsoap; 
+  }
+}
+.viconsource {
+  &:before {
+    content: $viconsource; 
+  }
+}
+.viconsouth {
+  &:before {
+    content: $viconsouth; 
+  }
+}
+.viconsouth_east {
+  &:before {
+    content: $viconsouth_east; 
+  }
+}
+.viconsouth_west {
+  &:before {
+    content: $viconsouth_west; 
+  }
+}
+.viconsports_bar {
+  &:before {
+    content: $viconsports_bar; 
+  }
+}
+.viconstairs {
+  &:before {
+    content: $viconstairs; 
+  }
+}
+.viconstar_outline1 {
+  &:before {
+    content: $viconstar_outline1; 
+  }
+}
+.viconstar_rate {
+  &:before {
+    content: $viconstar_rate; 
+  }
+}
+.viconsticky_note_2 {
+  &:before {
+    content: $viconsticky_note_2; 
+  }
+}
+.viconstop_circle {
+  &:before {
+    content: $viconstop_circle; 
+  }
+}
+.viconstroller {
+  &:before {
+    content: $viconstroller; 
+  }
+}
+.viconsubscript {
+  &:before {
+    content: $viconsubscript; 
+  }
+}
+.viconsubtitles_off {
+  &:before {
+    content: $viconsubtitles_off; 
+  }
+}
+.viconsuperscript {
+  &:before {
+    content: $viconsuperscript; 
+  }
+}
+.viconsupport {
+  &:before {
+    content: $viconsupport; 
+  }
+}
+.viconsupport_agent {
+  &:before {
+    content: $viconsupport_agent; 
+  }
+}
+.viconswitch_left {
+  &:before {
+    content: $viconswitch_left; 
+  }
+}
+.viconswitch_right {
+  &:before {
+    content: $viconswitch_right; 
+  }
+}
+.vicontable_rows {
+  &:before {
+    content: $vicontable_rows; 
+  }
+}
+.vicontable_view {
+  &:before {
+    content: $vicontable_view; 
+  }
+}
+.vicontapas {
+  &:before {
+    content: $vicontapas; 
+  }
+}
+.vicontaxi_alert {
+  &:before {
+    content: $vicontaxi_alert; 
+  }
+}
+.vicontext_snippet {
+  &:before {
+    content: $vicontext_snippet; 
+  }
+}
+.vicontour {
+  &:before {
+    content: $vicontour; 
+  }
+}
+.vicontty {
+  &:before {
+    content: $vicontty; 
+  }
+}
+.viconumbrella {
+  &:before {
+    content: $viconumbrella; 
+  }
+}
+.viconupgrade {
+  &:before {
+    content: $viconupgrade; 
+  }
+}
+.viconverified {
+  &:before {
+    content: $viconverified; 
+  }
+}
+.viconvideo_settings {
+  &:before {
+    content: $viconvideo_settings; 
+  }
+}
+.viconview_sidebar {
+  &:before {
+    content: $viconview_sidebar; 
+  }
+}
+.viconwash {
+  &:before {
+    content: $viconwash; 
+  }
+}
+.viconwater_damage {
+  &:before {
+    content: $viconwater_damage; 
+  }
+}
+.viconwest {
+  &:before {
+    content: $viconwest; 
+  }
+}
+.viconwheelchair_pickup {
+  &:before {
+    content: $viconwheelchair_pickup; 
+  }
+}
+.viconwifi_calling {
+  &:before {
+    content: $viconwifi_calling; 
+  }
+}
+.viconwifi_protected_setup {
+  &:before {
+    content: $viconwifi_protected_setup; 
+  }
+}
+.viconwine_bar {
+  &:before {
+    content: $viconwine_bar; 
+  }
+}
+.viconwrong_location {
+  &:before {
+    content: $viconwrong_location; 
+  }
+}
+.viconwysiwyg {
+  &:before {
+    content: $viconwysiwyg; 
+  }
+}
+.viconleaderboard {
+  &:before {
+    content: $viconleaderboard; 
+  }
+}
+.vicon6_ft_apart {
+  &:before {
+    content: $vicon6_ft_apart; 
+  }
+}
+.viconbook_online {
+  &:before {
+    content: $viconbook_online; 
+  }
+}
+.viconclean_hands {
+  &:before {
+    content: $viconclean_hands; 
+  }
+}
+.viconconnect_without_contact {
+  &:before {
+    content: $viconconnect_without_contact; 
+  }
+}
+.viconcoronavirus {
+  &:before {
+    content: $viconcoronavirus; 
+  }
+}
+.viconelderly {
+  &:before {
+    content: $viconelderly; 
+  }
+}
+.viconfollow_the_signs {
+  &:before {
+    content: $viconfollow_the_signs; 
+  }
+}
+.viconleave_bags_at_home {
+  &:before {
+    content: $viconleave_bags_at_home; 
+  }
+}
+.viconmasks {
+  &:before {
+    content: $viconmasks; 
+  }
+}
+.viconreduce_capacity {
+  &:before {
+    content: $viconreduce_capacity; 
+  }
+}
+.viconsanitizer {
+  &:before {
+    content: $viconsanitizer; 
+  }
+}
+.viconsend_to_mobile {
+  &:before {
+    content: $viconsend_to_mobile; 
+  }
+}
+.viconsick {
+  &:before {
+    content: $viconsick; 
+  }
+}
+.viconadd_task {
+  &:before {
+    content: $viconadd_task; 
+  }
+}
+.viconcontact_page {
+  &:before {
+    content: $viconcontact_page; 
+  }
+}
+.vicondisabled_by_default {
+  &:before {
+    content: $vicondisabled_by_default; 
+  }
+}
+.viconfacebook {
+  &:before {
+    content: $viconfacebook; 
+  }
+}
+.vicongroups {
+  &:before {
+    content: $vicongroups; 
+  }
+}
+.viconluggage {
+  &:before {
+    content: $viconluggage; 
+  }
+}
+.viconno_backpack {
+  &:before {
+    content: $viconno_backpack; 
+  }
+}
+.viconno_luggage {
+  &:before {
+    content: $viconno_luggage; 
+  }
+}
+.viconoutbond {
+  &:before {
+    content: $viconoutbond; 
+  }
+}
+.viconpublished_with_changes {
+  &:before {
+    content: $viconpublished_with_changes; 
+  }
+}
+.viconrequest_page {
+  &:before {
+    content: $viconrequest_page; 
+  }
+}
+.viconstacked_line_chart {
+  &:before {
+    content: $viconstacked_line_chart; 
+  }
+}
+.viconunpublished {
+  &:before {
+    content: $viconunpublished; 
+  }
+}
+.viconalign_horizontal_center {
+  &:before {
+    content: $viconalign_horizontal_center; 
+  }
+}
+.viconalign_horizontal_left {
+  &:before {
+    content: $viconalign_horizontal_left; 
+  }
+}
+.viconalign_horizontal_right {
+  &:before {
+    content: $viconalign_horizontal_right; 
+  }
+}
+.viconalign_vertical_bottom {
+  &:before {
+    content: $viconalign_vertical_bottom; 
+  }
+}
+.viconalign_vertical_center {
+  &:before {
+    content: $viconalign_vertical_center; 
+  }
+}
+.viconalign_vertical_top {
+  &:before {
+    content: $viconalign_vertical_top; 
+  }
+}
+.viconhorizontal_distribute {
+  &:before {
+    content: $viconhorizontal_distribute; 
+  }
+}
+.viconqr_code_2 {
+  &:before {
+    content: $viconqr_code_2; 
+  }
+}
+.viconupdate_disabled {
+  &:before {
+    content: $viconupdate_disabled; 
+  }
+}
+.viconvertical_distribute {
+  &:before {
+    content: $viconvertical_distribute; 
+  }
+}
+

@@ -1,0 +1,73 @@
+<section class="content" style="padding-bottom: -100px;">
+    <div class="content" style="padding: 5px; padding-top: 20px;">
+        <div class="card">
+            <div class="card-header card-image">
+                รายการรับจากจัดส่ง
+            </div>
+            <div class="card-body">
+                <aside class="mb-3" id="info-block">
+                    <section class="file-marker">
+                        <div>
+                            <div class="box-title">
+                                &nbsp;&nbsp;<a style="font-size:14px">ตรวจสอบ</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                                <div class="row mb-3">
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            อ้างอิงหมายเลขจัดส่ง :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" id="txtRemarkNo" name="txtRemarkNo" class="form-control"
+                                                    style="width: 70%;" placeholder="อ้างอิงหมายเลขจัดส่ง">&nbsp;&nbsp;
+                                                <button type="button" name="btnCancel" class="btn btn-outline-amway btn-sm"
+                                                    ><i class="vp-clipboard-check-solid"></i> ตรวจสอบ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            สาขาที่ส่ง :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" id="txtShipmentBranch" name="txtShipmentBranch" class="form-control"
+                                                    style="width: 100%;" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                            </div>
+                       </div>   
+                    </section>
+                </aside>
+                <aside id="info-block">
+                    <section class="file-marker">
+                        <div>
+                            <div class="box-title">
+                                &nbsp;&nbsp;<a style="font-size:14px">รายการ</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="box-contents" style="text-align: left;padding: 10px;">
+                                <div class="row" style="padding-left: 5px;">
+                                    <div class="card shadow-none">
+                                        <table datatable [dtOptions]="dtOptions"
+                                            class="row-border hover table-bordered table-striped display nowrap compact">
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>   
+                    </section>
+                </aside>
+                
+                <hr>
+                <div class="row bm-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnSave" class="btn btn-outline-amway btn-sm" (click)="onSave()"><i
+                                class="vp-check-solid"></i>&nbsp;&nbsp; ยีนยันรับสินค้า&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-sm"
+                            (click)="onCancel()"><i class="vp-times-solid"></i> ปิด</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

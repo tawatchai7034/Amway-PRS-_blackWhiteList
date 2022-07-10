@@ -1,0 +1,107 @@
+<section class="content" style="padding-bottom: -100px;">
+    <div class="content" style="padding: 5px;">
+        <div class="card" style="margin-left: 5px;margin-right:5px;margin-top: 10px;">
+            <ul class="nav nav-pills flex-column" data-toggle="collapse" data-target="#demo">
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link card-image-6" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="d-flex justify-content-between">
+                            <div class="text-gray" style="font-size:20px">
+                                BOM
+                            </div>
+                            <div class="text-primary">
+                                Search
+                                <i class="right vp-angle-down-solid" style="color:#0070c0"></i>
+                            </div>
+                        </div>
+                    </a>
+                    
+                  
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="card-body">
+                                <div class="row mb-3"> 
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                           SKU :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" id="txtSKU" name="txtSKU" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                           Child SKU :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" id="txtChildSKU" name="txtChildSKU" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Description :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" id="txtDescription" name="txtDescription" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Status :&nbsp;
+                                            <div class="input-group-append ">
+                                                <select name="type" id="type" class="form-control">
+                                                    <option value="">All</option>
+                                                    <option value="Y">Active</option>
+                                                    <option value="N">Inactive</option>
+                                                    <option value="D">Deleted</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-0 text-center">
+                                    <div class="col-lg">
+                                        <button type="button" name="btnSearch" class="btn btn-outline-primary btn-xs"><i
+                                                class="vp-search-solid"></i> Search</button>
+                                    </div>
+                                </div>
+                          </div>
+                        </div>
+                   
+                </li>
+            </ul>
+        </div>
+        <div class="card" style="padding: 5px;">
+            <div class="row" style="padding: 10px;">
+                <button type="button" class="btn btn-outline-success btn-xs" title="เพิ่ม" (click)="onNew()"><i class="vp-plus-solid"></i>New
+                </button>
+            </div>
+            <table datatable
+            [dtOptions]="dtOptions" class=" row-border hover table-bordered table-striped display nowrap compact" >
+            <tbody>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning btn-xs" title="แก้ไข" (click)="onEdit()"><i
+                                class="vp-edit-solid"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-danger btn-xs" title="ลบ" (click)="onDelete()"><i
+                                class="vp-trash-alt"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-info btn-xs" title="ดู" (click)="onView()"><i
+                                class="vp-eye"></i>
+                        </button>
+                    </td>
+                    <td>100188</td>
+                    <td>100186</td>
+                    <td>ESPRING REPLACEMENT PART</td>
+                    <td>1</td>
+                    <td>15-06-2022</td>
+                    <td>15-06-2022</td>
+                   <td>Active</td>                  
+                </tr>
+            </tbody>
+        </table> 
+        </div>
+    </div>
+</section>
+

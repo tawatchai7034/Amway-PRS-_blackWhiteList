@@ -1,0 +1,218 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<section class="content">
+    <!--<div style="padding-left: 10px;padding-top:5px">New Repair Order</div>  -->
+    <div class="content" style="padding: 5px;">
+        <div class="card" style="margin-left: 5px;margin-right:5px;margin-top: 10px;">
+            <div class="card-header card-image-5">
+                <div class="row">
+                    <div class="col text-left">เปิดใบรับซ่อม (Durable)</div>
+                    <!--<div class="col text-right"><i class="nav-icon vp-home-solid" style="font-size: 20px;"></i></div>-->
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-0">
+                <div class="col text-right">SKU :&nbsp;</div>
+                <div class="col text-left">
+                    <div class="input-group-append ">
+                        <select name="branch" id="branch" class="form-control">
+                            <option value="a">เครื่องกรองน้ำอีสปริง</option>
+                            <option value="b">เครื่องกรองอากาศ</option>
+                            <option value="c">เครื่องดูดฝุ่น</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col text-right">Serial Number :&nbsp;</div>
+                <div class="col text-left">
+                    <div class="input-group-append">
+                        <input type="text" class="form-control">
+                     </div>
+                </div>
+                
+                <div class="col text-right">
+                    <button type="button" name="btnSearch" class="btn btn-outline-primary btn-xs"><i
+                        class="vp-search-solid"></i> ตรวจสอบ</button>
+                </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="padding: 5px;">
+            <div class="col-5">
+                <div class="card" style="height: 250px;">
+                    <div class="card-header card-image">
+                        <div class="row">
+                            <div class="col text-left">ลูกค้าผู้ใช้สินค้า</div>
+                            <div class="col text-right"></div>
+                        </div>
+                    </div>
+                   <div class="card-body">
+                    <aside id="info-block">
+                        <section class="file-marker">
+                            <div>
+                                <div class="box-title">
+                                    &nbsp;&nbsp;<a style="font-size:14px">นักธุรกิจแอมเวย์ผู้ซื้อเครื่อง</a>&nbsp;&nbsp;
+                                </div>
+                                <div class="box-contents" style="text-align: left;padding: 10px;">
+                                    <div class="row mb-1">
+                                        <div class="col-4 text-right"> รหัสนักธุรกิจ :</div>
+                                        <div class="col">2711647</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 text-right"> ชื่อนักธุรกิจ :</div>
+                                        <div class="col">คุณนักธุรกิจทดสอบระบบ</div>
+                                    </div>
+                                </div>
+                           </div>   
+                        </section>
+                    </aside>
+                    <div>&nbsp;</div>
+                    <aside id="info-block">
+                        <section class="file-marker">
+                            <div>
+                                <div class="box-title">
+                                    &nbsp;&nbsp;<a style="font-size:14px">ชื่อลูกค้าผู้ใช้สินค้า</a>&nbsp;&nbsp;
+                                </div>
+                                <div class="box-contents" style="text-align: left;padding: 10px;">
+                                    <div class="row mb-1">
+                                        <div class="col-4 text-right"> รหัสลูกค้า :</div>
+                                        <div class="col">01234567</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 text-right"> ชื่อลูกค้า :</div>
+                                        <div class="col">คุณทดสอบ</div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </section>
+                    </aside>
+                   </div>
+                </div>
+            </div>
+            <!--สินค้า-->
+            <div class="col-7">
+                <div class="card" style="height: 250px;">
+                    <div class="card-header card-image">
+                        <div class="row">
+                            <div class="col text-left">สินค้า</div>
+                            <div class="col text-right"></div>
+                        </div>
+                    </div>
+                   <div class="card-body">
+                    <aside id="info-block">
+                        <section class="file-marker">
+                            <div>
+                                <div class="box-title">
+                                    &nbsp;&nbsp;<a style="font-size:14px">1</a>&nbsp;&nbsp;
+                                </div>
+                                <div class="box-contents" style="text-align: left;padding: 10px;">
+                                    <div class="row mb-1">
+                                        <div class="col-4 text-right"> SKU :</div>
+                                        <div class="col">100188</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 text-right"> ประเภทสินค้า :</div>
+                                        <div class="col">เครื่องกรองน้ำอีสปริง</div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </section>
+                    </aside>
+                    <p></p>
+                       <div class="row">
+                           <div class="col-7">
+                            <aside id="info-block">
+                                <section class="file-marker">
+                                    <div>
+                                        <div class="box-title">
+                                            &nbsp;&nbsp;<a style="font-size:14px">2</a>&nbsp;&nbsp;
+                                        </div>
+                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                            <div class="row mb-1">
+                                                <div class="col-7 text-right"> วันซื้อสินค้า :</div>
+                                                <div class="col">13/02/2018</div>
+                                            </div>
+                                            <div class="row mb-1">
+                                                <div class="col-7 text-right"> วันเริ่มรับประกัน :</div>
+                                                <div class="col">13/02/2018</div>
+                                            </div>
+                                            <div class="row mb-1">
+                                                <div class="col-7 text-right"> วันหมดอายุรับประกัน :</div>
+                                                <div class="col">13/02/2020</div>
+                                            </div>                                      
+                                            <div class="row">
+                                                <div class="col-7 text-right"> สถานะการประกัน :</div>
+                                                <div class="col" style="color:red">นอกการรับประกัน</div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </section>
+                            </aside>
+                           </div>
+                           <div class="col-5">
+                            <aside id="info-block">
+                                <section class="file-marker">
+                                    <div>
+                                        <div class="box-title">
+                                            &nbsp;&nbsp;<a style="font-size:14px">3</a>&nbsp;&nbsp;
+                                        </div>
+                                    </div>
+                                    <p></p>
+                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                            <div class="row mb-3">
+                                                <div class="col-6 text-right"> บริษัทผู้ผลิต :</div>
+                                                <div class="col">Amway</div>
+                                            </div>
+                                            <div class="row mb-0">
+                                                <div class="col text-center">
+                                                   <a href="javascript: void(0);"><i class="vp-eye"></i>&nbsp;ดูประวัติการซ่อม</a></div>
+                                            </div>
+                                           
+                                        </div>    
+                                    <p></p>
+                                </section>
+                            </aside>
+                           </div>
+                       </div>
+                       <p></p>
+                       
+                   </div>
+                </div>
+            </div>
+        </div>  
+        <div class="card" style="margin-left: 5px;margin-right:5px">
+            <div class="card-header card-image">รับประกันการซ่อม รายการที่ยังเหลือระยะเวลา ดังนี้</div>
+            <div class="card-body">
+                <table datatable
+            [dtOptions]="dtOptions" class="row-border hover table-bordered table-striped display nowrap compact " style="width:100%;">
+                  <tbody>
+                    <tr>                       
+                      <td>1</td>
+                      <td>100186</td>
+                      <td>ESPRING REPLACEMENT PART</td>
+                      <td>123456789AAAA</td> 
+                      <td>01/06/2022</td>
+                      <td>30/06/2022</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>100187</td>
+                      <td>ESPRING PREFILTER</td>
+                      <td>4455667788AAAA</td>
+                      <td>01/06/2022</td>
+                      <td>30/06/2022</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class="card-footer">
+                <div class="col text-center">
+                    <button type="button" name="btnSearch" class="btn btn-outline-amway btn-sm" (click)="confirmReceive()"><i
+                        class="vp-check-solid"></i> ยืนยันการดำเนินรายการถัดไป</button>
+                </div>
+            </div>
+        </div>  
+       
+    </div>
+</section>
+</html> 

@@ -1,0 +1,246 @@
+<div class="container-fluid" style="padding-top: 10px;padding-bottom: 10px;">
+    <div class="card" style="margin-left: 5px;margin-right:5px;margin-top: 10px;">
+      <div class="card-header card-image">
+        <div class="row">
+          <div class="col text-left">เปิดใบรับซ่อม (Shopper & Premium)</div>
+          <!--<div class="col text-right"><i class="nav-icon vp-home-solid" style="font-size: 20px;"></i></div>-->
+        </div>
+      </div>
+      <!------------------------------------------------------------------------------------>
+      <div class="card-body">
+        <mat-stepper>
+          <!--Step 1-->
+          <mat-step label="ข้อมูลผู้ส่งซ่อม" state="one">
+             <div class="card text-center" style="margin-top: 5px;">
+            <div class="row mb-2" style="text-align: left; padding-top: 10px;">
+              <div class="col-3 text-right">ประเภทผู้ส่งซ่อม :&nbsp;</div>
+              <div class="col text-left">
+                <div class="input-group-append">
+                  <p class="text-center wrapper"><input type="radio" name="rdoType" checked>&nbsp;นักธุรกิจแอมเวย์ 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rdoType">&nbsp;อื่นๆ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2" style="text-align: left;">
+              <div class="col-3 text-right">หมายเลขอ้างอิงผู้ส่งซ่อม :&nbsp;</div>
+              <div class="col text-left">
+                <div class="input-group-append">
+                  <input type="text" class="form-control" style="width: 30%;">
+                </div>
+              </div>
+            </div>           
+            <div class="row mb-2" style="text-align: left;">
+              <div class="col-3 text-right">ชื่อผู้ส่งซ่อม :&nbsp;</div>
+              <div class="col text-left">
+                <div class="input-group-append">
+                  <input type="text" class="form-control" style="width: 30%;" value="ทดสอบระบบ">
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2" style="text-align: left;">
+              <div class="col-3 text-right">เบอร์โทรศัพท์(มือถือ) :&nbsp;</div>
+              <div class="col text-left">
+                <div class="input-group-append">
+                  <input type="text" class="form-control" style="width: 30%;" placeholder="08xxxxxxxx">
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2" style="text-align: left;">
+              <div class="col-3 text-right">เบอร์โทรศัพท์(บ้าน) :&nbsp;</div>
+              <div class="col text-left">
+                <div class="input-group-append">
+                  <input type="text" class="form-control" style="width: 30%;">
+                  &nbsp; หมายเลขต่อ &nbsp;<input type="text" class="form-control" style="width: 10%;">
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2" style="text-align: left;">
+              <div class="col-3 text-right">E-mail :&nbsp;</div>
+              <div class="col text-left">
+                <div class="input-group-append">
+                  <input type="text" class="form-control" style="width: 30%;" placeholder="test@gmail.com">
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row" style="margin-top: 20px;">
+              <div class="col text-right">
+                <button mat-button matStepperNext class="btn btn-xs btn-info">ถัดไป&nbsp;
+                  <i class="vp-angle-double-right-solid"></i>
+                </button>
+              </div>
+            </div>
+          </mat-step>
+          <!------------------------------------------------------------------------------------>
+          <!--Step 2-->
+          <mat-step label="อาการเสีย" state="two">
+            <div class="card text-left" style="margin-top: 5px;">
+              <div class="card-body" style="height: 300px;overflow: auto;">
+                <div class="row mb-2">
+                  <div class="col-lg">
+                    <div class="form-group">
+                      หมายเลขโมเดล (ถ้ามี) :&nbsp;
+                      <div class="input-group-append ">
+                        <input type="text" name="txtModelNo" class="form-control" style="width: 80%;" value="" placeholder="Model No.">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg">
+                    <div class="form-group">
+                      หมายเลขเครื่อง (ถ้ามี) :&nbsp;
+                      <div class="input-group-append ">
+                        <input type="text" name="txtSerialNo" class="form-control" style="width: 80%;" value="" placeholder="Serial No.">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-lg">
+                    <div class="form-group">
+                      รายละเอียดอาการเสีย :&nbsp;
+                      <div class="input-group-append ">
+                        <textarea id="txtDescription" name="txtDescription" rows="7" cols="50" class="form-control"
+                          style="resize:none"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+              <div class="col">
+                <button mat-button matStepperPrevious class="btn btn-xs btn-dark"><i
+                    class="vp-angle-double-left-solid"></i>&nbsp;ย้อนกลับ</button>&nbsp;
+              </div>
+              <div class="col text-right">
+                <button mat-button matStepperNext class="btn btn-xs btn-info">ถัดไป&nbsp;
+                  <i class="vp-angle-double-right-solid"></i>
+                </button>
+              </div>
+            </div>
+          </mat-step>
+          <!------------------------------------------------------------------------------------>
+          <!--Step 3-->
+          <mat-step label="รายการรับมอบจากผู้ส่งซ่อม" state="three">
+            <div class="card text-left" style="margin-top: 5px;">
+              <div class="card-body" style="height: 300px;overflow: auto;">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="form-group">
+                            รายละเอียดรับมอบจากผู้ส่งซ่อม :&nbsp;
+                            <div class="input-group-append ">
+                                <textarea id="txtReceiveItemDescription" name="txtReceiveItemDescription" rows="7" cols="50" class="form-control" style="resize:none"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>              
+            </div>
+            <div class="row" style="margin-top: 20px;">
+              <div class="col">
+                <button mat-button matStepperPrevious class="btn btn-xs btn-dark"><i
+                    class="vp-angle-double-left-solid"></i>&nbsp;ย้อนกลับ</button>&nbsp;
+              </div>
+              <div class="col text-right">
+                <button mat-button matStepperNext class="btn btn-xs btn-info">ถัดไป&nbsp;
+                  <i class="vp-angle-double-right-solid"></i>
+                </button>
+              </div>
+            </div>
+          </mat-step>
+          
+          <!------------------------------------------------------------------------------------>
+          <!--Step 4-->
+          <mat-step label="ข้อมูลนัดรับ">
+            <div class="card" style="margin-top: 10px;">
+              <div class="card-body">
+                <div class="row mb-2" style="text-align: left;">
+                  <div class="col-3 text-right">ช่องทางสะดวกในการติดต่อ :&nbsp;</div>
+                  <div class="col text-left">
+                    <div class="input-group-append">
+                      <p class="text-center wrapper"><input type="radio" name="rdoType" checked>&nbsp;SMS
+                        &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoType">&nbsp;E-mail
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-2" style="text-align: left;">
+                  <div class="col-3 text-right">เลือกศูนย์เพื่อส่งให้ Vendor :&nbsp;</div>
+                  <div class="col-3 text-left">
+                    <div class="form-group"> 
+                       <div class="input-group-append ">
+                           <select name="staus" id="staus" class="form-control">
+                              <option value="saab">81B3 : Reserve Logistic Supply</option>                           
+                           </select>
+                       </div>
+                   </div>
+                  </div>               
+                </div>
+
+                <div class="row mb-2" style="text-align: left;">
+                  <div class="col-3 text-right">ลูกค้าต้องการรับสินค้าที่ไหน :&nbsp;</div>
+                  <div class="col-3 text-left">
+                    <div class="form-group"> 
+                       <div class="input-group-append ">
+                           <select name="staus" id="staus" class="form-control">
+                            <option value="saab">01HQ : สำนักงานใหญ่</option>
+                            <option value="mercedes">02HY : หาดใหญ่</option>
+                            <option value="audi">03TB : ธนบุรี</option>
+                             </select>
+                       </div>
+                   </div>
+                  </div>               
+                </div>
+                <div class="row mb-2" style="text-align: left;">
+                  <div class="col-3 text-right">วันที่นัดรับ :&nbsp;</div>
+                  <div class="col-3 text-left">
+                    <div class="form-group">
+                        <div class="input-group-append">
+                            <input id="date_to" name="input-name" type="text" placeholder="DD-MM-YYYY HH:mm" class="form-control" 
+                                #ds="bsDatepicker" bsDatepicker [bsValue]="bsValue" 
+                                [bsConfig]="{withTimepicker: true, isAnimated: true, dateInputFormat: 'DD-MM-YYYY HH:mm' ,containerClass:'theme-amway-blue',adaptivePosition: true  }"
+                                style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                            <button type="button" class="btn btn-xs btn-outline-dark" mat-raised-button (click)="ds.toggle()"
+                                [attr.aria-expanded]="ds.isOpen" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                    class="vp-calendar text-black" style="font-size: 20px;"></i></button>
+                        </div>
+                    </div>                   
+                  </div>
+                </div>
+                <div class="row mb-2" style="text-align: left;">
+                  <div class="col-3 text-right">หมายเหตุ :&nbsp;</div>
+                  <div class="col-3 text-left">
+                    <div class="input-group-append ">
+                   <input type="text" class="form-control">
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row" style="margin-top: 20px;">
+                  <div class="col text-right">
+                    <button class="btn btn-xs btn-outline-warning"><i
+                        class="vp-times-solid"></i>&nbsp;ยกเลิกการออกใบรับซ่อม</button>&nbsp;
+                  </div>
+                  <div class="col text-left">
+                    <button class="btn btn-xs btn-outline-success" id="btnConfirm" name="btnConfirm" (click)="onConfirm()"> 
+                      <i class="vp-check-solid"></i>
+                      &nbsp;
+                      ยืนยันการดำเนินรายการถัดไป
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div style="margin-top: 20px;">
+              <button mat-button matStepperPrevious class="btn btn-xs btn-dark"><i
+                  class="vp-angle-double-left-solid"></i>&nbsp;ย้อนกลับ</button>&nbsp;
+            </div>
+          </mat-step>
+        </mat-stepper>
+      </div>
+    </div>
+    </div>

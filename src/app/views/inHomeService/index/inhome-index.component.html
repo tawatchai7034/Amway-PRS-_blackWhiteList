@@ -1,0 +1,373 @@
+<!-- 
+<div class="content" style="padding: 5px;padding-bottom: -100px;">
+    <nav class="mt-2">
+        <form autocomplete="off">
+            <div class="card">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link card-image-6" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="d-flex justify-content-between">
+                                <div class="text-gray" style="font-size:20px">
+                                    In-Home Service
+                                </div>
+                                <div class="text-primary">
+                                    Search
+                                    <i class="right vp-angle-down-solid" style="color:#0070c0"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Start Date :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input id="orderDate" name="input-name" type="text"
+                                                        placeholder="DD-MM-YYYY" class="form-control" #dc="bsDatepicker"
+                                                        bsDatepicker [bsValue]="date"
+                                                        [bsConfig]="{isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-dark-blue'}"
+                                                        style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                                    <button type="button" class="btn btn-xs btn-outline-dark"
+                                                        mat-raised-button (click)="dc.toggle()"
+                                                        [attr.aria-expanded]="dc.isOpen"
+                                                        style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                                            class="vp-calendar text-black"
+                                                            style="font-size: 20px;"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            End Date :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input id="orderDate" name="input-name" type="text"
+                                                        placeholder="DD-MM-YYYY" class="form-control" #dw="bsDatepicker"
+                                                        bsDatepicker [bsValue]="date"
+                                                        [bsConfig]="{isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-dark-blue'}"
+                                                        style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                                    <button type="button" class="btn btn-xs btn-outline-dark"
+                                                        mat-raised-button (click)="dw.toggle()"
+                                                        [attr.aria-expanded]="dw.isOpen"
+                                                        style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                                            class="vp-calendar text-black"
+                                                            style="font-size: 20px;"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Serial No. :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="serialNo" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            SKU :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="SKU" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            รหัสผู้แจ้ง :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="txtname" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            ชื่อผู้แจ้ง :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="txtname" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Status :&nbsp;
+                                            <div class="input-group-append ">
+                                                <select name="Status" id="Status" class="form-control">
+                                                    <option value="">ไม่ระบุ</option>
+                                                    <option value="Y">status 1</option>
+                                                    <option value="N">status 2</option>
+                                                    <option value="D">status 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="row mb-0 text-center">
+                                    <div class="col-lg">
+                                        <button type="button" name="btnSearch" class="btn btn-outline-primary btn-xs"><i
+                                                class="vp-search-solid"></i> Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </nav>
+    <div class="card" style="padding: 5px;">
+        <div class="row" style="padding: 10px;">
+            <button type="button" class="btn btn-outline-success btn-xs" title="เพิ่ม" (click)="onNew()"><i
+                    class="vp-plus-solid"></i>New
+            </button>
+        </div>
+        <table datatable [dtOptions]="dtOptions"
+            class="row-border hover table-bordered table-striped display nowrap compact">
+            <tbody>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning btn-xs" title="แก้ไข" (click)="onEdit()"><i
+                                class="vp-edit-solid"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-danger btn-xs" title="ลบ" (click)="onDelete()"><i
+                                class="vp-trash-alt"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-info btn-xs" title="ดู" (click)="onView()"><i
+                                class="vp-eye"></i>
+                        </button>
+                        <br><br>
+                        <button type="button" class="btn btn-outline-success btn-xs" title="บริการ" (click)="onService()"><i
+                                class="vp-wrench-solid"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-primary btn-xs" title="สำรวจ" (click)="onSurvey()"><i
+                                class="vp-box-open-solid"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-dark btn-xs" title="ยกเลิก" (click)="onCancel()"><i
+                            class="vp-ban-solid"></i>
+                    </button>
+                    </td>
+                    <td>13-07-2021 18.38</td>
+                    <td>เปิดใบแจ้งซ่อม</td>
+                    <td>13-07-2021 00.00</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>100188</td>
+                    <td>6662237</td>
+                    <td>คุณพัชนี เต็มนา</td>
+                    <td>0819055984</td>
+                    <td>6662237</td>
+                    <td>คุณพัชนี เต็มนา</td>
+                    <td>0819055984</td>
+                    <td>ทินกร มุ่งแห่งกลาง</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> -->
+
+<section class="content">
+    <!--<div style="padding-left: 10px;padding-top:5px">New Repair Order</div>  -->
+    <div class="content" style="padding: 0px;">
+        <div class="card" style="margin-left: 5px;margin-right:5px;margin-top: 10px;">
+            <ul class="nav nav-pills flex-column" data-toggle="collapse" data-target="#demo">
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link card-image-6" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="d-flex justify-content-between">
+                            <div class="text-gray" style="font-size:20px">
+                                In-Home Service
+                            </div>
+                            <div class="text-primary">
+                                Search
+                                <i class="right vp-angle-down-solid" style="color:#0070c0"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="navbarToggleExternalContent">
+
+                        <div class="card-body">
+
+                            <div class="row mb-3">
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Start Date :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input id="orderDate" name="input-name" type="text"
+                                                    placeholder="DD-MM-YYYY" class="form-control" #dc="bsDatepicker"
+                                                    bsDatepicker [bsValue]="date"
+                                                    [bsConfig]="{isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-dark-blue'}"
+                                                    style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                                <button type="button" class="btn btn-xs btn-outline-dark"
+                                                    mat-raised-button (click)="dc.toggle()"
+                                                    [attr.aria-expanded]="dc.isOpen"
+                                                    style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                                        class="vp-calendar text-black"
+                                                        style="font-size: 20px;"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        End Date :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input id="orderDate" name="input-name" type="text"
+                                                    placeholder="DD-MM-YYYY" class="form-control" #dw="bsDatepicker"
+                                                    bsDatepicker [bsValue]="date"
+                                                    [bsConfig]="{isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-dark-blue'}"
+                                                    style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                                <button type="button" class="btn btn-xs btn-outline-dark"
+                                                    mat-raised-button (click)="dw.toggle()"
+                                                    [attr.aria-expanded]="dw.isOpen"
+                                                    style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                                        class="vp-calendar text-black"
+                                                        style="font-size: 20px;"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Serial No. :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="serialNo" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        SKU :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="SKU" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        รหัสผู้แจ้ง :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="txtname" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        ชื่อผู้แจ้ง :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="txtname" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Status :&nbsp;
+                                        <div class="input-group-append ">
+                                            <select name="Status" id="Status" class="form-control">
+                                                <option value="">ไม่ระบุ</option>
+                                                <option value="Y">status 1</option>
+                                                <option value="N">status 2</option>
+                                                <option value="D">status 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row mb-0 text-center">
+                                <div class="col">
+                                    <button type="button" name="btnSearch" class="btn btn-outline-primary btn-xs"><i
+                                            class="vp-search-solid"></i> Search</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+        
+        <div class="card" style="margin-left: 5px;margin-right: 5px;">
+            <div class="row" style="padding: 15px;">
+                <button type="button" class="btn btn-outline-success btn-xs" title="เพิ่ม" (click)="onNew()"><i
+                    class="vp-plus-solid"></i>New
+            </button>
+            </div>
+            <div class="row" style="margin-left: 5px;margin-right:5px">
+                <div class="card shadow-none">
+                    <table datatable [dtOptions]="dtOptions"
+                    class="row-border hover table-bordered table-striped display nowrap compact">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-outline-warning btn-xs" title="แก้ไข" (click)="onEdit()"><i
+                                        class="vp-edit-solid"></i>
+                                </button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-danger btn-xs" title="ลบ" (click)="onDelete()"><i
+                                        class="vp-trash-alt"></i>
+                                </button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-info btn-xs" title="ดู" (click)="onView()"><i
+                                        class="vp-eye"></i>
+                                </button>
+                                <br><br>
+                                <button type="button" class="btn btn-outline-success btn-xs" title="บริการ" (click)="onService()"><i
+                                        class="vp-wrench-solid"></i>
+                                </button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-primary btn-xs" title="สำรวจ" (click)="onSurvey()"><i
+                                        class="vp-box-open-solid"></i>
+                                </button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-dark btn-xs" title="ยกเลิก" (click)="onCancel()"><i
+                                    class="vp-ban-solid"></i>
+                            </button>
+                            </td>
+                            <td>13-07-2021 18.38</td>
+                            <td>เปิดใบแจ้งซ่อม</td>
+                            <td>13-07-2021 00.00</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>100188</td>
+                            <td>6662237</td>
+                            <td>คุณพัชนี เต็มนา</td>
+                            <td>0819055984</td>
+                            <td>6662237</td>
+                            <td>คุณพัชนี เต็มนา</td>
+                            <td>0819055984</td>
+                            <td>ทินกร มุ่งแห่งกลาง</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+</section>

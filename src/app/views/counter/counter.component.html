@@ -1,0 +1,184 @@
+<section class="content">
+    <!--<div style="padding-left: 10px;padding-top:5px">New Repair Order</div>  -->
+    <div class="content" style="padding: 5px;">
+        <div class="card" style="margin-left: 5px;margin-right:5px;margin-top: 10px;">
+            <ul class="nav nav-pills flex-column" data-toggle="collapse" data-target="#demo">
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link card-image-6" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="d-flex justify-content-between">
+                            <div class="text-gray" style="font-size:20px">
+                                Repair Order
+                            </div>
+                            <div class="text-primary">
+                                Search
+                                <i class="right vp-angle-down-solid" style="color:#0070c0"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="card-body">
+                            <div class="row mb-0">
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Receive No :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="receiveNo" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Serial Number :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="receiveNo" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        SKU :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="receiveNo" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Receive Branch :&nbsp;
+                                        <div class="input-group-append ">
+                                            <select name="branch" id="branch" class="form-control">
+                                                <option value="volvo">ทุกสาขา</option>
+                                                <option value="saab">01HQ : สำนักงานใหญ่</option>
+                                                <option value="mercedes">02HY : หาดใหญ่</option>
+                                                <option value="audi">03TB : ธนบุรี</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-0">
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Receive From :&nbsp;
+                                        <div class="input-group-append">
+                                            <input id="date_form" name="input-name" type="text" placeholder="DD-MM-YYYY"
+                                                class="form-control" #dp="bsDatepicker" bsDatepicker [bsValue]="date"
+                                                [bsConfig]="{ isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-dark-blue'}"
+                                                style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                            <button type="button" class="btn btn-xs btn-outline-dark" mat-raised-button
+                                                (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen"
+                                                style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                                    class="vp-calendar text-black"
+                                                    style="font-size: 20px;"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Receive To :&nbsp;
+                                        <div class="input-group-append">
+                                            <input id="date_to" name="input-name" type="text" placeholder="DD-MM-YYYY"
+                                                class="form-control" #ds="bsDatepicker" bsDatepicker [bsValue]="date"
+                                                [bsConfig]="{ isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-amway-blue'}"
+                                                style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                                            <button type="button" class="btn btn-xs btn-outline-dark" mat-raised-button
+                                                (click)="ds.toggle()" [attr.aria-expanded]="ds.isOpen"
+                                                style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                                    class="vp-calendar text-black"
+                                                    style="font-size: 20px;"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Dist Number :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="receiveNo" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Dist Name :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="receiveNo" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Receive Name :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="receiveNo" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        ID Card :&nbsp;
+                                        <div class="input-group-append ">
+                                            <input type="text" name="receiveNo" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        Status :&nbsp;
+                                        <div class="input-group-append ">
+                                            <select name="staus" id="staus" class="form-control">
+                                                <option value="volvo">ทั้งหมด</option>
+                                                <option value="saab">รับเครื่องจากลูกค้า</option>
+                                                <option value="mercedes">อยู่ในระหว่างซ่อม</option>
+                                                <option value="audi">รอการอนุมัติ</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg"></div>
+                            </div>
+                            <div class="row mb-0 text-center">
+                                <div class="col">
+                                    <button type="button" name="btnSearch" class="btn btn-outline-primary btn-xs"><i
+                                            class="vp-search-solid"></i> Search</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="card" style="margin-left: 5px;margin-right: 5px;">
+            <div class="row" style="padding: 15px;">
+                <button type="button" class="btn btn-outline-success btn-sm" title="เปิดใบรับซ่อม(ซ่อมเอง)"
+                    (click)="durable()"><i class="vp-plus-solid"></i>เปิดใบรับซ่อม (Durable)
+                </button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-info btn-sm" title="เปิดใบรับซ่อม(ส่งต่อ)"
+                    (click)="openShopper()"><i class="vp-plus-solid"></i>เปิดใบรับซ่อม (Shopper & Premium)
+                </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-outline-warning btn-sm" title="ส่งให้จัดส่ง"
+                    (click)="sendShipment()"><i class="vp-plus-solid"></i>ส่งให้จัดส่ง
+                </button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-warning btn-sm" title="รับจากจัดส่ง"
+                    (click)="receiveShipment()"><i class="vp-plus-solid"></i>รับจากจัดส่ง
+                </button>
+            </div>
+            <div class="row" style="margin-left: 5px;margin-right:5px">
+                <div class="card shadow-none">
+                    <table datatable [dtOptions]="dtOptions"
+                        class="row-border table-bordered table-striped display nowrap compact">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

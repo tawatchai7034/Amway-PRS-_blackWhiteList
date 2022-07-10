@@ -1,0 +1,109 @@
+<div class="content" style="padding: 5px;padding-top: 20px;">
+    <form autocomplete="off">
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">BOM Data <label class="lblView">View</label></div>
+                    <!--<div class="col text-right"><i class="vp-clipboard-list-solid txtHead" style="font-size: 25px;"></i></div>-->
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="form-group">
+                            SKU :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" id="txtSKU" name="txtSKU" class="form-control" style="width: 100%;" value="100188 เครื่องกรองน้ำอีสปริง" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        Effective Start Date  :&nbsp;
+                                        <div class="input-group-append">
+                                            <input   id="date_form"
+                                            name="input-name"  type="text" placeholder="DD-MM-YYYY" class="form-control"  #ds="bsDatepicker"  bsDatepicker [bsValue]="sdate" 
+                                            [bsConfig]="{ isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-dark-blue'}" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        Effective End Date :&nbsp;
+                                        <div class="input-group-append">
+                                            <input id="date_to" name="input-name" type="text" placeholder="DD-MM-YYYY" class="form-control"
+                                                #ds="bsDatepicker" bsDatepicker [bsValue]="sdate" 
+                                                [bsConfig]="{ isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-amway-blue'}"
+                                                disabled>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            Status :&nbsp;
+                            <div class="row form-inline" style="padding-left: 5px;">
+                                <input type="radio" id="rdoStatus" name="rdoStatus" value="Y" checked disabled>&nbsp;Active&nbsp;&nbsp;
+                                <input type="radio" id="rdoStatus" name="rdoStatus" value="N" disabled>&nbsp;Inactive
+                               </div>
+                        </div>                       
+                    </div>
+                    <div class="col-lg">
+                       <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                Child SKU :&nbsp;
+                                <div class="input-group-append ">
+                                    <input type="text" id="txtChildSKU" name="txtChildSKU" class="form-control" style="width: 100%;" value="100186" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                Name :&nbsp;
+                                <div class="input-group-append ">
+                                    <input type="text" id="txtChildSKUName" name="txtChildSKUName" class="form-control" style="width: 100%;" value="ESPRING REPLACEMENT PART" readonly>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-group">
+                                    Qty :&nbsp;
+                                    <div class="input-group-append">
+                                        <input type="text" id="txtChildSKU" name="txtChildSKU" value="0" class="form-control  text-right" style="width: 100%;" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    Remark :&nbsp;
+                                    <div class="input-group-append ">
+                                        <textarea id="txtRemark" name="txtRemark" rows="3" cols="50" class="form-control"
+                                        style="resize:none" readonly></textarea>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+                
+                <hr>
+                <div class="row bm-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                        (click)="onClose()"><i class="vp-times-solid"></i> Close</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

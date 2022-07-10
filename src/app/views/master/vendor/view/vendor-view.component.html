@@ -1,0 +1,99 @@
+<div class="content" style="padding: 5px;padding-top: 10px;">
+    <form>
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">Vendor Data <label class="lblView">View</label></div>
+                    <!--<div class="col text-right"><i class="vp-clipboard-list-solid txtHead" style="font-size: 25px;"></i></div>-->
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                            Vendor Code :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="vendorCode" class="form-control" value="V001" style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Vendor Name :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="vendorName" class="form-control" value="AMWAY" style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Address :&nbsp;
+                            <div class="input-group-append ">
+                                <textarea id="w3review" name="w3review" rows="4" cols="50" class="form-control" 
+                               style="resize:none" readonly ></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a>
+                                Telephone :
+                            </a>
+                            <a style="margin-left:38%">
+                                Fax :
+                            </a>
+                            <div class="input-group-append ">
+                                <input type="text" name="branchTel" class="form-control" value="027258000"
+                                    style="width: 100%;" readonly>
+                                &nbsp;&nbsp;
+                                <input type="text" name="branchFax" class="form-control" value="027351206"
+                                    style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                       
+                    </div>
+                   
+                    <div class="col-6" style="padding-left: 0px;">
+                        <div class="form-group">
+                            Vendor Type :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="vendorType" class="form-control" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            Contact Person :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="contactPerson" class="form-control" style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Telephone Person :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="telephonePerson" class="form-control" style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            E-Mail :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="email" class="form-control" style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Web Site :&nbsp;
+                            <div class="input-group-append ">
+                                <input type="text" name="vendorCode" class="form-control" value="www.amwayshopping.com" style="width: 100%;" readonly>
+                            </div>
+                        </div>
+                        <div style="padding-top: 15px;">
+                        
+                    </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row bm-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                        (click)="onClose()"><i class="vp-times-solid"></i> Close</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

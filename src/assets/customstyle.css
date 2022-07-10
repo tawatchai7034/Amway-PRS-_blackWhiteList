@@ -1,0 +1,759 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*สีบนแท็บบาร์*/
+.grad1 { 
+    height: 40px;  
+    background-color: #3c8dbc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,#3c8dbc, pink, white);
+    border-radius:3px;
+}
+/*สีบนแท็บบาร์*/
+.grad2 {
+    height: 40px; 
+    background-color: #3c8dbc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,#3c8dbc, white);
+}
+/*สีเขียวบนหัวตาราง*/
+.grad3 {
+    height: 5px;
+    background-color: #3c8dbc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom,forestgreen, darkgreen);
+    color: white;
+}
+/*สีบนแท็บบาร์*/
+.grad4 {
+    height: 60px;
+    background-color: #3c8dbc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom,white, #e3f4d2);
+    color: green;
+}
+/*สีบนแท็บบาร์*/
+.grad5 {
+    height: 57px;
+    background-color: #3c8dbc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #3c8dbc,lightblue, gray);
+}
+/*สีเขียวบนหัวตาราง*/
+.grad6 {
+    height: 55px;
+    background-color: #3c8dbc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom,white, green);
+    color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+/*สีแถว Standard*/
+.grad7 {
+    height: 30px;
+    background-color: #3c8dbc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom,white, #ffe082);
+    color: black;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+/*สีเขียวบนข้อความ Standard*/
+.grad8 {
+    background-color: #3c8dbc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom,forestgreen, darkgreen);
+    color: white;
+    border-radius:5px;
+    font-size:14px;
+}
+/*สีเขียวบนหัวตาราง*/
+.grad9 {
+    height: 5px;
+    background-color: #3c8dbc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom,lightgreen, lightgreen);
+    color: white;
+}
+
+/*สีบนแท็บบาร์ Vansale*/
+.vansale-header-bar {
+    height: 57px;
+    background-color: #59a63d; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #094f1d,#59a63d, #59a63d);
+}
+.prs-header-bar-2 {
+    height: 57px;
+    background-color: #3f72af; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #3f72af,#3f72af, #3f72af);
+}
+.prs-header-bar-1 {
+    height: 57px;
+    background-color: #112d4e; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #112d4e,#112d4e, #112d4e);
+}
+.prs-header-bar-0 {
+    height: 57px;
+    background-color: #fafafa; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #fafafa,#fafafa, #fafafa);
+    border: none;
+}
+.prs-header-bar {
+    height: 57px;
+    background-color: #fff; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #fff,#fff, #fff);
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.prs-header-bar a {
+    /*padding: 8px 8px 8px 32px;*/
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.prs-header-bar a:hover {
+    color: gray;
+}
+
+/*สีบน card header*/
+.card-image-2{
+    height: 40px;
+    background:  url('../../../assets/amway-images/bg-4.jpg') no-repeat center center fixed;
+}
+.card-image-4 {
+    height: 40px;
+    background-color: #dbe2ef; 
+}
+.card-image-5{
+    height: 40px;
+    background-color: #FFFFFF; 
+    /*background:  url('../../../assets/amway-images/bg-navbar-1.png') no-repeat center center fixed;*/
+}
+.card-image-6 {
+    height: 40px;
+    background-color: #fafafa; 
+}
+.card-image {
+    height: 40px;
+    background-color: #FFFFFF; 
+}
+
+.card-image-10{
+    height:110px;
+    width: 300px;
+    background-color: #ffffff; /* For browsers that do not support gradients */
+    color: rgb(0, 0, 0);
+    border-radius:5px;
+    font-size:14px;
+    text-align:left;
+}
+.card-image-10 .toast-title {
+    color: rgb(0, 0, 0);
+    height: 20px;
+    
+  }
+  
+  .card-image-10 button {
+    color: rgb(0, 0, 0);
+  }
+
+
+
+/*สีSidebar Vansale*/
+
+.navbar-vansale-green {
+    background-color: #094f1d
+}
+.sidepanel {
+    background-color: #fff;
+        
+}
+.sidepanel a {
+    /*padding: 8px 8px 8px 32px;*/
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+    .sidepanel a:hover {
+        color: white;
+    }
+
+    .nav-image{
+       
+        background:  url('../../../assets/amway-images/bg_navbar.png') no-repeat center center fixed;
+    }
+
+
+
+
+/*ปุ่ม radio ใหญ่ขึ้น*/
+.radio_control {
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 0.1em solid currentColor;
+}
+/*ปุ่ม radio ใหญ่ขึ้น*/
+.radio_control1 {
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    border: 0.1em solid currentColor;
+}
+
+/*ปุ่ม radio เหลี่ยม ใหญ่ขึ้น*/
+.square-radio {
+    border: 1px solid black;
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.square-radio--clicked .square-radio--content {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+}
+
+
+/*ปุ่ม checkbox ใหญ่ขึ้น*/
+.checkbox_control {
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 0.1em solid currentColor;
+}
+
+
+/*ขนาดของกรอบแสดงรูปภาพ*/
+.centeredImageContainer {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.txtHead {
+    color: #112d4e;
+    font-weight: thin;
+}
+
+.txtTopic {
+    color: #112d4e;
+    font-weight: bold;
+}
+
+.lblTopic {
+    font-weight: thin;
+    font-size: 14px;
+}
+
+
+
+td.highlight {
+    background-color: black !important;
+}
+/*จัดกลางในตาราง Index*/
+td.center {
+    text-align: center;
+}
+/*จัดชิดซ้ายในตาราง Index*/
+
+td.left {
+    text-align: left;
+}
+/*จัดชิดขวาในตาราง Index*/
+
+td.right {
+    text-align: right;
+}
+/*จัดกลางหัวตาราง Index*/
+table.dataTable thead tr {
+    text-align: center;
+ 
+}
+
+
+.hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 8px 0px;
+    border-block-color:gray;
+}
+    .hr-sect::before,
+    .hr-sect::after {
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.35);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 8px;
+    }
+/*Start กรอบเทา ข้อความบนเส้น*/
+#info-block section {
+    border: 1px solid #dcdcdc;
+    color: rgba(0, 0, 0, 0.35);
+    border-radius:5px;
+
+}
+
+.file-marker > div {
+    padding: 0 3px;
+    /*height: 100px;*/
+    margin-top: -0.8em;
+    color:black;
+   
+}
+
+.box-title {
+    background: white none repeat scroll 0 0;
+    display: inline-block;
+    padding: 0 2px;
+    margin-left: 1em;
+    color: gray;
+    
+}
+/*End กรอบเทา ข้อความบนเส้น*/
+/*กรอบวงกลมสีดำ มีข้อความด้านใน*/
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+    padding-left:2px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+}
+/*Start ปุ่มสีม่วง*/
+.btn-purple {
+    color: #fff;
+    background-color: #cd00cd;
+    border-color: #cd00cd;
+    box-shadow: none
+}
+
+    .btn-purple:hover {
+        color: #fff;
+        background-color: #b400b4;
+        border-color: #9b009b
+    }
+
+    .btn-purple.focus, .btn-purple:focus {
+        color: #fff;
+        background-color: #b400b4;
+        border-color: #9b009b;
+        box-shadow: none,0 0 0 0 rgba(231,0,231,.5)
+    }
+
+    .btn-purple.disabled, .btn-purple:disabled {
+        color: #fff;
+        background-color: #b400b4;
+        border-color: #cd00cd
+    }
+
+    .btn-purple:not(:disabled):not(.disabled).active, .btn-purple:not(:disabled):not(.disabled):active, .show > .btn-purple.dropdown-toggle {
+        color: #fff;
+        background-color: #9b009b;
+        border-color: #b400b4
+    }
+
+        .btn-purple:not(:disabled):not(.disabled).active:focus, .btn-purple:not(:disabled):not(.disabled):active:focus, .show > .btn-purple.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0 rgba(231,0,231,.5)
+        }
+/*End ปุ่มสีม่วง*/
+
+
+
+.card-vgreen.card-outline {
+    border-top: 3px solid #59a63d;
+}
+
+.input-line {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.mycontent-left {
+    border-right: 1px dashed #333;
+}
+
+/*ปุ่ม Browse ในรูปภาพ*/
+.picture-container {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+}
+
+.picture {
+    width: 250px;
+    height: 250px;
+    background-color: #999999;
+    border: 1px solid #CCCCCC;
+    color: #FFFFFF;
+    margin: 0px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    border-radius:10px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
+    .picture:hover {
+        border-color: #59a63d;
+    }
+
+.content.ct-wizard-green .picture:hover {
+    border-color: #05ae0e;
+}
+
+.content.ct-wizard-blue .picture:hover {
+    border-color: #3472f7;
+}
+
+.content.ct-wizard-orange .picture:hover {
+    border-color: #ff9500;
+}
+
+.content.ct-wizard-red .picture:hover {
+    border-color: #ff3b30;
+}
+
+.picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.picture-src {
+    width: 100%;
+}
+/*End ปุ่ม Browse ในรูปภาพ*/
+
+
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #a8bbbf;
+    }
+
+/*customer font*/
+@font-face {
+    font-family: 'prompt'; /*a name to be used later*/
+    src: url('../fonts/prompt/Prompt-Regular.ttf'); /*URL to font*/
+}
+
+.bordergrey {
+    border-radius: 5px;
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    padding-left: 15px;
+    background: #fff;
+    border: 1px solid lightgray;
+    color: black;
+    text-align: left;
+}
+.bordergrey1 {
+    border-radius: 1px;
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    padding-right: 5px;
+    background: #fff;
+    border: 1px solid lightgray;
+    color: black;
+    text-align: left;
+}
+table {
+    font-size: 13px;
+}
+    table.dataTable tbody th, table.dataTable tbody td {
+        height: 20px;
+        vertical-align: middle;
+        align-content: flex-start;
+    }
+    
+
+.form-control {
+    height:30px;
+    font-size:13px;
+}   
+.form-group{
+    margin-bottom:0px;
+}
+
+ /* visited link */
+
+       /*Start ปุ่ม amway*/
+.btn-amway {
+    color: #fff;
+    background-color: #112d4e;
+    border-color: #112d4e;
+    box-shadow: none
+}
+
+    .btn-amway:hover {
+        color: #000;
+        background-color: #fff;
+        border-color: #000
+    }
+
+    .btn-amway.focus, .btn-amway:focus {
+        color: #fff;
+        background-color: #112d4e;
+        border-color: #112d4e;
+        box-shadow: none,0 0 0 0 #112d4e
+    }
+
+    .btn-amway.disabled, .btn-amway:disabled {
+        color: #fff;
+        background-color: #112d4e;
+        border-color: #112d4e
+    }
+
+    .btn-amway:not(:disabled):not(.disabled).active, .btn-amway:not(:disabled):not(.disabled):active, .show > .btn-amway.dropdown-toggle {
+        color: #fff;
+        background-color:#112d4e;
+        border-color: #112d4e
+    }
+
+        .btn-amway:not(:disabled):not(.disabled).active:focus, .btn-amway:not(:disabled):not(.disabled):active:focus, .show > .btn-amway.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0 #112d4e
+        }
+
+/*End ปุ่ม  blue amway*/  
+
+/*Start ปุ่ม outline blue amway*/
+.btn-outline-amway {
+    color: #112d4e;
+    border-color: #112d4e;
+
+
+}
+
+    .btn-outline-amway:hover {
+        color: #fff;
+        background-color: #112d4e;
+        border-color: #112d4e
+    }
+
+    .btn-outline-amway.focus, .btn-outline-amway:focus {
+        box-shadow: 0 0 0 0 rgba(173, 167, 253, 0.5)
+    }
+
+    .btn-outline-amway.disabled, .btn-outline-amway:disabled {
+        color: #112d4e;
+        background-color: transparent
+    }
+
+    .btn-outline-amway:not(:disabled):not(.disabled).active, .btn-outline-amway:not(:disabled):not(.disabled):active, .show > .btn-outline-amway.dropdown-toggle {
+        color: #1f2d3d;
+        background-color: #112d4e;
+        border-color: #112d4e
+    }
+
+        .btn-outline-amway:not(:disabled):not(.disabled).active:focus, .btn-outline-amway:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-amway.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0 rgba(173, 167, 253, 0.5)
+        }
+/*End ปุ่ม outline pink delong*/
+
+.stepper-wrapper {
+    font-family: Arial;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    font-weight: bold;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background-color: #4bb543;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #4bb543;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+  .block {
+    border: 1px solid #112d4e;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.circle {
+    background: #112d4e;
+    border-radius: 30px;
+    color: white;
+    height: 30px;
+    font-weight: bold;
+    width: 30px;
+    display: table;
+    margin: 5px auto;
+}
+.circle p {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.toast-aaa {
+
+    background-color: #a08c6f;
+  }
+
+.lblNew{
+    background-color:green ;
+    color: white;
+    width: 50px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight:normal; 
+}
+.lblEdit{
+    background-color:#ffc107;
+    color: white;
+    width: 50px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight:normal; 
+}
+.lblView{
+    background-color:#70bcd1 ;
+    color: white;
+    width: 50px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight:normal; 
+}
+.lblService{
+    background-color:#bbaee0 ;
+    color: white;
+    width: 80px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight:normal; 
+}
+.bs-datepicker-body table td span.selected,
+.bs-datepicker-head,
+.bs-datepicker-head,
+.bs-datepicker button:active,
+.bs-datepicker-body table td.selected span,
+.bs-datepicker-body table td span[class*="select-"]:after,
+.bs-datepicker-body table td[class*="select-"] span:after,
+.bs-datepicker-body table td.active-week span:hover {
+    background-color: #112d4e !important;
+}
+
+
+.tabBorder{
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+}
+.bg-amway-header{
+    background-color: #112d4e;
+    color: #FFFFFF;
+}
+.bg-amway{
+    background-color: #112d4e;
+    
+}
+
+
+

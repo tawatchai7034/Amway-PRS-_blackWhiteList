@@ -1,0 +1,116 @@
+<div class="content" style="padding: 5px;padding-bottom: -100px;">
+    <nav class="mt-2">
+        <form autocomplete="off">
+            <div class="card">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link card-image-6" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="d-flex justify-content-between">
+                                <div class="text-gray" style="font-size:20px">
+                                    Part
+                                </div>
+                                <div class="text-primary">
+                                    Search
+                                    <i class="right vp-angle-down-solid" style="color:#0070c0"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            SKU :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="SKU" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Name :&nbsp;
+                                            <div class="input-group-append ">
+                                                <input type="text" name="txtName" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Part Type :&nbsp;
+                                            <div class="input-group-append ">
+                                                <select name="type" id="type" class="form-control">
+                                                    <option value="">ไม่กำหนด</option>
+                                                    <option value="1">Part 1</option>
+                                                    <option value="2">Part 2</option>
+                                                    <option value="3">Part 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            Status :&nbsp;
+                                            <div class="input-group-append ">
+                                                <select name="type" id="type" class="form-control">
+                                                    <option value="">All</option>
+                                                    <option value="Y">Active</option>
+                                                    <option value="N">Inactive</option>
+                                                    <option value="D">Deleted</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-0 text-center">
+                                    <div class="col-lg">
+                                        <button type="button" name="btnSearch" class="btn btn-outline-primary btn-xs"><i
+                                                class="vp-search-solid"></i> Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </nav>
+    <div class="card" style="padding: 5px;">
+        <div class="row" style="padding: 10px;">
+            <button type="button" class="btn btn-outline-success btn-xs" title="เพิ่ม" (click)="onNew()"><i
+                    class="vp-plus-solid"></i>New
+            </button>
+        </div>
+        <table datatable [dtOptions]="dtOptions"
+            class="row-border hover table-bordered table-striped display nowrap compact">
+            <tbody>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning btn-xs" title="แก้ไข" (click)="onEdit()"><i
+                                class="vp-edit-solid"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-danger btn-xs" title="ลบ" (click)="onDelete()"><i
+                                class="vp-trash-alt"></i>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-outline-info btn-xs" title="ดู" (click)="onView()"><i
+                                class="vp-eye"></i>
+                        </button>
+                    </td>
+                    <td>10086</td>
+                    <td>ชุดไส้กรองคาร์บอน+หลอดอุล</td>
+                    <td>Accessory</td>
+                    <td>180</td>
+                    <td>1000.00</td>
+                    <td>N</td>
+                    <td>Y</td>
+                    <td>Y</td>
+                    <td>ESPRING REPLACEMENT PART</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+
+<div class="content" style="padding: 5px;padding-top: 10px;">
+    <form autocomplete="off">
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">Permission Data <label class="lblNew">New</label></div>
+                    <!--<div class="col text-right"><i class="vp-clipboard-list-solid txtHead" style="font-size: 25px;"></i></div>-->
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col">
+                        <aside id="info-block">
+                            <section class="file-marker">
+                                <div>
+                                    <div class="box-title">
+                                        &nbsp;&nbsp;<a style="font-size:14px">New Data</a>&nbsp;&nbsp;
+                                    </div>
+                                    <div class="box-contents" style="text-align: left;padding: 10px;height: 400px;">
+                                        <div class="row">
+                                            <div class="col-lg">
+                                                <div class="form-group">
+                                                    Permission Name :&nbsp;
+                                                    <div class="input-group-append ">
+                                                        <input type="text" id="txtPermission" name="txtPermission" class="form-control" placeholder="Please enter Permission Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="row">
+                                            <div class="col-lg">
+                                                <div class="form-group">
+                                                    Remark :&nbsp;
+                                                    <div class="input-group-append ">
+                                                        <textarea id="txtRemark" name="txtRemark" rows="3" cols="50" class="form-control" style="resize:none"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-lg">
+                                                <div class="form-group">
+                                                   Delete Status :&nbsp;
+                                                   <div class="row form-inline" style="padding-left: 5px;">
+                                                    <input type="radio" id="rdoDelete" name="rdoDelete" value="Y">&nbsp;Yes&nbsp;&nbsp;
+                                                    <input type="radio" id="rdoDelete" name="rdoDelete" value="N" checked>&nbsp;No
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg">
+                                                <div class="form-group">
+                                                    Status :&nbsp;
+                                                    <div class="row form-inline" style="padding-left: 5px;">
+                                                        <input type="radio" id="rdoStatus" name="rdoStatus" value="Y" checked>&nbsp;Active&nbsp;&nbsp;
+                                                        <input type="radio" id="rdoStatus" name="rdoStatus" value="N">&nbsp;Inactive
+                                                       </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>   
+                            </section>
+                        </aside>                        
+                    </div>
+                    <div class="col" style="padding-left: 0px;">
+                        <aside id="info-block">
+                            <section class="file-marker">
+                                <div>
+                                    <div class="box-title">
+                                        &nbsp;&nbsp;<a style="font-size:14px">Function</a>&nbsp;&nbsp;
+                                    </div>
+                                    <div class="box-contents" style="text-align: left;padding: 10px;height: 400px;">
+                                        <div class="card-body" style="overflow: auto;height: 380px;">
+                                            <div class="card" style="padding: 5px;"  *ngFor="let a of permissionName; let index = index">
+                                                <div class="row">
+                                                    <div class="col"><input type="checkbox">&nbsp;{{menuName}}</div>
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col"><input type="checkbox">&nbsp;New</div>
+                                                    <div class="col"><input type="checkbox">&nbsp;Edit</div>
+                                                    <div class="col"><input type="checkbox">&nbsp;Delete</div>
+                                                    <div class="col"><input type="checkbox">&nbsp;View</div>
+                                                </div>                           
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </aside>   
+                    </div>
+                </div>
+                <hr>
+                <div class="row bm-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnSave" class="btn btn-amway btn-xs" (click)="onSave()"><i
+                                class="vp-save-solid"></i>&nbsp;&nbsp; Save&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                            (click)="onCancel()"><i class="vp-times-solid"></i> Cancel</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

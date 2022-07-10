@@ -1,0 +1,121 @@
+<div class="content" style="padding: 5px;padding-top: 20px;">
+    <form autocomplete="off">
+        <div class="card">
+            <div class="card-header card-image">
+                <div class="row">
+                    <div class="col text-left">Config Data <label class="lblNew">New</label></div>
+                    <div class="col text-right"><i class="vp-clipboard-list-solid txtHead" style="font-size: 25px;"></i></div>
+                </div>
+            </div>
+            
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            
+                            <div class="form-group">
+                                <a>
+                                    Function :
+                                </a>
+                                <a style="margin-left:39%">
+                                    Name :
+                                </a>
+                                <div class="input-group-append ">
+                                    <select name="Function" id="Function" class="form-control" style="width: 50%;">
+                                        <option value="">Function 1</option>
+                                        <option value="1">Function 2</option>
+                                        <option value="2">Function 3</option>
+                                    </select>
+                                    &nbsp;
+                                    <select name="Name" id="Name" class="form-control" style="width: 50%;">
+                                        <option value="">Name 1</option>
+                                        <option value="1">Name 2</option>
+                                        <option value="2">Name 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                Remark :&nbsp;
+                                <div class="input-group-append ">
+                                    <textarea id="Remark" name="Remark" rows="2" cols="50" class="form-control"
+                                        placeholder="Please enter Remark" style="width: 100%;resize:none;"></textarea>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                           
+                        </div>
+                       
+                        <div class="col-6" style="padding-left: 0px;">
+                            
+                            <div class="form-group">
+                                <a>
+                                    Sequence : <a class="text-red" style="font-size: 12px;">*กรอกได้เฉพาะตัวเลขเท่านั้น</a>
+                                </a>
+                                <a style="margin-left:15%">
+                                    Effective Date :
+                                </a>
+                                <div class="input-group-append ">
+                                    <!-- <input type="text" name="text_plain" class="form-control" style="width: 50%;" onKeyUp="if(isNaN(this.value)){ alert('กรุณากรอกตัวเลข'); this.value='';}"/> -->
+                                    <input type="text" name="Sequence" class="form-control" style="width: 50%;" placeholder="Please enter Sequence" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" />
+                                    &nbsp;&nbsp;
+                                        <input   id="effectiveDate" 
+                                        name="effectiveDate"  type="text" placeholder="DD-MM-YYYY" class="form-control"  #dp="bsDatepicker" bsDatepicker [bsValue]="date" 
+                                        [bsConfig]="{ isAnimated: true, dateInputFormat: 'DD-MM-YYYY' ,containerClass:'theme-dark-blue',adaptivePosition:true}" style="border-top-right-radius: 0px; border-bottom-right-radius: 0px; width: 50%;">
+                                        <button type="button" class="btn btn-xs btn-outline-dark" mat-raised-button (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen"
+                                        style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><i
+                                            class="vp-calendar text-black" style="font-size: 20px;"></i></button>
+                                    
+                                </div>
+                               
+                            </div>
+
+                            <br>
+                            <aside id="info-block">
+                                <section class="file-marker">
+                                    <div>
+                                        <div class="box-title">
+                                            &nbsp;&nbsp;<a style="font-size:14px">Status</a>&nbsp;&nbsp;
+                                        </div>
+                                        <div class="box-contents" style="text-align: left;padding: 10px;">
+                                            <table>
+                                                
+                                                <tr>
+                                                    <td class="text-right">
+                                                        Status :&nbsp;
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="rdoCounter">&nbsp;Active
+                                                        &nbsp;&nbsp;&nbsp;<input type="radio" name="rdoCounter"
+                                                            checked>&nbsp;Inactive
+                                                    </td>
+
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                            </aside>
+                        
+                        </div>
+                    </div>
+             
+                <hr>
+                <div class="row bm-3">
+                    <div class="col text-right">
+                        <button type="button" name="btnSave" class="btn btn-amway btn-xs" (click)="onSave()"><i
+                                class="vp-save-solid"></i>&nbsp;&nbsp; Save&nbsp;</button>&nbsp;
+                        <button type="button" name="btnCancel" class="btn btn-outline-amway btn-xs"
+                            (click)="onCancel()"><i class="vp-times-solid"></i> Cancel</button>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </form>
+</div>
+
