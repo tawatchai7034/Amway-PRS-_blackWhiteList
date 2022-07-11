@@ -16,6 +16,7 @@ export class BlackWhitelistIndexComponent implements OnInit {
   BlackWhiteList: any = [];
   searchForm : FormGroup;
 
+
   constructor(
     private router: Router,
     private blackWhiteService: BlackWhiteServicesService,
@@ -33,9 +34,9 @@ export class BlackWhitelistIndexComponent implements OnInit {
   }
 
   editButton =
-    '<button type="button" class="btn btn-outline-warning btn-xs" title="แก้ไข" (click)="onEdit()"><i class="vp-edit-solid"></i></button>';
+    '<button type="button" className = "editButton" class="btn btn-outline-warning btn-xs" title="แก้ไข" (click)="onEdit()"><i class="vp-edit-solid"></i></button>';
   viewButton =
-    '<button type="button" class="btn btn-outline-info btn-xs" title="ดู" (click)="onView()"><i class="vp-eye"></i></button>';
+    '<button type="button" className = "viewButton" class="btn btn-outline-info btn-xs" title="ดู" (click)="onView()"><i class="vp-eye"></i></button>';
 
   command = this.editButton + '  ' + this.viewButton;
   rows: BlackWhiteInfo[] = [];
@@ -87,7 +88,7 @@ export class BlackWhitelistIndexComponent implements OnInit {
         this.rows.push(result);
       }
 
-      $('#blackWhiteTable').DataTable({
+      let table = $('#blackWhiteTable').DataTable({
         pagingType: 'full_numbers',
         processing: true,
         searching: false,
@@ -98,11 +99,12 @@ export class BlackWhitelistIndexComponent implements OnInit {
         order: [[1, 'asc']],
         columns: [
           {
-            data: 'command',
-            title: '',
+            // data: 'command',
+            // title: '',
             orderable: false,
             className: 'center',
             width: '100px',
+            defaultContent: this.command
           },
           {
             data: 'recieveNo',
@@ -156,6 +158,34 @@ export class BlackWhitelistIndexComponent implements OnInit {
         ],
       });
     });
+
+     //store current class reference in _currClassRef variable for using in jquery click event handler
+     var _currClassRef = this;
+
+     //unbind previous event on tbody so that multiple events are not binded to the table whenever this function runs again
+     $('#datatables tbody td').unbind();
+ 
+     //defined jquery click event
+     $('#datatables tbody td').on('click', 'button', function () {
+ 
+       //the "this" in this function is "this" of jquery object not of component because we did not use an arrow function
+ 
+       //get row for data
+       var tr = $(this).closest('tr');
+       var row = this.table.row(tr);
+       //this of jquery object
+       if (this.className == "editButton") {
+         //use function of current class using reference
+         console.log(row.data().guidKey);
+       }
+       else if (this.className == "viewButton") {
+        console.log(row.data().guidKey);
+       }
+       else if (this.className == "showIdButton") {
+        console.log(row.data().Id);
+       }
+ 
+     })
   }
 
   onSearch() {

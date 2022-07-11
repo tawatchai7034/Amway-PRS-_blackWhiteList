@@ -81,18 +81,17 @@
               </div>
             </div>
             <div class="form-group">
-              <a style="color: red">*</a> Record Date :&nbsp;
+              <a style="color: red" >*</a> Record Date :&nbsp;
               <div class="input-group-append">
                 <input
                   id="recordDate"
                   formControlName="recordDate"
                   type="text"
                   placeholder="DD-MM-YYYY"
-                  [(ngModel)]="this.formText.recordDate"
                   class="form-control"
                   #dp="bsDatepicker"
                   bsDatepicker
-                  [bsValue]="date"
+                  [bsValue]="recordDate"
                   [bsConfig]="{
                     isAnimated: true,
                     dateInputFormat: 'DD-MM-YYYY',
@@ -136,12 +135,13 @@
                         <tr>
                           <td class="text-right">Status :&nbsp;</td>
                           <td>
-                            <input type="radio" formControlName="status" value="Y"/>&nbsp;Active
+                            <input id="statusY" type="radio" formControlName="status" value="Y" checked>&nbsp;Active
                             &nbsp;&nbsp;&nbsp;<input
+                            id="statusN"
                               type="radio"
                               formControlName="status"
                               value="N"
-                              checked
+                              
                             />&nbsp;Inactive
                           </td>
                         </tr>
