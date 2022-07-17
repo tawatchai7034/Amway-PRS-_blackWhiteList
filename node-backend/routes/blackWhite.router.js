@@ -235,6 +235,10 @@ blackWhiteRoute.route("/apiInsertBlackWhite").post((req, res, next) => {
 blackWhiteRoute.route("/apiUpdateBlackWhite").post((req, res, next) => {
   try {
     let dateTime = new Date();
+    let dateInput = req.body.recordDate;
+    let dateSplit = dateInput.split('/');
+    let newDateFormat = dateSplit[2] + '-' + dateSplit[1] + '-' + dateSplit[0]
+    let dateData = new Date(newDateFormat);
     BlackWhiteList.updateOne(
       { guidKey: req.body.guidKey },
       {
@@ -244,7 +248,7 @@ blackWhiteRoute.route("/apiUpdateBlackWhite").post((req, res, next) => {
           serialNoNew: req.body.serialNoNew,
           serialNoOld: req.body.serialNoOld,
           type: req.body.type,
-          recordDate: req.body.recordDate,
+          recordDate: dateData,
           status: req.body.status,
           updateDate: dateTime,
           updateBy: req.body.updateBy,
