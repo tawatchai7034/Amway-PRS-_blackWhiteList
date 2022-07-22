@@ -6,6 +6,7 @@ const blackWhiteRoute = express.Router();
 let BlackWhiteList = require("../models/blackList");
 
 // Post method version
+// test get
 blackWhiteRoute.route("/apiAllBlackWhiteList").post((req, res, next) => {
   try {
     let receiveNo = req.body.receiveNo;
@@ -39,22 +40,26 @@ blackWhiteRoute.route("/apiAllBlackWhiteList").post((req, res, next) => {
             };
             list.push(result);
           }
-
-          res.json(list);
+			const newResult = {
+			success: true,
+			message: '',
+			result: list,
+			};
+          res.json(newResult);
         }
       }
     );
   } catch (err) {
     const result = {
       success: false,
-      message: err,
+      message: err.message,
       result: null,
     };
     res.json(result);
   }
 });
 
-blackWhiteRoute.route("/apiGetBlackWhiteList").post((req, res, next) => {
+blackWhiteRoute.route("/apiGetBlackWhiteList").post( (req, res, next) => {
   try {
     let receiveNo = req.body.receiveNo;
     let sku = req.body.sku;
@@ -63,7 +68,7 @@ blackWhiteRoute.route("/apiGetBlackWhiteList").post((req, res, next) => {
     let type = req.body.type;
     let status = req.body.status;
 
-    BlackWhiteList.find(
+     BlackWhiteList.find(
       {
         receiveNo: { $regex: receiveNo },
         sku: { $regex: sku },
@@ -73,8 +78,13 @@ blackWhiteRoute.route("/apiGetBlackWhiteList").post((req, res, next) => {
         status: { $regex: status },
       },
       (error, data) => {
-        if (error) {
-          return next(error);
+			if (error) {
+				const result = {
+				success: false,
+				message: error.message,
+				result: null,
+			};
+			res.json(result);
         } else {
           var list = [];
           for(var i = 0 ;i < data.length ; i++){
@@ -95,8 +105,12 @@ blackWhiteRoute.route("/apiGetBlackWhiteList").post((req, res, next) => {
             };
             list.push(result);
           }
-
-          res.json(list);
+           const result = {
+				success: true,
+				message: '',
+				result: list,
+			};
+          res.json(result);
         }
       }
     );
@@ -110,14 +124,20 @@ blackWhiteRoute.route("/apiGetBlackWhiteList").post((req, res, next) => {
   }
 });
 
-blackWhiteRoute.route("/apiGetBlackWhite").post((req, res, next) => {
+blackWhiteRoute.route("/apiGetBlackWhite").post((req, res) => {
   try {
     let guidKey = req.body.guidKey;
-    BlackWhiteList.find({ guidKey: guidKey }, (error, data) => {
+	
+    BlackWhiteList.find({ guidKey: guidKey}, (error, data) => {
       if (error) {
-        return next(error);
-      } else {
         const result = {
+          success: false,
+          message: error,
+          result: null,
+        };
+        res.json(result);
+      } else {
+        const newData = {
           guidKey: data[0].guidKey,
           sku: data[0].sku,
           receiveNo: data[0].receiveNo,
@@ -132,6 +152,11 @@ blackWhiteRoute.route("/apiGetBlackWhite").post((req, res, next) => {
           updateDate: data[0].updateDate,
           updateBy: data[0].createBy,
         };
+		const result = {
+				success: true,
+				message: '',
+				result: newData,
+			};
         res.json(result);
       }
     });
@@ -174,8 +199,13 @@ blackWhiteRoute.route("/apiSearchByReceiveNo").post((req, res, next) => {
             };
             list.push(result);
           }
+		  const newResult = {
+			success: true,
+			message: '',
+			result: list,
+			};
 
-          res.json(list);
+          res.json(newResult);
         }
       }
     );

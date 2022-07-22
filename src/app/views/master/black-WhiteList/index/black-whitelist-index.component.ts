@@ -88,7 +88,7 @@ export class BlackWhitelistIndexComponent implements OnInit {
         this.rows.push(result);
       }
 
-      let table = $('#blackWhiteTable').DataTable({
+       $('#blackWhiteTable').DataTable({
         pagingType: 'full_numbers',
         processing: true,
         searching: false,
@@ -157,35 +157,79 @@ export class BlackWhitelistIndexComponent implements OnInit {
           },
         ],
       });
-    });
+    },((error)=>{
+      $('#blackWhiteTable').DataTable({
+        pagingType: 'full_numbers',
+        processing: true,
+        searching: false,
+        scrollX: true,
+        scrollY: '400px',
+        dom: 'frtip',
+        data: this.rows,
+        order: [[1, 'asc']],
+        columns: [
+          {
+            // data: 'command',
+            // title: '',
+            orderable: false,
+            className: 'center',
+            width: '100px',
+            defaultContent: this.command
+          },
+          {
+            data: 'recieveNo',
+            title: 'Recieve No',
+            className: 'center',
+            width: '150px',
+          },
+          {
+            data: 'SKU',
+            title: 'SKU',
+            className: 'left',
+            width: '180px',
+          },
+          {
+            data: 'oldSerial',
+            title: 'Old Serial',
+            className: 'left',
+            width: '180px',
+          },
+          {
+            data: 'newSerial',
+            title: 'New Serial',
+            className: 'left',
+            width: '180px',
+          },
+          {
+            data: 'recordDate',
+            title: 'Record Date',
+            className: 'center',
+            width: '80px',
+          },
+          {
+            data: 'type',
+            title: 'Type',
+            className: 'center',
+            width: '100px',
+          },
+          {
+            data: 'status',
+            title: 'Status',
+            className: 'center',
+            width: '100px',
+            render: function (data, type, row) {
+              var color = 'black';
+              if (data == 'Deleted') {
+                color = 'red';
+              }
+              return '<span style="color:' + color + '">' + data + '</span>';
+            },
+          },
+        ],
+      });
+    }))
 
-     //store current class reference in _currClassRef variable for using in jquery click event handler
-     var _currClassRef = this;
 
-     //unbind previous event on tbody so that multiple events are not binded to the table whenever this function runs again
-     $('#datatables tbody td').unbind();
- 
-     //defined jquery click event
-     $('#datatables tbody td').on('click', 'button', function () {
- 
-       //the "this" in this function is "this" of jquery object not of component because we did not use an arrow function
- 
-       //get row for data
-       var tr = $(this).closest('tr');
-       var row = this.table.row(tr);
-       //this of jquery object
-       if (this.className == "editButton") {
-         //use function of current class using reference
-         console.log(row.data().guidKey);
-       }
-       else if (this.className == "viewButton") {
-        console.log(row.data().guidKey);
-       }
-       else if (this.className == "showIdButton") {
-        console.log(row.data().Id);
-       }
- 
-     })
   }
 
   onSearch() {
